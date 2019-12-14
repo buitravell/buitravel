@@ -1,0 +1,284 @@
+﻿*{
+    margin:0;
+    padding:0;
+   
+}
+
+.timkiemtour 
+{
+    float:right;
+    background-color:antiquewhite;
+}
+.timkiemtour1 {
+    float:right;
+
+}
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-brand img
+{
+    height:40px;
+    padding-left:30px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+
+}
+    .navbar-nav li:hover {
+        background: #c6adad;
+        border-radius: 3px;
+        color: white;
+    }
+.navbar-nav li a {
+        float: right;
+        text-align: left;
+        color: #aba6a8;
+        font-weight: bold;
+    }
+#nav-bar ul li a:hover {
+    color: white;
+}
+.nav-bar
+{
+    background:#fff;
+}
+.navbar-toggler{
+    border:none!important;
+}
+.nav-link{
+    color:#555!important;
+    font-weight:600;
+    font-size:16px;
+}
+.login-btn{
+    width:100px;
+    padding: 8px 0;
+    outline: none!important;
+    border: 2px solid #fff;
+    color:#fff;
+    border-radius:50px;
+    float:right;
+}
+/*Slider*/
+#slider
+{
+    width:100%;
+
+}
+.carousel-caption 
+{
+    top:70%;
+    transform:translateY(-50%);
+    bottom:initial!important;
+
+}
+.carousel-caption  h5
+{
+    color:#fff;
+    font-size:42px;
+}
+/*Tour giờ chót*/
+
+
+/*features*/
+#demo {
+    float: left;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: antiquewhite;
+    display:block;
+}
+#demo2 {
+    float: left;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: antiquewhite;
+    display: block;
+}
+#demo3 {
+    float: left;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: antiquewhite;
+    display: block;
+}
+.features {
+    padding: 50px 0;
+    border-radius: 5px
+}
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #a76869;
+}
+.feature-img img{
+    width:100%;
+
+}
+.price{
+    
+    height:50px;
+    background:#ff5722;
+    color:#fff;
+    font-weight:600;
+    
+    padding:10px;
+    
+    left:20px;
+    bottom:-50px;
+}
+.feature-img
+{
+    position:relative;
+}
+.rating{
+    color:orange;
+    padding:3px;
+    float:right;
+    background:#fff;
+    bottom:-1px;
+    right:0;
+    position:relative;
+
+}
+.features .fa{
+    font-size:15px;
+    
+}
+.feature-details {
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 100px;
+}
+.feature-details h4 {
+        font-weight: 600;
+        margin-top: 20px;
+        color: #807c7e;
+    }
+.feature-details .fa{
+    margin-right:5px;
+    text-align:justify;
+    
+        
+}
+
+.xemthem-btn {
+    width: 100px;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50px;
+    float: right;
+    text-align:center;
+}
+.feature-box{
+    box-shadow: 0 0 10px 1px rgba(37,73,241,0.18);
+    margin-bottom:30px;
+}
+.gallery{
+    padding: 100px 0;
+    background:#efefef;
+
+}
+.gallery-box img{
+    width:100%;
+    border-radius:10px;
+    cursor:pointer;
+}
+.gallery-box img:hover {
+    transform:scale(1.1);
+}
+
+
+.gallery-box h4{
+    display:block;
+    font-size:20px;
+    width:200px;
+    text-shadow:-2px 2px 2px #000;
+    color:#fff;
+    text-align:center;
+    font-weight:600;
+
+}
+.gallery-box{
+    position:relative;
+    margin-bottom:30px;
+}
+.banner {
+    height: 80%;
+    background-image: url(hinh/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 15%;
+}
+.banner-highlights{
+    padding:70px 0;
+    background:rgba(0,0,0,0.7);
+    text-align:center;
+    color:#fff;
+}
+.col-xs-12 {
+    width: 100%;
+}
+.booking-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    color:purple;
+}
+
+.booking-btn:hover {
+    opacity: 1;
+    font-weight: bold;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 15px -10px dodgerblue;
+    -moz-box-shadow: 0px 5px 15px -10px dodgerblue;
+    transition: all 0.4s ease 0s;
+}
+
+
+.user-feedback{
+    padding:100px 0;
+}
+.user-review{
+    text-align:center;
+    box-shadow: 0 0 10px 0 rgba(0,0,100,0.2);
+    padding-bottom:50px;
+}
+.user-review p{
+    padding: 50px 10px 10px 10px;
+}
+.user-feedback img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    position:relative;
+    margin: -30px 0 20px 40%;
+
+}
+.user-review p::before{
+    content: '\201d';
+    display:block;
+    position:absolute;
+    font-size:100px;
+    color:#6495ed;
+    font-family:sans-serif;
+    left:44%;
+    top:-20px;
+}

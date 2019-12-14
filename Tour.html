@@ -1,0 +1,1735 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style type="text/css">
+        @import url(Css/tutuc2.css);
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <style type="text/css">
+        @import url(Css/tutuc2.css);
+        @import url(Css/footer.css);
+        @import url(Css/3.css);
+
+        .auto-style1 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 78%;
+        }
+
+        .auto-style2 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 87%;
+        }
+    </style>
+
+    <!--Auto complete thanh tìm kiếm-->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!--Thông báo alert-->
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+
+    <!--<script type="text/javascript">
+        document.onscroll = function() {
+            if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+                document.getElementById('left').style.display = 'none';
+            }
+            else {
+                document.getElementById('left').style.display = 'block';
+            }
+        }
+    </script>-->
+</head>
+<body>
+    <div id="main">
+        <!--Thanh menu trên cùng-->
+        <section>
+            <div class="menu-bar">
+                <img src="hinh/LOGO-BUITRAVEL.png"
+                     width="40"
+                     height="40" , class="log" />
+                <ul>
+                    <li><a href="buitravel.html"><i class="fa fa-home"></i>Trang Chủ</a></li>
+                    <li><a href="Tour.html"><i class="fa fa-users"></i>Tour</a></li>
+                    <li><a href="TuTuc1.html"><i class="fa fa-clone"></i>Tự Túc</a></li>
+                    <li><a href="kinhnghiem.html"><i class="fa fa-angellist"></i>Kinh Nghiệm</a></li>
+                    <li><a href="#"><i class="fa fa-inr"></i>Diễn Đàn</a></li>
+                    <li><a href="lienhe.html"><i class="fa fa-phone"></i>Liên Hệ</a></li>
+                    <li id="btnDangKy"><a href="#">Đăng ký</a></li>
+                    <li id="btnDangNhap"><a href="#">Đăng nhập</a></li>
+                    <li id="chaomung">Chào <span id="spanusn" class="highlight"></span>,</li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!--Tìm kiếm, nhập input-->
+        <div id="headlink">
+            <!--Nút search đi-->
+            <div id="searchfield">
+                <form>
+                    <input type="text" placeholder="Nhập điểm khởi hành" class="biginput" name="search1" id="autocomplete" title="Tên thành phố/tỉnh thành" />
+                </form>
+            </div>
+            <!--Nút search đến-->
+            <div id="searchfield1">
+                <form>
+                    <input type="text" placeholder="Nhập điểm đến" class="biginput" name="search2" id="autocomplete" title="Tên thành phố/tỉnh thành" />
+                </form>
+            </div>
+            <!--Button Ngày-->
+            <div id="divNgay">
+                <button id="btnNgay" type="button" onclick="moPopupNgay()">NGÀY ĐI - NGÀY VỀ</button>
+            </div>
+            <!--Button Số người-->
+            <div id="divSoNguoi">
+                <button id="btnSoNguoi" type="button" onclick="moPopupNguoi()">SỐ NGƯỜI</button>
+            </div>
+            <!--Tìm kiếm-->
+            <div id="divTimKiem">
+                <button id="btnTimKiem" type="button" class="btnTron">TÌM KIẾM  ➤</button>
+            </div>
+        </div>
+
+        <!--Thanh div bên trái màn hình-->
+        <div id="left" style="color:#373737;">
+            <ul>
+                <li id="atourist">
+                    <a class="trai" href="#atour">
+                        &nbsp;&nbsp;&nbsp;
+                        <img src="hinh/logovietravel.png" width="30" height="30" />Vietravel
+                    </a>
+                </li>
+                <li id="btourist">
+                    <a class="trai" href="#btour">
+                        &nbsp;&nbsp;&nbsp;
+                        <img src="hinh/logo-saigontourist1.png" width="30" height="30" />SaiGonTourist
+                    </a>
+                </li>
+                <li id="ctourist">
+                    <a class="trai" href="#ctour">
+                        &nbsp;&nbsp;&nbsp;
+                        <img src="hinh/logotst1.png" width="30" height="30" />TSTTourist
+                    </a>
+                </li>
+                <li id="dtourist">
+                    <a class="trai" href="#dtour">
+                        &nbsp;&nbsp;&nbsp;
+                        <img src="hinh/logobenthanhtourist1.png" width="30" height="30" />BenThanhTourist
+                    </a>
+                </li>
+                <li id="etourist">
+                    <a class="trai" href="#etour">
+                        &nbsp;&nbsp;&nbsp;
+                        <img src="hinh/logohanoitourist2.png" width="35" height="35" />HaNoiTourist
+                    </a>
+                </li>
+                <li id="ftourist">
+                    <a class="trai" href="#ftour">
+                        &nbsp;&nbsp;&nbsp;
+                        <img src="hinh/logofiditour1.png" width="30" height="30" />FiDiTour
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!--Nội dung chính giữa màn hình-->
+        <div id="right">
+            <br />
+
+
+            <h2 id="tour">Tourist trong nước</h2>
+            <br />
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="detailtourtrongnuoc.html" target="_blank"><img src="hinh/tourtrongnuoc1.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Đà Lạt</span>
+
+                                </div>
+                                <h5>Đà Lạt - Langbiang - Đường Hầm Đất Sét </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>1,990,000 đ</h4>
+                                    <p>Đà Lạt mộng mơ khiến bao người ngơ ngẩn bởi nơi đây ăm ắp nắng vàng, bầu trời xanh ngắt, khí trời se lạnh thả hồn...</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo3"></span>
+                                <a href="detailtourtrongnuoc1.html" target="_blank"><img src="hinh/tourtrongnuoc2.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i>Miền Tây </span>
+
+                                </div>
+                                <h5>Miền Tây - Mỹ Tho - Thới Sơn - Bến Tre - Cần Thơ</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>2,595,000 đ</h4>
+                                    <p>Ngắm nhìn cảng cá Mỹ Tho,Nghe tài đàn ca tài tử Nam Bộ,Xuôi dòng sông Tiền đến rạch Tân Thạch</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>2 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>1 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo2"></span>
+                                <a href="detailtourfidi.html" target="_blank"><img src="hinh/slider1.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Hạ Long</span>
+
+                                </div>
+                                <h5>Du thuyền Hạ Long </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>5,190,000 đ</h4>
+                                    <p>
+
+                                        Vịnh Hạ Long như một bức tranh thuỷ mặc khổng lồ vô cùng sống động. Đó là những tác phẩm tạo hình tuyệt mỹ hoàn hao để chiêm nghiễm...
+                                    </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>2 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>1 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="detailtourfidi1.html" target="_self"><img src="hinh/fiditoursapasapa2.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Sapa</span>
+
+                                </div>
+                                <h5>Sapa chinh phục đỉnh Fansipan</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>3,620,000 đ</h4>
+                                    <p>Bản Cát Cát tìm hiểu đời sống sinh hoạt của người đồng bào dân tộc H'mông, thăm thác Tiên Sa. Thưởng thức chương trình biểu diễn văn nghệ truyền thống tại nhà máy thủy điện cũ.</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="detailtoursaigon1.html" target="_self"><img src="hinh/tourfidicamau.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Đà nẵng</span>
+
+                                </div>
+                                <h5>Du lịch Đà Nẵng - Hà Nội - Lào Cai - Sapa</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>4,750,000 đ</h4>
+                                    <p>Chinh phục núi Hàm Rồng, thưởng ngoạn vườn lan, vườn hoa ôn đới, vườn đào và khu vườn đá,Tham quan bản Cát Cát lâu đời của người Mông </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="detailtourvietravel2.html" target="_self"><img src="hinh/tourtravel2.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Buôn Ma Thuột</span>
+
+                                </div>
+                                <h5>Buôn Ma Thuột - Bản Đôn - Hồ Lắk - Buôn Kôtam - Bảo Tàng Cà Phê Thế Giới</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>3,990,000 đ</h4>
+                                    <p>Trong không khí mát lành của phố núi Cao Nguyên, du khách có thể tản bộ trên các con phố để tham quan các địa điểm</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo2"></span>
+                                <a href="detailtsttour.html" target="_blank"><img src="hinh/tsttour.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Phú Quốc</span>
+
+                                </div>
+                                <h5>Khám phá VINPEARL Phú Quốc </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>9,790,000 đ</h4>
+                                    <p>
+
+                                        Thủy Cung Vinpearl - là một trong những thủy cung quy mô lớn và hiện đại nhất Việt Nam...
+                                    </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo3"></span>
+                                <a href="detailtourhanoi1.html" target="_blank"><img src="hinh/tourhanoi3.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i>Hà Nội </span>
+
+                                </div>
+                                <h5>Hà Nội- Hà Giang – Đồng Văn– Mèo Vạc– Hà Nội</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>1,390,000 đ</h4>
+                                    <p>Dinh Thự Họ Vương - nơi ở của vua Mèo Vương Chí Sình nổi tiếng về phong cảnh </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-img">
+                            <span id="demo2"></span>
+                            <a href="detailtourfidi.html" target="_blank"><img src="hinh/slider1.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i> Hạ Long</span>
+
+                            </div>
+                            <h5>Du thuyền Hạ Long </h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>5,190,000 đ</h4>
+                                <p>
+
+                                    Vịnh Hạ Long như một bức tranh thuỷ mặc khổng lồ vô cùng sống động. Đó là những tác phẩm tạo hình tuyệt mỹ
+                                </p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>2 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>1 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="atour" class="clear">Vietravel</h2>
+            <p> Tour hấp dẫn</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="detailtourvietravel1.html" target="_blank"><img src="hinh/tourtravel1.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Đà Nẵng</span>
+
+                                </div>
+                                <h5>Đà nẵng - Bà Nà - Cầu Vàng - Sơn Trà - Hội An - la Vang - Động Thiên Đường- Huế </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>5,990,000 đ</h4>
+                                    <p>Bà Nà Hills với không gian như làng Pháp thu nhỏ đa sắc màu - Phố cổ Hội An với lung linh sắc màu của đèn lồng và những hoạt động dân gian đặc sắc</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo3"></span>
+                                <a href="detailtourvietravel2.html" target="_blank"><img src="hinh/tourtravel2.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i>Buôn Ma Thuột </span>
+
+                                </div>
+                                <h5>Buôn Ma Thuột - Bản Đôn - Hồ Lắk - Buôn Kôtam - Bảo Tàng Cà Phê Thế Giới</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>3,990,000 đ</h4>
+                                    <p>du khách có thể tản bộ trên các con phố để tham quan các địa điểm nổi tiếng như: nhà đày Buôn Ma Thuột, Bảo tàng các dân tộc Việt Nam</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo2"></span>
+                                <a href="detailtourvietravel3.html" target="_blank"><img src="hinh/tourtravel3.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Phú Yên</span>
+
+                                </div>
+                                <h5>Phú Yên - Quy Nhơn - Eo Gió </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>6,990,000 đ</h4>
+                                    <p>
+
+                                        Du lịch Bình Định với khung cảnh thiên nhiên tuyệt đẹp, nhiều đặc sản hấp dẫn sẽ là điểm dừng chân thú vị cho du khách muốn tránh xa những nơi ồn ào đông đúc. Bình Định không chỉ có nhiều bãi biển và danh lam thắng cảnh đẹp.
+                                    </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h2 id="btour" class="clear">SaiGonTourist</h2>
+            <p> Tour hấp dẫn</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="detailtoursaigon.html" target="_blank"><img src="hinh/toursaigon.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Hà Nội</span>
+
+                                </div>
+                                <h5>Du lịch Hà Nội - Hạ Long - Ninh Bình </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>7,940,000 đ</h4>
+                                    <p>
+                                        Chiêm ngưỡng vẻ đẹp của Vịnh Hạ Long – một di sản thiên nhiên của thế giới với hàng nghìn đảo đá có hình dạng kỳ vĩ.
+
+                                    </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo3"></span>
+                                <a href="detailtoursaigon1.html" target="_blank"><img src="hinh/toursaigon2.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i>Đà Nẵng </span>
+
+                                </div>
+                                <h5>Du lịch Đà Nẵng - Hà Nội - Lào Cai - Sapa</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>4,750,000 đ</h4>
+                                    <p>Chinh phục núi Hàm Rồng, thưởng ngoạn vườn lan, vườn hoa ôn đới, vườn đào và khu vườn đá</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo2"></span>
+                                <a href="detailtourbenthanh2.html" target="_blank"><img src="hinh/toursaigon1.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Hà Nội</span>
+
+                                </div>
+                                <h5>Du lịch Hà Nội - Ninh Bình - Hạ Long - Tết nguyên đán 2020 </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>8,590,000 đ</h4>
+                                    <p>
+
+                                        Viếng chùa Bái Đính ngôi chùa của những kỷ lục
+                                        , Khu du lịch Tràng An - nơi có cảnh quan ngoạn mục
+                                    </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>2 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>1 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <h2 class="clear" id="ctour">TSTTourist</h2>
+            <p>Tour hấp dẫn</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="detailtourtst1.html" target="_blank"><img src="hinh/tourtst3.png" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Phú Quốc</span>
+
+                                </div>
+                                <h5> Phú Quốc - Ngắm Hoàng Hôn Tại Sunset Sanato - Bãi Sao </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>6,990,000 đ</h4>
+                                    <p> Phú Quốc là điểm nghỉ dưỡng, tham quan, và khám phá sinh thái tuyệt vời</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo3"></span>
+                                <a href="detailtourtst2.html" target="_blank"><img src="hinh/tourtst2.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i>Nha Trang </span>
+
+                                </div>
+                                <h5> Nha Trang - Đà Lạt</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>5,190,000 đ</h4>
+                                    <p> Ngắm cảnh hoàng hôn trên Vịnh Nha Trang,tự do tắm biển, tắm hồ bơi lớn nhất Đông Nam Á </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>2 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>1 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo2"></span>
+                                <a href="detailtsttour.html" target="_blank"><img src="hinh/tsttour.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Phú Quốc</span>
+
+                                </div>
+                                <h5>Khám phá VINPEARL Phú Quốc </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>9,790,000 đ</h4>
+                                    <p>
+
+                                        Thủy Cung Vinpearl - là một trong những thủy cung quy mô lớn và hiện đại nhất Việt Nam...
+                                    </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <h2 class="clear" id="dtour">BenThanhTourist</h2>
+            <p>Tour hấp dẫn</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="detailtourbenthanh.html" target="_blank"><img src="hinh/benthanh4.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Đà Lạt</span>
+
+                                </div>
+                                <h5>Festival Hoa Đà Lạt - Đường Hầm ĐấT Sét - Fresh Garden - Cánh Đồng Hoa Cẩm Tú Cầu </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>1,990,000 đ</h4>
+                                    <p>Đà Lạt mộng mơ khiến bao người ngơ ngẩn bởi nơi đây ăm ắp nắng vàng, bầu trời xanh ngắt</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo3"></span>
+                                <a href="detailtourbenthanh1.html" target="_blank"><img src="hinh/benthanh1.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i>Côn Đảo </span>
+
+                                </div>
+                                <h5>Du Lịch Côn Đảo: Thiên Đường Nghỉ Dưỡng</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>1,390,000 đ</h4>
+                                    <p>Tham quan cơ ngơi của các đời chúa Đảo. Nghe thuyết minh tổng thể Côn Đảo xưa và nay, xem các hiện vật gốc được trưng bày</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo2"></span>
+                                <a href="detailtourfidi.html" target="_blank"><img src="hinh/slider1.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Huế</span>
+
+                                </div>
+                                <h5>Du Lịch Huế - Đà Nẵng - Hội An - Bà Nà </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>8,990,000 đ</h4>
+                                    <p>
+
+                                        Đại Nội - Hoàng cung triều Nguyễn, tham quan Ngọ Môn, Điện Thái Hòa, Tử Cấm Thành, Thế Miếu, Hiển Lâm Các, Cửu Đỉnh...
+                                    </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <h2 class="clear" id="etour">HaNoiTourist</h2>
+            <p>Tour hấp dẫn</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="detailtourhanoi.html" target="_blank"><img src="hinh/tourhanoi.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i>Hà Nội</span>
+
+                                </div>
+                                <h5>Hà Nội– Cát Cát – Hàm Rồng – Lao Chài – Tả Van – Hà Nội </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>2,970,000 đ</h4>
+                                    <p> khám phá khu du lịch núi Hàm Rồng với khung cảnh hoang sơ, kỳ vĩ; thăm vườn lan Đông Dương , muôn sắc màu</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo3"></span>
+                                <a href="detailtourhanoi1.html" target="_blank"><img src="hinh/tourhanoi3.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i>Hà Nội </span>
+
+                                </div>
+                                <h5>Hà Nội- Hà Giang – Đồng Văn– Mèo Vạc– Hà Nội</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>1,390,000 đ</h4>
+                                    <p>Dinh Thự Họ Vương - nơi ở của vua Mèo Vương Chí Sình nổi tiếng về phong cảnh thiên nhiên, trái ngon, dược liệu quý… </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo2"></span>
+                                <a href="detailtourhanoi2.html" target="_blank"><img src="hinh/tourfidicamau.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Miền Tây</span>
+
+                                </div>
+                                <h5>Miền Tây - Sóc Trăng - Bạc Liêu - Cà Mua - Mỹ Tho - Cần Thơ </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>6,990,000 đ</h4>
+                                    <p>
+                                        Chùa Dơi: ngôi chùa nổi tiếng với hàng ngàn con dơi treo vắt vẻo
+                                        , Đất Sét: ngôi chùa nổi bật
+                                    </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <h2 class="clear" id="ftour">FiDiTourist</h2>
+            <p>Tour hấp dẫn</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="detailtourfidi1.html" target="_blank"><img src="hinh/fiditoursapasapa2.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> SaPa</span>
+
+                                </div>
+                                <h5> Tour SaPa chinh phục đỉnh Fansipan </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>3,620,000 đ</h4>
+                                    <p>Chinh phục 600 bậc đá lên đỉnh Fansipan trên độ cao 3.143m- nóc nhà của Đông Dương.</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo3"></span>
+                                <a href="detailtourfidi2.html" target="_blank"><img src="hinh/tourfidicamau.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i>Miền Tây </span>
+
+                                </div>
+                                <h5>Mỹ Tho - Cần Thơ - Sóc Trăng - Bạc Liêu- Cà Mau</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>4,050,000 đ</h4>
+                                    <p>Tận hưởng bầu không khí trong lành khoáng đãng. Xuôi dòng sông Hậu về đất Tây Đô xưa, dạo bến Ninh Kiều </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo2"></span>
+                                <a href="detailtourfidi.html" target="_blank"><img src="hinh/slider1.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Hạ Long</span>
+
+                                </div>
+                                <h5>Du thuyền Hạ Long </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>5,190,000 đ</h4>
+                                    <p>
+
+                                        Vịnh Hạ Long như một bức tranh thuỷ mặc khổng lồ vô cùng sống động. Đó là những tác phẩm tạo hình tuyệt mỹ, tài hoa của tạo hoá
+                                    </p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>2 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>1 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--Footer cuối màn hình-->
+        <div id="foot">
+            <div>
+                <div>
+                    <table id="idwithtable" border="0" cellpadding="8" class="backgroundmuc">
+                        <tr class="bvsc">
+
+                            <td rowspan="9" class="text-white text-bold number" align="center">
+                                Vì sao chọn <br />
+                                Buitravel.com?
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number">  1.  </td>
+                            <td class="number">  2.  </td>
+                            <td class="number">  3.  </td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">
+                                MẠNG BÁN TOUR
+                            </td>
+                            <td class="text-bold">
+                                THÔNG TIN
+                            </td>
+                            <td class="text-bold">
+                                GIÁ CẢ
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                ---------------------------
+                            </td>
+                            <td>
+                                ---------------------------
+                            </td>
+                            <td>
+                                ---------------------------
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Ứng dụng công nghệ mới nhất
+                            </td>
+                            <td>
+                                An toàn và linh hoạt
+                            </td>
+                            <td>
+                                Luôn có mức giá tốt nhất với mọi mức giá
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="number">
+                                4.
+                            </td>
+                            <td class="number">
+                                5.
+                            </td>
+                            <td class="number">
+                                6.
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-bold">
+                                SẢN PHẨM
+                            </td>
+                            <td class="text-bold">
+                                ĐẶT TOUR
+                            </td>
+                            <td class="text-bold">
+                                HỖ TRỢ
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> ---------------------------</td>
+                            <td> ---------------------------</td>
+                            <td> ---------------------------</td>
+                        </tr>
+                        <tr>
+                            <td>Đa dạng, chất lượng<br /> Đạt chất lượng tốt nhất</td>
+                            <td>Dễ dàng và nhanh chóng</td>
+                            <td>
+                                Từ 8h00 đến 23h<br /> Hotline hỗ trợ trực tuyến
+                            </td>
+                        </tr>
+
+
+                    </table>
+                    <br />
+                </div>
+                <div class="wrapper bg-green">
+                    <footer class="d-flex-r clear containerf text-white" id="main-footer">
+                        <div class="mx-0">
+                            <h6 class="heading font-x1 my-1">LIÊN HỆ</h6>
+                            <ul class="nospace linkedlist contact">
+                                <li>
+
+                                    <address> <img src="hinh/location.png" /> &nbsp;&nbsp; Pasteur , Phường 6, Quận 3 ,TP HCM</address>
+
+                                </li>
+                                <li>
+                                    <img src="hinh/telephone%20(3).png" />&nbsp;&nbsp; +(84 28)3822 8899
+
+                                </li>
+                                <li>
+                                    <img src="hinh/messages.png" />&nbsp;&nbsp;
+                                    info@buitravel.com
+                                </li>
+                                <li>
+                                    <img src="hinh/Travel.png" />&nbsp;&nbsp;
+                                    <a class="text-white" href="https://www.youtube.cpm/buitravel/" target="_blank"><i class="fa fa-youtube"></i>buitravel.com</a>
+
+                                </li>
+                            </ul>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4611.090314710304!2d106.690956426912!3d10.78240361522089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3816236ab3%3A0xb62bca767bca4649!2zUGFzdGV1ciwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574304266404!5m2!1svi!2s"
+                                    width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="mx-0 ">
+                            <h6 class="heading my-1 font-x1">THÔNG TIN</h6>
+                            <ul class="nospace linkedlist">
+                                <li class="my-0"><a href="#" class="f">Tin tức</a></li>
+                                <li class="my-0"><a href="#" class="f">Kinh nghiệm du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Cẩm nang du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Sitemap</a></li>
+                                <li>---------------------------------</li>
+                                <li class="my-0"><a href="#" class="f">Chính sách riêng tư</a></li>
+                                <li class="my-0"><a href="#" class="f">Thỏa thuận sử dụng</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mx-0">
+                            <h6 class="heading my-1 font-x1">NEWSLETTER</h6>
+
+                            <form method="post" action="#" id="foote">
+                                <table>
+                                    <tr>
+                                        <td><input type="name" placeholder="Name" /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style3">
+                                            <input type="email" class="auto-style2" placeholder="Email" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style3"><button class="auto-style4">Submit</button></td>
+                                    </tr>
+                                </table>
+                            </form>
+
+                        </div>
+                        <div class="mx-0 " id="instafeed">
+                            <h6 class="heading my-1 font-x1">MẠNG XÃ HỘI</h6>
+                            <div class="d-flex-r my-1">
+                                <a href="#"><img src="hinh/facebook1.png" class="my-0" /> </a>
+                                <a href="#"><img src="hinh/instagram.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/twitter.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/youtube.png" class="my-0" /> </a>
+                            </div>
+                            <h6 class="heading my-1 font-x1 ">HOTLINE</h6>
+                            <div class="d-flex-r my-1">
+                                <img src="hinh/call.png" class="my-1" />
+                                <ul class="nospace linkedlist ">
+
+                                    <li class="my-0 text-bold"> 1900 1839</li>
+                                    <li class="my-0"> Tư vấn 8h00 - 23h00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="d-flex-r clear justify-content-space-between text-white" id="copyright">
+                        <p class="d-flex-r ">
+                            Copyright &copy; 2019 - All Rights Reserved -
+                            <a href="#"> &nbsp; &nbsp;Domain Name </a>
+                        </p>
+                        <a href="#myPage" id="backtotop"><i class="fa fa-chevron-up"></i></a>
+                        <p class="d-flex-r"> Template by <a href="https://www.facebook.com/buitravel.com/" target="_blank" title="buitravel.com"> &nbsp; 5A1C </a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--Form số người-->
+        <form name="frmSoNguoi" id="frmSoNguoi">
+            <table id="tableSoNguoi">
+                <tr>
+                    <td>Người lớn</td>
+                    <td class="right">
+                        <div class="value-button" onclick="decreaseValueNL()" value="Decrease Value">
+                            <span>-</span>
+                        </div>
+                        <input type="number" class="number1" id="number1" value="0" />
+                        <div class="value-button" onclick="increaseValueNL()" value="Increase Value">
+                            <span class="spanmiddle">+</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Trẻ em</td>
+                    <td class="right">
+                        <div class="value-button" onclick="decreaseValueTE()" value="Decrease Value">
+                            <span>-</span>
+                        </div>
+                        <input type="number" class="number1" id="number2" value="0" />
+                        <div class="value-button" onclick="increaseValueTE()" value="Increase Value">
+                            <span class="spanmiddle">+</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Trẻ sơ sinh</td>
+                    <td class="right">
+                        <div class="value-button" onclick="decreaseValueSS()" value="Decrease Value">
+                            <span>-</span>
+                        </div>
+                        <input type="number" class="number1" id="number3" value="0" />
+                        <div class="value-button" onclick="increaseValueSS()" value="Increase Value">
+                            <span class="spanmiddle">+</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <hr id="hrnhat" />
+            <button class="btnClear" type="reset">Xoá</button>
+            <button class="btnSave" type="button" onclick="ChangeTextNguoi()">Lưu</button>
+        </form>
+
+        <!--Form chọn ngày-->
+        <form name="frmNgay" id="frmNgay">
+            <table id="tableNgay">
+                <tr>
+                    <td>Chọn ngày đi</td>
+                    <td>Chọn ngày về</td>
+                </tr>
+                <tr>
+                    <td><input type="date" id="ngaydi" /></td>
+                    <td><input type="date" id="ngayve" /></td>
+                </tr>
+            </table>
+            <hr id="hrnhat" />
+            <button class="btnClear" type="reset">Xoá</button>
+            <button class="btnSave" type="button" onclick="ChangeTextNgay()">Lưu</button>
+        </form>
+
+        <!--Form đăng ký-->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="close" onclick="closeForm()"></div>
+                <form action="ThongBaoDangKy.html" id="frm" onsubmit="return (validateForm());">
+                    <div class="icontainer">
+                        <h1 id="sign">Đăng ký</h1>
+                        <p>Vui lòng điền vào mẫu bên dưới để đăng ký tài khoản</p>
+                        <hr>
+
+                        <label for="email"><b>Email/Số điện thoại</b></label>
+                        <input type="text" placeholder="Nhập email hoặc số điện thoại" name="email" required id="email" />
+
+                        <label for="usn"><b>Username</b></label>
+                        <input type="text" placeholder="Nhập username bạn muốn" name="usn" required id="usn" />
+
+                        <label for="psw"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="psw" id="psw" required>
+
+                        <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" id="psw-repeat" required>
+
+                        <label>
+                            <input type="checkbox" name="remember" style="margin-bottom:4%"> Nhớ mật khẩu
+                        </label>
+
+                        <p id="dieukhoan">Bằng việc đăng ký, tôi đồng ý với các  <a class="DangKy" href="#">Điều khoản & Điều kiện</a> và <a class="DangKy" href="#">Chính sách về quyền riêng tư</a> của Bụi Travel</p>
+
+                        <div class="clearfix">
+                            <button type="button" class="cancelbtn" onclick="closeForm()">Huỷ</button>
+                            <button type="submit" class="signupbtn">Đăng ký</button>
+                        </div>
+                        <div class="strike">
+                            <span>hoặc</span>
+                        </div>
+                        <!--Nút Facebook-->
+                        <div class="space">
+                            <div class="btnFB" ; onclick="window.location='http://facebook.com';">
+                                <div class="logoFB">
+                                    <img src="image/fb.png" />
+                                </div>
+                                <div class="content">Đăng ký bằng Facebook</div>
+                            </div>
+                        </div>
+                        <!--Nút Gmail-->
+                        <div>
+                            <div class="btnGM" ; onclick="window.location='http://google.com';">
+                                <div class="logoGM">
+                                    <img src="image/google.png" />
+                                </div>
+                                <div class="content">Đăng ký bằng Gmail</div>
+                            </div>
+                        </div>
+                        <p class="clearfloat">Bạn đã có tài khoản? <a class="DangKy" href="#" onclick="chuyenForm()">Đăng nhập</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Form đăng nhập-->
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <div class="close" onclick="closeForm2()"></div>
+                <form action="#" id="frm2">
+                    <div class="icontainer">
+                        <h1 id="sign">Đăng nhập</h1>
+                        <p>Vui lòng điền thông tin để đăng nhập</p>
+                        <hr>
+
+                        <label for="email2"><b>Email/Số điện thoại</b></label>
+                        <input type="text" placeholder="Nhập email hoặc số điện thoại" name="email2" required id="email2" />
+
+
+                        <label for="psw2"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="psw2" id="psw2" required>
+
+                        <label>
+                            <input type="checkbox" name="remember" style="margin-bottom:4%"> Nhớ mật khẩu
+                        </label>
+
+                        <div class="clearfix">
+                            <button type="button" class="cancelbtn" onclick="closeForm2()">Huỷ</button>
+                            <button type="submit" class="signupbtn">Đăng nhập</button>
+                        </div>
+
+                        <div class="strike">
+                            <span>hoặc</span>
+                        </div>
+                        <!--Nút Facebook-->
+                        <div class="space">
+                            <div class="btnFB" ; onclick="window.location='http://facebook.com';">
+                                <div class="logoFB">
+                                    <img src="image/fb.png" />
+                                </div>
+                                <div class="content">Đăng nhập bằng Facebook</div>
+                            </div>
+                        </div>
+                        <!--Nút Gmail-->
+                        <div>
+                            <div class="btnGM" ; onclick="window.location='http://google.com';">
+                                <div class="logoGM">
+                                    <img src="image/google.png" />
+                                </div>
+                                <div class="content">Đăng nhập bằng Gmail</div>
+                            </div>
+                        </div>
+                        <p class="clearfloat">Bạn chưa có tài khoản? <a class="DangKy" href="#" onclick="chuyenForm2()">Đăng ký</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Modal box đăng ký-->
+        <script type="text/javascript">
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            var modal2 = document.getElementById("myModal2");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("btnDangKy");
+
+
+
+            // When the user clicks on the button, open the modal
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            function closeForm() {
+                modal.style.display = "none";
+            }
+
+            function chuyenForm() {
+                modal.style.display = "none";
+                modal2.style.display = "block";
+            }
+        </script>
+
+        <!--Modal box đăng nhập-->
+        <script type="text/javascript">
+            // Get the modal
+            var modal2 = document.getElementById("myModal2");
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn2 = document.getElementById("btnDangNhap");
+
+            // When the user clicks on the button, open the modal
+            btn2.onclick = function () {
+                modal2.style.display = "block";
+            }
+
+
+
+            function closeForm2() {
+                modal2.style.display = "none";
+            }
+
+            function chuyenForm2() {
+                modal.style.display = "block";
+                modal2.style.display = "none";
+            }
+        </script>
+
+        <!--Chức năng tăng/giảm số lượng Người lớn-->
+        <script type="text/javascript">
+            function increaseValueNL() {
+                var value = parseInt(document.getElementById('number1').value, 10);
+                value = isNaN(value) ? 0 : value;
+                value++;
+                document.getElementById('number1').value = value;
+            }
+
+            function decreaseValueNL() {
+                var value = parseInt(document.getElementById('number1').value, 10);
+                value = isNaN(value) ? 0 : value;
+                value < 1 ? value = 1 : '';
+                value--;
+                document.getElementById('number1').value = value;
+            }
+
+
+        </script>
+
+        <!--Chức năng tăng/giảm số lượng Trẻ em-->
+        <script type="text/javascript">
+            function increaseValueTE() {
+                var value = parseInt(document.getElementById('number2').value, 10);
+                value = isNaN(value) ? 0 : value;
+                value++;
+                document.getElementById('number2').value = value;
+            }
+
+            function decreaseValueTE() {
+                var value = parseInt(document.getElementById('number2').value, 10);
+                value = isNaN(value) ? 0 : value;
+                value < 1 ? value = 1 : '';
+                value--;
+                document.getElementById('number2').value = value;
+            }
+        </script>
+
+        <!--Chức năng tăng/giảm số lượng Trẻ sơ sinh-->
+        <script type="text/javascript">
+            function increaseValueSS() {
+                var value = parseInt(document.getElementById('number3').value, 10);
+                value = isNaN(value) ? 0 : value;
+                value++;
+                document.getElementById('number3').value = value;
+            }
+
+            function decreaseValueSS() {
+                var value = parseInt(document.getElementById('number3').value, 10);
+                value = isNaN(value) ? 0 : value;
+                value < 1 ? value = 1 : '';
+                value--;
+                document.getElementById('number3').value = value;
+            }
+        </script>
+
+        <!--Chức năng mở popup Số người-->
+        <script type="text/javascript">
+            function moPopup() {
+                if (document.getElementById("frmSoNguoi").style.display == "none") {
+                    document.getElementById("frmSoNguoi").style.display = "block";
+                }
+                else {
+                    document.getElementById("frmSoNguoi").style.display = "none";
+                }
+            }
+        </script>
+
+        <!--Chức năng set Số Người-->
+        <script type="text/javascript">
+            function ChangeTextNguoi() {
+                var v1 = parseInt(document.getElementById("number1").value);
+                var v2 = parseInt(document.getElementById("number2").value);
+                var v3 = parseInt(document.getElementById("number3").value);
+                var v = v1 + v2 + v3;
+                if (v > 0) {
+                    document.getElementById("btnSoNguoi").innerHTML = v + " người";
+                }
+                else {
+                    swal("Nhập số người để nhận được gợi ý chính xác hơn!");
+                    document.getElementById("btnSoNguoi").innerHTML = "Số người";
+                }
+            }
+        </script>
+
+        <!--Chức năng mở popup Ngày-->
+        <script type="text/javascript">
+            function moPopupNgay() {
+                if (document.getElementById("frmNgay").style.display == "none") {
+                    document.getElementById("frmNgay").style.display = "block";
+                }
+                else {
+                    document.getElementById("frmNgay").style.display = "none";
+                }
+            }
+        </script>
+
+        <!--Set ngày cho button Ngày-->
+        <script type="text/javascript">
+            function ChangeTextNgay() {
+                var ngaydi = new Date(document.getElementById("ngaydi").value);
+                var ngayve = new Date(document.getElementById("ngayve").value);
+                var d1 = ngaydi.getDate();
+                var m1 = ngaydi.getMonth();
+                var d2 = ngayve.getDate();
+                var m2 = ngayve.getMonth();
+                if (isNaN(ngaydi) && isNaN(ngayve)) {
+                    swal("Chọn ngày đi và ngày về để nhận được gợi ý chính xác hơn!")
+                    document.getElementById("btnNgay").innerHTML = "Ngày đi - Ngày về"
+                }
+                else if (isNaN(ngaydi)) {
+                    swal("Chọn ngày đi để nhận được gợi ý chính xác hơn!")
+                    document.getElementById("btnNgay").innerHTML = "--/-- " + " - " + d2 + "/" + m2;
+                }
+                else if (isNaN(ngayve)) {
+                    swal("Chọn ngày về để nhận được gợi ý chính xác hơn!")
+                    document.getElementById("btnNgay").innerHTML = d1 + "/" + m1 + " - " + "--/-- ";
+                }
+
+                else {
+                    document.getElementById("btnNgay").innerHTML = d1 + "/" + m1 + " - " + d2 + "/" + m2;
+                }
+            }
+        </script>
+
+        <!--Validate data trong form đăng ký, đăng nhập-->
+        <script type="text/javascript">
+            //JavaScript Document
+            function validateForm() {
+                //Email hoặc phải được điền chính xác
+                var email = document.getElementById("email").value;
+                var aCong = email.indexOf("@");
+                var dauCham = email.lastIndexOf(".");
+                var kiemTraDT = isNaN(email);
+                var psw = document.getElementById("psw").value;
+                var pswrepeat = document.getElementById("psw-repeat").value;
+                var usn = document.getElementById("usn").value
+                sessionStorage.setItem("username", usn)
+                sessionStorage.setItem("email", email)
+                if (kiemTraDT == true) {
+                    if ((aCong < 1) || (dauCham < aCong + 2) || (dauCham + 2 > email.length)) {
+                        swal("Email hoặc số điện thoại bạn điền không chính xác. Xin vui lòng nhập lại!");
+                        return false;
+                    }
+                }
+                if (psw != pswrepeat) {
+                    swal("Mật khẩu bạn nhập không giống nhau. Xin vui lòng nhập lại!");
+                    return false;
+                }
+            }
+        </script>
+        <!--Chào user-->
+        <script type="text/javascript">
+            if (sessionStorage.getItem("username")) {
+                document.getElementById("btnDangKy").style.display = "none"
+                document.getElementById("btnDangNhap").style.display = "none"
+                document.getElementById("chaomung").style.display = "block"
+                var spanusn = sessionStorage.getItem("username")
+                document.getElementById("spanusn").innerHTML = spanusn
+            }
+        </script>
+
+        <script type="text/javascript">
+            function Navigate() {
+                var input = document.getElementById("autocomplete").value;
+                /*navigate qua trang khác dựa vào input tìm kiếm*/
+                if (input == "Hà Nội") {
+                    location.href = "TuTuc2_HN.html";
+                }
+                else if (input == "Đà Lạt") {
+                    location.href = "TuTuc2_DaLat.html";
+                }
+                else if (input == "Đà Nẵng") {
+                    location.href = "TuTuc2_DaNang.html";
+                }
+                else if (input == "TP Hồ Chí Minh") {
+                    location.href = "TuTuc2_HCM.html";
+                }
+                else {
+                    location.href = "TuTuc2_SaPa.html";
+                }
+            }
+        </script>
+</body>
+</html>

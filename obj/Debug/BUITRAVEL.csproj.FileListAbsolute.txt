@@ -1,0 +1,166 @@
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\BUITRAVEL.dll.config
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\BUITRAVEL.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\BUITRAVEL.pdb
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\csc.exe
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\csc.exe.config
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\csc.rsp
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\csi.exe
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\csi.exe.config
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\csi.rsp
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.Managed.Core.targets
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.AppContext.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Collections.Immutable.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Console.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.Compression.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.FileSystem.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.Pipes.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Reflection.Metadata.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.AccessControl.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Claims.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Principal.Windows.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.ValueTuple.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.XmlDocument.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.XPath.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\vbc.exe
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\vbc.exe.config
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\vbc.rsp
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\VBCSCompiler.exe
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\roslyn\VBCSCompiler.exe.config
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.csprojAssemblyReference.cache
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.csproj.CopyComplete
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.dll
+D:\WEBOK\BUITRAVEL(cuối)\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.pdb
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\BUITRAVEL.dll.config
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\BUITRAVEL.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\BUITRAVEL.pdb
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\csc.exe
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\csc.exe.config
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\csc.rsp
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\csi.exe
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\csi.exe.config
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\csi.rsp
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.Managed.Core.targets
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.AppContext.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Collections.Immutable.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Console.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.Compression.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.FileSystem.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.Pipes.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Reflection.Metadata.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.AccessControl.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Claims.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Principal.Windows.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.ValueTuple.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.XmlDocument.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.XPath.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\vbc.exe
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\vbc.exe.config
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\vbc.rsp
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\VBCSCompiler.exe
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\roslyn\VBCSCompiler.exe.config
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.csprojAssemblyReference.cache
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.csproj.CoreCompileInputs.cache
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.csproj.CopyComplete
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.dll
+D:\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL(cuối) - Bản cuối\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.pdb
+E:\BUITRAVEL\BUITRAVEL\bin\BUITRAVEL.dll.config
+E:\BUITRAVEL\BUITRAVEL\bin\BUITRAVEL.dll
+E:\BUITRAVEL\BUITRAVEL\bin\BUITRAVEL.pdb
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\csc.exe
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\csc.exe.config
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\csc.rsp
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\csi.exe
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\csi.exe.config
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\csi.rsp
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.Managed.Core.targets
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.AppContext.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Collections.Immutable.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Console.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.Compression.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.FileSystem.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.IO.Pipes.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Reflection.Metadata.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.AccessControl.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Claims.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Security.Principal.Windows.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.ValueTuple.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.XmlDocument.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.XPath.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\vbc.exe
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\vbc.exe.config
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\vbc.rsp
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\VBCSCompiler.exe
+E:\BUITRAVEL\BUITRAVEL\bin\roslyn\VBCSCompiler.exe.config
+E:\BUITRAVEL\BUITRAVEL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\BUITRAVEL\BUITRAVEL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.csprojAssemblyReference.cache
+E:\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.csproj.CopyComplete
+E:\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.dll
+E:\BUITRAVEL\BUITRAVEL\obj\Debug\BUITRAVEL.pdb

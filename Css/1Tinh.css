@@ -1,0 +1,56 @@
+﻿/*Định Dạng Chữ Trong Địa Điểm Ăn Uống */
+.text-cus {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 17px;
+    -webkit-line-clamp: 1;
+    display: block;
+    -webkit-box-orient: vertical;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.text-cus1 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: block;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+    padding: 10px 0 0 9px;
+}
+/*Định Dạng Chữ Trong Phần Mô tả Đặc Sản*/
+.text-am {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    padding-left: 9px;
+    line-height: 20px;
+}
+
+a#naviga:link {
+    color: black;
+    text-decoration: none;
+}
+
+a#naviga:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a#naviga:hover {
+    color: #122074;
+    text-decoration: underline;
+}
+
+a#naviga:active {
+    color: #122074;
+    text-decoration: underline;
+}

@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tourgiochotxemthem</title>
+    <link rel="stylesheet" href="Css/3.css" />
+    <link rel="stylesheet" href="Css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="Css/tutuc2.css" type="text/css" />
+    <link rel="stylesheet" href="Css/detailtourgiochot.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 30, 2019 15:37:25").getTime();
+
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = " Còn " + days + " ngày " + hours + " : "
+                + minutes + " : " + seconds;
+            document.getElementById("demo2").innerHTML = " Còn " + days + " ngày " + hours + " : "
+                + minutes + " : " + seconds;
+            document.getElementById("demo3").innerHTML = " Còn " + days + " ngày " + hours + " : "
+                + minutes + " : " + seconds;
+            document.getElementById("demo4").innerHTML = " Còn " + days + " ngày " + hours + " : "
+                + minutes + " : " + seconds;
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+                document.getElementById("demo2").innerHTML = "EXPIRED";
+                document.getElementById("demo3").innerHTML = "EXPIRED";
+                document.getElementById("demo4").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</head>
+<body>
+    ﻿<div id="main">
+        <!--Thanh menu trên cùng-->
+        <section>
+            <div class="menu-bar">
+                <img src="hinh/LOGO-BUITRAVEL.png"
+                     width="40"
+                     height="40" , class="log" />
+                <ul>
+                    <li><a href="buitravel.html"><i class="fa fa-home"></i>Trang Chủ</a></li>
+                    <li><a href="Tour.html"><i class="fa fa-users"></i>Tour</a></li>
+                    <li><a href="TuTuc1.html"><i class="fa fa-clone"></i>Tự Túc</a></li>
+                    <li><a href="kinhnghiem.html"><i class="fa fa-angellist"></i>Kinh Nghiệm</a></li>
+                    <li><a href="#"><i class="fa fa-inr"></i>Diễn Đàn</a></li>
+                    <li><a href="lienhe.html"><i class="fa fa-phone"></i>Liên Hệ</a></li>
+                    <li id="btnDangKy"><a href="#">Đăng ký</a></li>
+                    <li id="btnDangNhap"><a href="#">Đăng nhập</a></li>
+                    <li id="chaomung">Chào <span id="spanusn" class="highlight"></span>,</li>
+
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!--Chào mừng username-->
+    <!--Tìm kiếm, nhập input-->
+    <div id="headlink">
+        <!--Nút search đi-->
+        <div id="searchfield">
+            <form>
+                <input type="text" placeholder="Nhập điểm khởi hành" class="biginput" name="search1" id="autocomplete" title="Tên thành phố/tỉnh thành" />
+            </form>
+        </div>
+        <!--Nút search đến-->
+        <div id="searchfield1">
+            <form>
+                <input type="text" placeholder="Nhập điểm đến" class="biginput" name="search2" id="autocomplete" title="Tên thành phố/tỉnh thành" />
+            </form>
+        </div>
+        <!--Button Ngày-->
+        <div id="divNgay">
+            <button id="btnNgay" type="button" onclick="moPopupNgay()">NGÀY ĐI - NGÀY VỀ</button>
+        </div>
+        <!--Button Số người-->
+        <div id="divSoNguoi">
+            <button id="btnSoNguoi" type="button" onclick="moPopup()">SỐ NGƯỜI</button>
+        </div>
+        <!--Tìm kiếm-->
+        <div id="divTimKiem">
+            <button id="btnTimKiem" type="button" class="btnTron">TÌM KIẾM  ➤</button>
+        </div>
+    </div>
+
+    <!--Slide-->
+    <section id="slider">
+        <div id="headerSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#headerSlider" data-slide-to="1"></li>
+                <li data-target="#headerSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="hinh/slider1.jpg" class="d-block img-fluid" width="1550" height="500">
+                    <div class="carousel-caption">
+                        <h5>Bạn muốn chọn 1 tour phù hợp</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="hinh/slider4.jpg" class="d-block img-fluid" width="1550" height="500">
+                    <div class="carousel-caption">
+                        <h5>Thưởng thức cảnh đẹp muôn phương</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="hinh/slider3.jpg" class="d-block img-fluid" width="1550" height="500">
+                    <div class="carousel-caption">
+                        <h5>Bạn muốn chọn 1 tour giá rẻ</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="features">
+        <h1>Tour Giờ Chót</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo"></span>
+                            <a href="detailtourgiochot.html" target="_blank"><img src="hinh/condao.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i> Côn Đảo (Bà Rịa – Vũng Tàu)</span>
+
+                            </div>
+                            <h5>Côn Đảo - Thiên Đường Của Biển &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>7,490,000 đ</h4>
+                                <p>Không những nổi tiếng về cảnh đẹp thiên nhiên sơn thủy hữu tình, sở hữu những bãi biển hoang sơ trong vắt, bờ cát trắng mịn làm say mê du khách khắp nơi, mà nơi đây còn nổi tiếng.</p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo3"></span>
+                            <a href="detailtourgiochot1.html" target="_blank"><img src="hinh/tourgiochothanoi.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i> Hà Nội - Lào Cai - Sapa - Hạ Long</span>
+
+                            </div>
+                            <h5>Hà Nội - Lào Cai - Sapa - Hạ Long - Tặng Vé Xe Lửa Mường Hoa </h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+
+                            </div>
+                            <div class="feature-detail">
+                                <h4>8,290,000 đ</h4>
+                                <p>Sa Pa thu hút du khách với những thửa ruộng vàng óng vào mùa lúa chín, chợ tình quyến rũ, đỉnh Phan Xi Păng hùng vỹ. Hà Nội cổ kính, nên thơ trong sương sớm. Hạ Long kỳ vỹ.</p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>5 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>4 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo2"></span>
+                            <a href="detailtourgiochot3.html" target="_blank"><img src="hinh/tourgiochotnhatrang.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i> Nha Trang - Đà Lạt</span>
+
+                            </div>
+                            <h5>Nha Trang - Đà Lạt (Khách sạn tương đương 4*. Tour Tiêu Chuẩn) </h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>5,190,000 đ</h4>
+                                <p>Nha Trang thành phố đáng sống nhất Việt Nam với bờ biển dài với những bờ cát trắng, Đà Lạt thơ mộng, ngôn tình và lãng mạn. Tour thu hút nhiều khách tham gia từ trước đến nay</p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>5 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>4 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo"></span>
+                            <a href="detailtourgiochot4.html" target="_self"><img src="hinh/tourgiochot/tourgiochot4-hue-nho.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i> Huế - Hội An - Đà Nẵng</span>
+
+                            </div>
+                            <h5>La Vang - Động Phong Nha & Thiên Đường  (Tour Tiêu Chuẩn)</h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>6,790,000 đ</h4>
+                                <p>Đại Nội Huế rộng lớn nơi hoàng cung xưa của các vua chúa triều Nguyễn</p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>5 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>4 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo"></span>
+                            <a href="detailtourgiochot5.html" target="_self"><img src="hinh/tourgiochot/tourgiochot4-phuquoc-nho.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i> Phú Quốc</span>
+
+                            </div>
+                            <h5>Ngắm Hoàng Hôn Tại Sunset Sanato - Bãi Sao (Tour Tiêu Chuẩn)</h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>3,890,000 đ</h4>
+                                <p>Phú Quốc là điểm nghỉ dưỡng, tham quan, và khám phá sinh thái tuyệt vời. </p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo"></span>
+                            <a href="detailtourgiochot6.html" target="_self"><img src="hinh/tourgiochot/tourgiochot4-phuyen-nho.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i> Phú Yên - Quy Nhơn</span>
+
+                            </div>
+                            <h5>Phú Yên - Quy Nhơn - Eo Gió (Máy Bay. Khách sạn 4*. Tour Tiêu Chuẩn)</h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>5,490,000 đ</h4>
+                                <p>Đại Nội Huế rộng lớn nơi hoàng cung xưa của các vua chúa triều Nguyễn</p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <div id="foot">
+            <div>
+                <div>
+                    <table id="idwithtable" border="0" cellpadding="8" cellspacing="8" class="backgroundmuc">
+                        <tr class="bvsc">
+
+                            <td rowspan="9" class="text-white text-bold number" align="center">
+                                Vì sao chọn <br />
+                                Buitravel.com?
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number">  1.  </td>
+                            <td class="number">  2.  </td>
+                            <td class="number">  3.  </td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">
+                                MẠNG BÁN TOUR
+                            </td>
+                            <td class="text-bold">
+                                THÔNG TIN
+                            </td>
+                            <td class="text-bold">
+                                GIÁ CẢ
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                ---------------------------
+                            </td>
+                            <td>
+                                ---------------------------
+                            </td>
+                            <td>
+                                ---------------------------
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Ứng dụng công nghệ mới nhất
+                            </td>
+                            <td>
+                                An toàn và linh hoạt
+                            </td>
+                            <td>
+                                Luôn có mức giá tốt nhất với mọi mức giá
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="number">
+                                4.
+                            </td>
+                            <td class="number">
+                                5.
+                            </td>
+                            <td class="number">
+                                6.
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-bold">
+                                SẢN PHẨM
+                            </td>
+                            <td class="text-bold">
+                                ĐẶT TOUR
+                            </td>
+                            <td class="text-bold">
+                                HỖ TRỢ
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> ---------------------------</td>
+                            <td> ---------------------------</td>
+                            <td> ---------------------------</td>
+                        </tr>
+                        <tr>
+                            <td>Đa dạng, chất lượng<br /> Đạt chất lượng tốt nhất</td>
+                            <td>Dễ dàng và nhanh chóng</td>
+                            <td>
+                                Từ 8h00 đến 23h<br /> Hotline hỗ trợ trực tuyến
+                            </td>
+                        </tr>
+
+
+                    </table>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+                <div class="wrapper bg-green">
+                    <footer class="d-flex-r clear containerf text-white" id="main-footer">
+                        <div class="mx-0">
+                            <h6 class="heading font-x1 my-1">LIÊN HỆ</h6>
+                            <ul class="nospace linkedlist contact">
+                                <li>
+
+                                    <address> <img src="hinh/location.png" /> &nbsp;&nbsp; Pasteur , Phường 6, Quận 3 ,TP HCM</address>
+
+                                </li>
+                                <li>
+                                    <img src="hinh/telephone%20(3).png" />&nbsp;&nbsp; +(84 28)3822 8899
+
+                                </li>
+                                <li>
+                                    <img src="hinh/messages.png" />&nbsp;&nbsp;
+                                    info@buitravel.com
+                                </li>
+                                <li>
+                                    <img src="hinh/Travel.png" />&nbsp;&nbsp;
+                                    <a class="text-white" href="https://www.youtube.cpm/buitravel/" target="_blank"><i></i>buitravel.com</a>
+
+                                </li>
+                            </ul>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4611.090314710304!2d106.690956426912!3d10.78240361522089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3816236ab3%3A0xb62bca767bca4649!2zUGFzdGV1ciwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574304266404!5m2!1svi!2s"
+                                    width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="mx-0 ">
+                            <h6 class="heading my-1 font-x1">THÔNG TIN</h6>
+                            <ul class="nospace linkedlist">
+                                <li class="my-0"><a href="#" class="f">Tin tức</a></li>
+                                <li class="my-0"><a href="#" class="f">Kinh nghiệm du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Cẩm nang du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Sitemap</a></li>
+                                <li>------------------------</li>
+                                <li class="my-0"><a href="#" class="f">Chính sách riêng tư</a></li>
+                                <li class="my-0"><a href="#" class="f">Thỏa thuận sử dụng</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mx-0">
+                            <h6 class="heading my-1 font-x1">NEWSLETTER</h6>
+
+                            <form method="post" action="#" id="foote">
+                                <table>
+                                    <tr>
+                                        <td><input type="name" placeholder="Name" class="auto-style1" /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="email" " placeholder="Email" /> <br />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="auto-style4 btnf">Submit</button></td>
+                                    </tr>
+                                </table>
+                            </form>
+
+                        </div>
+                        <div class="mx-0 " id="instafeed">
+                            <h6 class="heading my-1 font-x1">MẠNG XÃ HỘI</h6>
+                            <div class="d-flex-r my-1">
+                                <a href="#"><img src="hinh/facebook1.png" class="my-0" /> </a>
+                                <a href="#"><img src="hinh/instagram.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/twitter.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/youtube.png" class="my-0" /> </a>
+                            </div>
+                            <h6 class="heading my-1 font-x1 ">HOTLINE</h6>
+                            <div class="d-flex-r my-1">
+                                <img src="hinh/call.png" class="my-1" />
+                                <ul class="nospace linkedlist ">
+
+                                    <li class="my-0 text-bold"> 1900 1839</li>
+                                    <li class="my-0"> Tư vấn 8h00 - 23h00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="d-flex-r clear justify-content-space-between text-white" id="copyright">
+                        <p class="d-flex-r ">
+                            Copyright &copy; 2019 - All Rights Reserved -
+                            <a href="#"> &nbsp; &nbsp;Domain Name </a>
+                        </p>
+                        <a href="#myPage" id="backtotop"><i class="fa fa-chevron-up"></i></a>
+                        <p class="d-flex-r"> Template by <a href="https://www.facebook.com/buitravel.com/" target="_blank" title="buitravel.com"> &nbsp; 5A1C </a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        //JavaScript Document
+        function validateForm() {
+            //Email hoặc phải được điền chính xác
+            var email = document.getElementById("email").value;
+            var aCong = email.indexOf("@");
+            var dauCham = email.lastIndexOf(".");
+            var kiemTraDT = isNaN(email);
+            var psw = document.getElementById("psw").value;
+            var pswrepeat = document.getElementById("psw-repeat").value;
+            var usn = document.getElementById("usn").value
+            sessionStorage.setItem("username", usn)
+            sessionStorage.setItem("email", email)
+            if (kiemTraDT == true) {
+                if ((aCong < 1) || (dauCham < aCong + 2) || (dauCham + 2 > email.length)) {
+                    swal("Email hoặc số điện thoại bạn điền không chính xác. Xin vui lòng nhập lại!");
+                    return false;
+                }
+            }
+            if (psw != pswrepeat) {
+                swal("Mật khẩu bạn nhập không giống nhau. Xin vui lòng nhập lại!");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

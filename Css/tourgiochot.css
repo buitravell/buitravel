@@ -1,0 +1,165 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-brand img {
+    height: 40px;
+    padding-left: 30px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+    .navbar-nav li a {
+        float: right;
+        text-align: left;
+    }
+
+#nav-bar ul li a:hover {
+    color: chocolate;
+}
+
+.nav-bar {
+    background: #fff;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.nav-link {
+    color: #555 !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100px;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50px;
+    float: right;
+}
+/*Slider*/
+#slider {
+    width: 100%;
+}
+
+.carousel-caption {
+    top: 70%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+}
+
+    .carousel-caption h5 {
+        color: #fff;
+        font-size: 42px;
+    }
+/*Tour giờ chót*/
+
+
+/*features*/
+#demo {
+    float: left;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: antiquewhite;
+    display: block;
+}
+
+#demo2 {
+    float: left;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: antiquewhite;
+    display: block;
+}
+
+#demo3 {
+    float: left;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: antiquewhite;
+    display: block;
+}
+
+.features {
+    padding: 50px 0;
+    border-radius: 5px
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #a76869;
+}
+
+.feature-img img {
+    width: 100%;
+}
+
+.price {
+    height: 50px;
+    background: #ff5722;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    left: 20px;
+    bottom: -50px;
+}
+
+.feature-img {
+    position: relative;
+}
+
+.rating {
+    color: orange;
+    padding: 3px;
+    float: right;
+    background: #fff;
+    bottom: -1px;
+    right: 0;
+    position: relative;
+}
+
+.features .fa {
+    font-size: 15px;
+}
+
+.feature-details {
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+    .feature-details h4 {
+        font-weight: 600;
+        margin-top: 20px;
+        color: #807c7e;
+    }
+
+    .feature-details .fa {
+        margin-right: 5px;
+        text-align: justify;
+    }
+
+.feature-box {
+    box-shadow: 0 0 10px 1px rgba(37,73,241,0.18);
+    margin-bottom: 30px;
+}
+.footer{
+
+}

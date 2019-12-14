@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style type="text/css">
+        @import url(Css/tutuc1.css);
+    </style>
+
+    <!--Auto complete thanh tìm kiếm-->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!--Thông báo alert-->
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+
+</head>
+<body background="image/thiet-ke-web-du-lich-5.jpg">
+    <div id="main">
+        <div id="link">
+            <h1 align="center"><span id="chuchao">Chào <span id="spanusn" class="highlightten"></span>, nhiều khuyến mãi đang chờ bạn</span> <span id="bandau">Nhiều khuyến mãi đang chờ bạn</span></h1>
+            <div id="titlemain">CHỌN NƠI ĐẾN</div>
+
+            <!--Nút search đến-->
+            <div id="searchfield">
+                <form>
+                    <input type="text" placeholder="Nhập địa điểm đến" class="biginput" name="search1" id="autocomplete" title="Tên thành phố/tỉnh thành" />
+                </form>
+            </div>
+
+            <!--Form chọn ngày đi-->
+            <form name="frmNgayDi" id="frmNgayDi" method="get" action="tutuc2.html">
+                <div id="titlemaindi">NGÀY CHECK-IN</div>
+                <input type="date" id="ngaydi1" />
+            </form>
+            <!--Form chọn ngày về-->
+            <form name="frmNgayVe" id="frmNgayVe" method="get" action="tutuc2.html">
+                <div id="titlemainve">NGÀY CHECKOUT</div>
+                <input type="date" id="ngayve1" />
+            </form>
+
+            <!--Button chọn Số người-->
+            <div id="titlemain">SỐ NGƯỜI</div>
+
+            <form action="tutuc2.html" method="get">
+                <div id="divNguoi" onclick="moPopupNguoi()">
+                    Chọn số người
+                    <span id="arrow">▼</span>
+                </div>
+            </form>
+
+            <!--Form số người-->
+            <form name="frmNguoi" id="frmNguoi">
+                <table id="tableNguoi">
+                    <tr>
+                        <td>Người lớn</td>
+                        <td class="right">
+                            <div class="value-button" onclick="decreaseValueNL()" value="Decrease Value">
+                                <span>-</span>
+                            </div>
+                            <input type="number" class="number1" id="number1" value="0" />
+                            <div class="value-button" onclick="increaseValueNL()" value="Increase Value">
+                                <span class="spanmiddle">+</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trẻ em</td>
+                        <td class="right">
+                            <div class="value-button" onclick="decreaseValueTE()" value="Decrease Value">
+                                <span>-</span>
+                            </div>
+                            <input type="number" class="number1" id="number2" value="0" />
+                            <div class="value-button" onclick="increaseValueTE()" value="Increase Value">
+                                <span class="spanmiddle">+</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trẻ sơ sinh</td>
+                        <td class="right">
+                            <div class="value-button" onclick="decreaseValueSS()" value="Decrease Value">
+                                <span>-</span>
+                            </div>
+                            <input type="number" class="number1" id="number3" value="0" />
+                            <div class="value-button" onclick="increaseValueSS()" value="Increase Value">
+                                <span class="spanmiddle">+</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <hr id="hrnhat" />
+                <button class="btnClear" type="reset">Xoá</button>
+                <button class="btnSave" type="button" onclick="ChangeTextNguoi1()">Lưu</button>
+            </form>
+
+            <!--Button Tìm kiếm-->
+            <div id="divTimKiem">
+                <form>
+                    <button type="button" onclick="Navigate()" name="btnTimKiem" class="btnSearchTron">Tìm kiếm</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Chức năng tăng/giảm số lượng Người lớn-->
+    <script type="text/javascript">
+        function increaseValueNL() {
+            var value = parseInt(document.getElementById('number1').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number1').value = value;
+        }
+
+        function decreaseValueNL() {
+            var value = parseInt(document.getElementById('number1').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number1').value = value;
+        }
+
+
+    </script>
+
+    <!--Chức năng tăng/giảm số lượng Trẻ em-->
+    <script type="text/javascript">
+        function increaseValueTE() {
+            var value = parseInt(document.getElementById('number2').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number2').value = value;
+        }
+
+        function decreaseValueTE() {
+            var value = parseInt(document.getElementById('number2').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number2').value = value;
+        }
+    </script>
+
+    <!--Chức năng tăng/giảm số lượng Trẻ sơ sinh-->
+    <script type="text/javascript">
+        function increaseValueSS() {
+            var value = parseInt(document.getElementById('number3').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number3').value = value;
+        }
+
+        function decreaseValueSS() {
+            var value = parseInt(document.getElementById('number3').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number3').value = value;
+        }
+    </script>
+
+    <!--Chức năng mở popup Số người-->
+    <script type="text/javascript">
+        function moPopupNguoi() {
+            if (document.getElementById("frmNguoi").style.display == "none") {
+                document.getElementById("frmNguoi").style.display = "block";
+            }
+            else {
+                document.getElementById("frmNguoi").style.display = "none";
+            }
+        }
+    </script>
+
+    <!--Chức năng set Số Người-->
+    <script type="text/javascript">
+        function ChangeTextNguoi1() {
+            var v1 = parseInt(document.getElementById("number1").value);
+            var v2 = parseInt(document.getElementById("number2").value);
+            var v3 = parseInt(document.getElementById("number3").value);
+            var v = v1 + v2 + v3;
+            if (v > 0) {
+                document.getElementById("divNguoi").innerHTML = v + " người" + "<span id='arrow'>▼</span>";
+            }
+            else {
+                swal("Nhập số người để nhận được gợi ý chính xác hơn!");
+                document.getElementById("divNguoi").innerHTML = "Số người" + "<span id='arrow'>▼</span>";
+            }
+        }
+    </script>
+
+
+
+    <!--Chức năng mở popup Ngày đi-->
+    <script type="text/javascript">
+        function moPopupNgayDi() {
+            if (document.getElementById("frmNgayDi").style.display == "none") {
+                document.getElementById("frmNgayDi").style.display = "block";
+            }
+            else {
+                document.getElementById("frmNgayDi").style.display = "none";
+            }
+        }
+    </script>
+
+    <!--Chức năng mở popup Ngày về-->
+    <script type="text/javascript">
+        function moPopupNgayDi() {
+            if (document.getElementById("frmNgayVe").style.display == "none") {
+                document.getElementById("frmNgayVe").style.display = "block";
+            }
+            else {
+                document.getElementById("frmNgayVe").style.display = "none";
+            }
+        }
+    </script>
+
+    <!--Chào user-->
+    <script type="text/javascript">
+        if (sessionStorage.getItem("username")) {
+            document.getElementById("bandau").style.display = "none"
+            document.getElementById("chuchao").style.display = "block"
+            var spanusn = sessionStorage.getItem("username")
+            document.getElementById("spanusn").innerHTML = spanusn
+        }
+    </script>
+    <script type="text/javascript">
+        function Navigate() {
+            var input = document.getElementById("autocomplete").value;
+            /*navigate qua trang khác dựa vào input tìm kiếm*/
+            if (input == "Hà Nội") {
+                location.href = "TuTuc2_HN.html";
+            }
+            else if (input == "Đà Lạt") {
+                location.href = "TuTuc2_DaLat.html";
+            }
+            else if (input == "Đà Nẵng") {
+                location.href = "TuTuc2_DaNang.html";
+            }
+            else if (input == "TP Hồ Chí Minh") {
+                location.href = "TuTuc2_HCM.html";
+            }
+            else {
+                location.href = "TuTuc2_SaPa.html";
+            }
+        }
+    </script>
+
+</body>
+</html>

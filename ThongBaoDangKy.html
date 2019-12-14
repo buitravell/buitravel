@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        @import url(Css/tutuc2.css);
+    </style>
+    <!--<script type="text/javascript">
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+                function (m, key, value) {
+                    vars[key] = value;
+                });
+            return vars;
+        }
+        var email = unescape(getUrlVars()["email"]);
+        var usn = unescape(getUrlVars()["usn"]);
+    </script>-->
+</head>
+<body>
+    <div id="main">
+        <!--Thanh menu trên cùng-->
+        <section>
+            <div class="menu-bar">
+                <img src="hinh/LOGO-BUITRAVEL.png"
+                     width="40"
+                     height="40" , class="log" />
+                <ul>
+                    <li><a href="buitravel.html"><i class="fa fa-home"></i>Trang Chủ</a></li>
+                    <li><a href="Tour.html"><i class="fa fa-users"></i>Tour</a></li>
+                    <li><a href="TuTuc1.html"><i class="fa fa-clone"></i>Tự Túc</a></li>
+                    <li><a href="kinhnghiem.html"><i class="fa fa-angellist"></i>Kinh Nghiệm</a></li>
+                    <li><a href="#"><i class="fa fa-inr"></i>Diễn Đàn</a></li>
+                    <li><a href="lienhe.html"><i class="fa fa-phone"></i>Liên Hệ</a></li>
+                    <li id="btnDangKy"><a href="#">Đăng ký</a></li>
+                    <li id="btnDangNhap"><a href="#">Đăng nhập</a></li>
+                    <li id="chaomung">Chào <span id="spanusn" class="highlight"></span>,</li>
+
+                </ul>
+            </div>
+
+
+            <div id="thongbao">
+                Chào mừng <span class="highlight" id="spanusn"></span> đến với Bụi Travel. <br />
+                Tên đăng nhập của bạn là: <span id="spanemail"></span>.<br />
+                Nhấn vào <a class="DangKy" href="HOME.html">đây</a> để quay về trang chủ.
+            </div>
+            <!--<script type="text/javascript">
+                document.getElementById("spanusn").innerHTML = usn
+                document.getElementById("spanemail").innerHTML = email
+            </script>-->
+            <script type="text/javascript">
+                var spanusn = sessionStorage.getItem("username")
+                var spanemail = sessionStorage.getItem("email")
+                document.getElementById("spanusn").innerHTML = spanusn
+                document.getElementById("spanemail").innerHTML = spanemail
+            </script>
+</body>
+</html>

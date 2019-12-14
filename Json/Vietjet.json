@@ -1,0 +1,67 @@
+﻿[
+    {
+
+        "Logo": "https://vietjets.com.vn/airline_logo/smVJ.gif",
+        "Ma": "VJ120",
+        "GioKhoiHanh": "5:30",
+        "GioDen": "7:35",
+        "Gia": "399.000 VND"
+        
+    },
+    {
+        "Logo": "https://vietjets.com.vn/airline_logo/smVJ.gif",
+        "Ma": "VJ146",
+        "GioKhoiHanh": "10:30",
+        "GioDen": "12:35",
+        "Gia": "399.000 VND"
+
+    },
+    {
+        "Logo": "https://vietjets.com.vn/airline_logo/smVJ.gif",
+        "Ma": "VJ196",
+        "GioKhoiHanh": "16:00",
+        "GioDen": "18:05",
+        "Gia": "399.000 VND"
+
+    },
+    {
+        "Logo": "https://vietjets.com.vn/airline_logo/smVJ.gif",
+        "Ma": "VJ423",
+        "GioKhoiHanh": "17:30",
+        "GioDen": "19:35",
+        "Gia": "399.000 VND"
+
+    },
+    {
+        "Logo": "https://vietjets.com.vn/airline_logo/smVJ.gif",
+        "Ma": "VJ126",
+        "GioKhoiHanh": "18:45",
+        "GioDen": "20:50",
+        "Gia": "499.000 VND"
+
+    },
+    {
+        "Logo": "https://vietjets.com.vn/airline_logo/smVJ.gif",
+        "Ma": "VJ125",
+        "GioKhoiHanh": "20:00",
+        "GioDen": "22:05",
+        "Gia": "499.000 VND"
+
+    },
+    {
+        "Logo": "https://vietjets.com.vn/airline_logo/smVJ.gif",
+        "Ma": "VJ144",
+        "GioKhoiHanh": "22:50",
+        "GioDen": "00:55",
+        "Gia": "499.000 VND"
+
+    },
+    {
+        "Logo": "https://vietjets.com.vn/airline_logo/smVJ.gif",
+        "Ma": "VJ194",
+        "GioKhoiHanh": "23:55",
+        "GioDen": "2:00",
+        "Gia": "499.000 VND"
+
+    }   
+]

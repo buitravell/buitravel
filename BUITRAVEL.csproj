@@ -1,0 +1,621 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0892B7D5-10DE-4242-BC97-E4B76BBF86D9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BUITRAVEL</RootNamespace>
+    <AssemblyName>BUITRAVEL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1Tinh.html" />
+    <Content Include="AmThucDaLat.html" />
+    <Content Include="AmThucDaNang.html" />
+    <Content Include="AmThucHaNoi.html" />
+    <Content Include="AmThucHCM.html" />
+    <Content Include="AmThucHoiAn.html" />
+    <Content Include="AmThucSaPa.html" />
+    <Content Include="AmThuc\DacSan.png" />
+    <Content Include="AmThuc\DDAnUong.png" />
+    <Content Include="AmThuc\DiaDiem.png" />
+    <Content Include="AmThuc\DiemDN1.jpg" />
+    <Content Include="AmThuc\DiemDN2.jpg" />
+    <Content Include="AmThuc\DiemDN3.jpg" />
+    <Content Include="AmThuc\DiemDN4.jpg" />
+    <Content Include="AmThuc\DiemDN5.jpg" />
+    <Content Include="AmThuc\DiemDN6.jpg" />
+    <Content Include="AmThuc\DiemHA1.jpg" />
+    <Content Include="AmThuc\DiemHA2.jpg" />
+    <Content Include="AmThuc\DiemHA3.jpg" />
+    <Content Include="AmThuc\DiemHA4.jpg" />
+    <Content Include="AmThuc\DiemHA5.jpg" />
+    <Content Include="AmThuc\DiemHA6.jpg" />
+    <Content Include="AmThuc\DiemHN1.jpg" />
+    <Content Include="AmThuc\DiemHN2.jpg" />
+    <Content Include="AmThuc\DiemHN3.jpg" />
+    <Content Include="AmThuc\DiemHN4.jpg" />
+    <Content Include="AmThuc\DiemHN5.jpg" />
+    <Content Include="AmThuc\DiemHN6.jpg" />
+    <Content Include="AmThuc\DiemSP1.jpg" />
+    <Content Include="AmThuc\DiemSP2.jpg" />
+    <Content Include="AmThuc\DiemSP3.jpg" />
+    <Content Include="AmThuc\DiemSP4.jpg" />
+    <Content Include="AmThuc\DiemSP5.jpg" />
+    <Content Include="AmThuc\DiemSP6.jpg" />
+    <Content Include="AmThuc\DiemTHHCM1.png" />
+    <Content Include="AmThuc\DiemTPHCM2.png" />
+    <Content Include="AmThuc\DiemTPHCM3.jpg" />
+    <Content Include="AmThuc\DiemTPHCM4.jpg" />
+    <Content Include="AmThuc\DiemTPHCM5.jpg" />
+    <Content Include="AmThuc\DiemTPHCM6.jpg" />
+    <Content Include="AmThuc\DiemĐL1.jpg" />
+    <Content Include="AmThuc\DiemĐL2.jpg" />
+    <Content Include="AmThuc\DiemĐL3.jpg" />
+    <Content Include="AmThuc\DiemĐL4.jpg" />
+    <Content Include="AmThuc\DiemĐL5.jpg" />
+    <Content Include="AmThuc\DiemĐL6.jpg" />
+    <Content Include="AmThuc\DN1.jpg" />
+    <Content Include="AmThuc\DN2.jpg" />
+    <Content Include="AmThuc\DN3.jpg" />
+    <Content Include="AmThuc\DN4.jpg" />
+    <Content Include="AmThuc\DN5.jpg" />
+    <Content Include="AmThuc\DN6.jpg" />
+    <Content Include="AmThuc\DSHN11.jpg" />
+    <Content Include="AmThuc\DSHN111.jpg" />
+    <Content Include="AmThuc\DSHN1111.jpg" />
+    <Content Include="AmThuc\HA.jpg" />
+    <Content Include="AmThuc\HA2.jpg" />
+    <Content Include="AmThuc\HA3.jpg" />
+    <Content Include="AmThuc\HA4.jpg" />
+    <Content Include="AmThuc\HA5.jpg" />
+    <Content Include="AmThuc\HA6.jpg" />
+    <Content Include="AmThuc\HN1.jpg" />
+    <Content Include="AmThuc\HN2.jpg" />
+    <Content Include="AmThuc\HN3.jpg" />
+    <Content Include="AmThuc\HN4.jpg" />
+    <Content Include="AmThuc\HN5.jpg" />
+    <Content Include="AmThuc\HN6.jpg" />
+    <Content Include="AmThuc\price.png" />
+    <Content Include="AmThuc\sapa1.jpg" />
+    <Content Include="AmThuc\sapa2.jpg" />
+    <Content Include="AmThuc\sapa3.jpg" />
+    <Content Include="AmThuc\sapa4.jpg" />
+    <Content Include="AmThuc\sapa5.jpg" />
+    <Content Include="AmThuc\sapa6.jpg" />
+    <Content Include="AmThuc\TPHCM1.png" />
+    <Content Include="AmThuc\TPHCM2.png" />
+    <Content Include="AmThuc\TPHCM3.png" />
+    <Content Include="AmThuc\TPHCM4.jpg" />
+    <Content Include="AmThuc\TPHCM5.jpg" />
+    <Content Include="AmThuc\TPHCM6.jpg" />
+    <Content Include="AmThuc\ĐL1.jpg" />
+    <Content Include="AmThuc\ĐL2.jpg" />
+    <Content Include="AmThuc\ĐL3.jpg" />
+    <Content Include="AmThuc\ĐL4.jpg" />
+    <Content Include="AmThuc\ĐL5.jpg" />
+    <Content Include="AmThuc\ĐL6.jpg" />
+    <Content Include="ChiTietAmThucHaNoi.html" />
+    <Content Include="ChiTietAmThucHCM.html" />
+    <Content Include="ChiTietAmThuc\Done.png" />
+    <Content Include="ChiTietAmThuc\DSHCM1.jpg" />
+    <Content Include="ChiTietAmThuc\DSHCM11.jpg" />
+    <Content Include="ChiTietAmThuc\DSHCM111.jpg" />
+    <Content Include="ChiTietAmThuc\DSHCM1111.jpg" />
+    <Content Include="ChiTietAmThuc\DSHCM11111.jpg" />
+    <Content Include="ChiTietAmThuc\DSHCM111111.jpg" />
+    <Content Include="ChiTietAmThuc\QCao1.jpg" />
+    <Content Include="ChiTietAmThuc\QCao2.jpg" />
+    <Content Include="ChiTietAmThuc\QCao3.jpg" />
+    <Content Include="ChiTietAmThuc\QCao4.jpg" />
+    <Content Include="ChiTietAmThuc\QCao5.jpg" />
+    <Content Include="ChiTietAmThuc\user1.jpg" />
+    <Content Include="ChiTietAmThuc\user2.jpg" />
+    <Content Include="ChiTietAmThuc\user3.jpg" />
+    <Content Include="ChiTietAmThuc\usergiang.jpg" />
+    <Content Include="ChiTietAmThuc\usernguyen.jpg" />
+    <Content Include="ChiTietAmThuc\userxuan.jpg" />
+    <Content Include="ChiTietAmThuc\ĐanhGia.PNG" />
+    <Content Include="ChiTietDiaDiemHN.html" />
+    <Content Include="Css\1Tinh.css" />
+    <Content Include="Css\2.css" />
+    <Content Include="Css\3.css" />
+    <Content Include="Css\AmThuc.css" />
+    <Content Include="Css\ChiTietAmThuc.css" />
+    <Content Include="Css\dangnhap.css" />
+    <Content Include="Css\detailhangtour.css" />
+    <Content Include="Css\detailtourgiochot.css" />
+    <Content Include="Css\DiaDiemAnUong.css" />
+    <Content Include="Css\diemyeuthich.css" />
+    <Content Include="Css\footer.css" />
+    <Content Include="Css\home.css" />
+    <Content Include="Css\MayBay.css" />
+    <Content Include="Css\tourgiochot.css" />
+    <Content Include="Css\tutuc1.css" />
+    <Content Include="Css\tutuc2.css" />
+    <Content Include="detailtourbenthanh.html" />
+    <Content Include="detailtourbenthanh1.html" />
+    <Content Include="detailtourbenthanh2.html" />
+    <Content Include="detailtourfidi.html" />
+    <Content Include="detailtourfidi1.html" />
+    <Content Include="detailtourfidi2.html" />
+    <Content Include="detailtourhanoi.html" />
+    <Content Include="detailtourhanoi1.html" />
+    <Content Include="detailtourhanoi2.html" />
+    <Content Include="detailtoursaigon.html" />
+    <Content Include="detailtoursaigon1.html" />
+    <Content Include="detailtoursaigon2.html" />
+    <Content Include="detailtourtrongnuoc.html" />
+    <Content Include="detailtourtrongnuoc1.html" />
+    <Content Include="detailtourtst1.html" />
+    <Content Include="detailtourtst2.html" />
+    <Content Include="detailtourvietravel1.html" />
+    <Content Include="detailtourvietravel2.html" />
+    <Content Include="detailtourvietravel3.html" />
+    <Content Include="detailtsttour.html" />
+    <Content Include="DiaDiemAnUong\calendar %282%29.png" />
+    <Content Include="DiaDiemAnUong\Clock.png" />
+    <Content Include="DiaDiemAnUong\DiaDiemHN1.jpg" />
+    <Content Include="DiaDiemAnUong\DiaDiemHN11.jpg" />
+    <Content Include="DiaDiemAnUong\phone.png" />
+    <Content Include="DiaDiemAnUong\price1.png" />
+    <Content Include="hinhjson\buonmathuot-nho.jpg" />
+    <Content Include="hinhjson\cantho.jpg" />
+    <Content Include="hinhjson\condao.jpg" />
+    <Content Include="hinhjson\condaojs.jpg" />
+    <Content Include="hinhjson\dalat-nho.jpg" />
+    <Content Include="hinhjson\phuyen-nho.jpg" />
+    <Content Include="hinhjson\tourgiochot4-hue-nho.jpg" />
+    <Content Include="hinhjson\tourgiochot4-phuquoc-nho.jpg" />
+    <Content Include="hinhjson\tourgiochot4-phuyen-nho.jpg" />
+    <Content Include="hinhjson\tourgiochothanoi.jpg" />
+    <Content Include="hinhjson\tourgiochotnhatrang.jpg" />
+    <Content Include="hinhjson\tourkm2nhatrang.jpg" />
+    <Content Include="hinhjson\tourkm2nhatrangjs.jpg" />
+    <Content Include="hinhjson\tourkm3huejpg.jpg" />
+    <Content Include="hinhjson\tourkm3huejs.jpg" />
+    <Content Include="hinh\0.jpg" />
+    <Content Include="hinh\ngu.jpg" />
+    <Content Include="hinh\background.jpg" />
+    <Content Include="hinh\background1.jpg" />
+    <Content Include="hinh\background2.jpg" />
+    <Content Include="hinh\background3.jpg" />
+    <Content Include="hinh\background4.jpg" />
+    <Content Include="hinh\background5.jpg" />
+    <Content Include="hinh\banner1.jpg" />
+    <Content Include="hinh\banner2.jpg" />
+    <Content Include="hinh\basics.png" />
+    <Content Include="hinh\benthanh1.jpg" />
+    <Content Include="hinh\benthanh3.jpg" />
+    <Content Include="hinh\benthanh4.jpg" />
+    <Content Include="hinh\call.png" />
+    <Content Include="hinh\chan dung.jpg" />
+    <Content Include="hinh\tien.jpg" />
+    <Content Include="hinh\condao.jpg" />
+    <Content Include="hinh\diemyeuthichangiang.jpg" />
+    <Content Include="hinh\diemyeuthichbaria.jpg" />
+    <Content Include="hinh\diemyeuthichdanang.jpg" />
+    <Content Include="hinh\diemyeuthichkiengiang.jpg" />
+    <Content Include="hinh\diemyeuthichquynhon.jpg" />
+    <Content Include="hinh\diemyeuthichsadec.jpg" />
+    <Content Include="hinh\diemyeuthichsapa.jpg" />
+    <Content Include="hinh\dkg4-6yq-1443293.jpg" />
+    <Content Include="hinh\facebook.png" />
+    <Content Include="hinh\facebook1.png" />
+    <Content Include="hinh\fiditourdulichhalong.jpg" />
+    <Content Include="hinh\fiditoursapasapa2.jpg" />
+    <Content Include="hinh\food1nem.jpg" />
+    <Content Include="hinh\food2comrang.jpg" />
+    <Content Include="hinh\food3che.jpg" />
+    <Content Include="hinh\food4.jpg" />
+    <Content Include="hinh\free.png" />
+    <Content Include="hinh\google.png" />
+    <Content Include="hinh\hagianggallery.jpg" />
+    <Content Include="hinh\hanoi.jpg" />
+    <Content Include="hinh\hinh\0.jpg" />
+    <Content Include="hinh\hinh\background.jpg" />
+    <Content Include="hinh\hinh\background1.jpg" />
+    <Content Include="hinh\hinh\background2.jpg" />
+    <Content Include="hinh\hinh\background3.jpg" />
+    <Content Include="hinh\hinh\background4.jpg" />
+    <Content Include="hinh\hinh\background5.jpg" />
+    <Content Include="hinh\hinh\banner1.jpg" />
+    <Content Include="hinh\hinh\banner2.jpg" />
+    <Content Include="hinh\hinh\basics.png" />
+    <Content Include="hinh\hinh\benthanh1.jpg" />
+    <Content Include="hinh\hinh\benthanh3.jpg" />
+    <Content Include="hinh\hinh\benthanh4.jpg" />
+    <Content Include="hinh\hinh\call.png" />
+    <Content Include="hinh\hinh\condao.jpg" />
+    <Content Include="hinh\hinh\diemyeuthichangiang.jpg" />
+    <Content Include="hinh\hinh\diemyeuthichbaria.jpg" />
+    <Content Include="hinh\hinh\diemyeuthichdanang.jpg" />
+    <Content Include="hinh\hinh\diemyeuthichkiengiang.jpg" />
+    <Content Include="hinh\hinh\diemyeuthichquynhon.jpg" />
+    <Content Include="hinh\hinh\diemyeuthichsadec.jpg" />
+    <Content Include="hinh\hinh\diemyeuthichsapa.jpg" />
+    <Content Include="hinh\hinh\dkg4-6yq-1443293.jpg" />
+    <Content Include="hinh\hinh\doitien.jpg" />
+    <Content Include="hinh\hinh\facebook1.png" />
+    <Content Include="hinh\hinh\fiditourdulichhalong.jpg" />
+    <Content Include="hinh\hinh\fiditoursapasapa2.jpg" />
+    <Content Include="hinh\hinh\food1nem.jpg" />
+    <Content Include="hinh\hinh\food2comrang.jpg" />
+    <Content Include="hinh\hinh\food3che.jpg" />
+    <Content Include="hinh\hinh\food4.jpg" />
+    <Content Include="hinh\hinh\free.png" />
+    <Content Include="hinh\hinh\hagianggallery.jpg" />
+    <Content Include="hinh\hinh\hanoi.jpg" />
+    <Content Include="hinh\hinh\hoguom.jpg" />
+    <Content Include="hinh\hinh\hoian.jpg" />
+    <Content Include="hinh\hinh\i-date-w.png" />
+    <Content Include="hinh\hinh\instagram.png" />
+    <Content Include="hinh\hinh\interkhachsan.jpg" />
+    <Content Include="hinh\hinh\khach-san-dakruco-daklak-2.jpg" />
+    <Content Include="hinh\hinh\khach-san-rex-sai-gon-0.jpg" />
+    <Content Include="hinh\hinh\khachsan\dalat.jpg" />
+    <Content Include="hinh\hinh\khachsan\detailks1.jpg" />
+    <Content Include="hinh\hinh\khachsan\ksa.jpg" />
+    <Content Include="hinh\hinh\khachsan\pullman.png" />
+    <Content Include="hinh\hinh\khachsan\vungtau.jpg" />
+    <Content Include="hinh\hinh\kitchen.png" />
+    <Content Include="hinh\hinh\layer1.jpg" />
+    <Content Include="hinh\hinh\layer2.1.jpg" />
+    <Content Include="hinh\hinh\layer3.1.jpg" />
+    <Content Include="hinh\hinh\layer4.1.jpg" />
+    <Content Include="hinh\hinh\line.png" />
+    <Content Include="hinh\hinh\location %282%29.png" />
+    <Content Include="hinh\hinh\location.png" />
+    <Content Include="hinh\hinh\LOGO-BUITRAVEL.png" />
+    <Content Include="hinh\hinh\logo.PNG" />
+    <Content Include="hinh\hinh\message.png" />
+    <Content Include="hinh\hinh\messages.png" />
+    <Content Include="hinh\hinh\monitor.png" />
+    <Content Include="hinh\hinh\ngu.jpg" />
+    <Content Include="hinh\hinh\nhahang\amthucDL.jpg" />
+    <Content Include="hinh\hinh\nhahang\amthucHA.jpg" />
+    <Content Include="hinh\hinh\nhahang\amthucHN.jpg" />
+    <Content Include="hinh\hinh\phuyen1.jpg" />
+    <Content Include="hinh\hinh\scooter.png" />
+    <Content Include="hinh\hinh\search.png" />
+    <Content Include="hinh\hinh\slide.jpg" />
+    <Content Include="hinh\hinh\slider1.jpg" />
+    <Content Include="hinh\hinh\slider2.jpg" />
+    <Content Include="hinh\hinh\slider3.jpg" />
+    <Content Include="hinh\hinh\slider4.jpg" />
+    <Content Include="hinh\hinh\telephone %282%29.png" />
+    <Content Include="hinh\hinh\telephone %283%29.png" />
+    <Content Include="hinh\hinh\telephone.png" />
+    <Content Include="hinh\hinh\thiet-ke-web-du-lich-5.jpg" />
+    <Content Include="hinh\hinh\thucung.jpg" />
+    <Content Include="hinh\hinh\tourfidicamau.jpg" />
+    <Content Include="hinh\hinh\tourgiochothanoi.jpg" />
+    <Content Include="hinh\hinh\tourgiochotnhatrang.jpg" />
+    <Content Include="hinh\hinh\tourgiochot\tourgiochot4-hue-nho.jpg" />
+    <Content Include="hinh\hinh\tourgiochot\tourgiochot4-hue.jpg" />
+    <Content Include="hinh\hinh\tourgiochot\tourgiochot4-phuquoc-lon.jpg" />
+    <Content Include="hinh\hinh\tourgiochot\tourgiochot4-phuquoc-nho.jpg" />
+    <Content Include="hinh\hinh\tourgiochot\tourgiochot4-phuquoc.jpg" />
+    <Content Include="hinh\hinh\tourgiochot\tourgiochot4-phuyen-nho.jpg" />
+    <Content Include="hinh\hinh\tourhanoi.jpg" />
+    <Content Include="hinh\hinh\tourhanoi1.JPG" />
+    <Content Include="hinh\hinh\tourhanoi3.jpg" />
+    <Content Include="hinh\hinh\tourkhuyenmai\buonmathuot-nho.jpg" />
+    <Content Include="hinh\hinh\tourkhuyenmai\buonmathuot.jpg" />
+    <Content Include="hinh\hinh\tourkhuyenmai\dalat-nho.jpg" />
+    <Content Include="hinh\hinh\tourkhuyenmai\dalat.jpg" />
+    <Content Include="hinh\hinh\tourkhuyenmai\phuyen-nho.jpg" />
+    <Content Include="hinh\hinh\tourkhuyenmai\phuyen.jpg" />
+    <Content Include="hinh\hinh\tourkm1.jpg" />
+    <Content Include="hinh\hinh\tourkm2nhatrang - Copy %282%29.jpg" />
+    <Content Include="hinh\hinh\tourkm2nhatrang - Copy.jpg" />
+    <Content Include="hinh\hinh\tourkm2nhatrang.jpg" />
+    <Content Include="hinh\hinh\tourkm2phanthiet.jpg" />
+    <Content Include="hinh\hinh\tourkm3huejpg.jpg" />
+    <Content Include="hinh\hinh\tourkm4hanoi.jpg" />
+    <Content Include="hinh\hinh\tourkmcantho.jpg" />
+    <Content Include="hinh\hinh\toursaigon.jpg" />
+    <Content Include="hinh\hinh\toursaigon1.jpg" />
+    <Content Include="hinh\hinh\toursaigon2.jpg" />
+    <Content Include="hinh\hinh\tourtravel1.jpg" />
+    <Content Include="hinh\hinh\tourtravel11.jpg" />
+    <Content Include="hinh\hinh\tourtravel2.jpg" />
+    <Content Include="hinh\hinh\tourtravel3.jpg" />
+    <Content Include="hinh\hinh\tourtrongnuoc1.jpg" />
+    <Content Include="hinh\hinh\tourtrongnuoc2.jpg" />
+    <Content Include="hinh\hinh\tourtst2.jpg" />
+    <Content Include="hinh\hinh\tourtst3.png" />
+    <Content Include="hinh\hinh\Travel.png" />
+    <Content Include="hinh\hinh\tsttour.jpg" />
+    <Content Include="hinh\hinh\twitter.png" />
+    <Content Include="hinh\hinh\usergiang.jpg" />
+    <Content Include="hinh\hinh\usernguyen.jpg" />
+    <Content Include="hinh\hinh\userxuan.jpg" />
+    <Content Include="hinh\hinh\wifi.png" />
+    <Content Include="hinh\hinh\youtube.png" />
+    <Content Include="hinh\hoguom.jpg" />
+    <Content Include="hinh\hoian.jpg" />
+    <Content Include="hinh\i-date-w.png" />
+    <Content Include="hinh\img_avatar2.png" />
+    <Content Include="hinh\instagram.png" />
+    <Content Include="hinh\interkhachsan.jpg" />
+    <Content Include="hinh\khach-san-dakruco-daklak-2.jpg" />
+    <Content Include="hinh\khach-san-rex-sai-gon-0.jpg" />
+    <Content Include="hinh\khachsan\dalat.jpg" />
+    <Content Include="hinh\khachsan\detailks1.jpg" />
+    <Content Include="hinh\khachsan\ksa.jpg" />
+    <Content Include="hinh\khachsan\pullman.png" />
+    <Content Include="hinh\khachsan\vungtau.jpg" />
+    <Content Include="hinh\kitchen.png" />
+    <Content Include="hinh\layer1.jpg" />
+    <Content Include="hinh\layer2.1.jpg" />
+    <Content Include="hinh\layer3.1.jpg" />
+    <Content Include="hinh\layer4.1.jpg" />
+    <Content Include="hinh\line.png" />
+    <Content Include="hinh\location %282%29.png" />
+    <Content Include="hinh\location.png" />
+    <Content Include="hinh\LOGO-BUITRAVEL.png" />
+    <Content Include="hinh\logo-saigontourist1.png" />
+    <Content Include="hinh\logo.PNG" />
+    <Content Include="hinh\logobenthanhtourist1.png" />
+    <Content Include="hinh\logofiditour1.png" />
+    <Content Include="hinh\logohanoitourist2.png" />
+    <Content Include="hinh\logotst1.png" />
+    <Content Include="hinh\logovietravel.png" />
+    <Content Include="hinh\message.png" />
+    <Content Include="hinh\messages.png" />
+    <Content Include="hinh\monitor.png" />
+    <Content Include="hinh\nhahang\amthucDL.jpg" />
+    <Content Include="hinh\nhahang\amthucHA.jpg" />
+    <Content Include="hinh\nhahang\amthucHN.jpg" />
+    <Content Include="hinh\phuyen1.jpg" />
+    <Content Include="hinh\scooter.png" />
+    <Content Include="hinh\search.png" />
+    <Content Include="hinh\slide.jpg" />
+    <Content Include="hinh\slider1.jpg" />
+    <Content Include="hinh\slider2.jpg" />
+    <Content Include="hinh\slider3.jpg" />
+    <Content Include="hinh\slider4.jpg" />
+    <Content Include="hinh\tc4.jpg" />
+    <Content Include="hinh\telephone %282%29.png" />
+    <Content Include="hinh\telephone %283%29.png" />
+    <Content Include="hinh\telephone.png" />
+    <Content Include="hinh\thiet-ke-web-du-lich-5.jpg" />
+    <Content Include="hinh\tourfidicamau.jpg" />
+    <Content Include="hinh\tourgiochothanoi.jpg" />
+    <Content Include="hinh\tourgiochotnhatrang.jpg" />
+    <Content Include="hinh\tourgiochot\tourgiochot4-hue-nho.jpg" />
+    <Content Include="hinh\tourgiochot\tourgiochot4-hue.jpg" />
+    <Content Include="hinh\tourgiochot\tourgiochot4-phuquoc-lon.jpg" />
+    <Content Include="hinh\tourgiochot\tourgiochot4-phuquoc-nho.jpg" />
+    <Content Include="hinh\tourgiochot\tourgiochot4-phuquoc.jpg" />
+    <Content Include="hinh\tourgiochot\tourgiochot4-phuyen-nho.jpg" />
+    <Content Include="hinh\tourhanoi.jpg" />
+    <Content Include="hinh\tourhanoi1.JPG" />
+    <Content Include="hinh\tourhanoi3.jpg" />
+    <Content Include="hinh\tourkhuyenmai\buonmathuot-nho.jpg" />
+    <Content Include="hinh\tourkhuyenmai\buonmathuot.jpg" />
+    <Content Include="hinh\tourkhuyenmai\dalat-nho.jpg" />
+    <Content Include="hinh\tourkhuyenmai\dalat.jpg" />
+    <Content Include="hinh\tourkhuyenmai\phuyen-nho.jpg" />
+    <Content Include="hinh\tourkhuyenmai\phuyen.jpg" />
+    <Content Include="hinh\tourkm1.jpg" />
+    <Content Include="hinh\tourkm2nhatrang - Copy %282%29.jpg" />
+    <Content Include="hinh\tourkm2nhatrang - Copy.jpg" />
+    <Content Include="hinh\tourkm2nhatrang.jpg" />
+    <Content Include="hinh\tourkm2phanthiet.jpg" />
+    <Content Include="hinh\tourkm3huejpg.jpg" />
+    <Content Include="hinh\tourkm4hanoi.jpg" />
+    <Content Include="hinh\tourkmcantho.jpg" />
+    <Content Include="hinh\toursaigon.jpg" />
+    <Content Include="hinh\toursaigon1.jpg" />
+    <Content Include="hinh\toursaigon2.jpg" />
+    <Content Include="hinh\tourtravel1.jpg" />
+    <Content Include="hinh\tourtravel11.jpg" />
+    <Content Include="hinh\tourtravel2.jpg" />
+    <Content Include="hinh\tourtravel3.jpg" />
+    <Content Include="hinh\tourtrongnuoc1.jpg" />
+    <Content Include="hinh\tourtrongnuoc2.jpg" />
+    <Content Include="hinh\tourtst2.jpg" />
+    <Content Include="hinh\tourtst3.png" />
+    <Content Include="hinh\Travel.png" />
+    <Content Include="hinh\tsttour.jpg" />
+    <Content Include="hinh\twitter.png" />
+    <Content Include="hinh\usergiang.jpg" />
+    <Content Include="hinh\usernguyen.jpg" />
+    <Content Include="hinh\userxuan.jpg" />
+    <Content Include="hinh\wifi.png" />
+    <Content Include="hinh\youtube.png" />
+    <Content Include="buitravel.html" />
+    <Content Include="detailtourgiochot.html" />
+    <Content Include="detailtourgiochot1.html" />
+    <Content Include="detailtourgiochot3.html" />
+    <Content Include="detailtourgiochot4.html" />
+    <Content Include="detailtourgiochot5.html" />
+    <Content Include="detailtourgiochot6.html" />
+    <Content Include="detailtourkhuyenmai1.html" />
+    <Content Include="detailtourkhuyenmai2.html" />
+    <Content Include="detailtourkhuyenmai3.html" />
+    <Content Include="detailtourkhuyenmai4.html" />
+    <Content Include="detailtourkhuyenmai5.html" />
+    <Content Include="detailtourkhuyenmai6.html" />
+    <Content Include="diemyeuthich.html" />
+    <Content Include="diemyeuthichdanang.html" />
+    <Content Include="diemyeuthichvungtau1.html" />
+    <Content Include="FormDangky.html" />
+    <Content Include="FormDangNhap.html" />
+    <Content Include="image\address.png" />
+    <Content Include="image\amthuc.png" />
+    <Content Include="image\AmThuc1.jpg" />
+    <Content Include="image\AmThuc2.jpg" />
+    <Content Include="image\AmThuc3.jpg" />
+    <Content Include="image\Dacsan.png" />
+    <Content Include="image\DDAnUong.png" />
+    <Content Include="image\dichuyen.png" />
+    <Content Include="image\DiemDuLich.jpg" />
+    <Content Include="image\DuLichHN1.jpg" />
+    <Content Include="image\DuLichHN2.jpg" />
+    <Content Include="image\DuLichHN3.jpg" />
+    <Content Include="image\DuLichHN4.jpg" />
+    <Content Include="image\DuLichHN5.jpg" />
+    <Content Include="image\DuLichHN6.jpg" />
+    <Content Include="image\facebook.png" />
+    <Content Include="image\google.png" />
+    <Content Include="image\homestay.png" />
+    <Content Include="image\Hotel.png" />
+    <Content Include="image\Khachsan.jpg" />
+    <Content Include="image\kshs.png" />
+    <Content Include="image\LOGO-BUITRAVEL.png" />
+    <Content Include="image\logobamboo.jpg" />
+    <Content Include="image\logovietjet.jpg" />
+    <Content Include="image\logovnair.png" />
+    <Content Include="image\maybay.png" />
+    <Content Include="image\Son-Doong-Dinosaur.jpg" />
+    <Content Include="image\thiet-ke-web-du-lich-5.jpg" />
+    <Content Include="image\tintuc.png" />
+    <Content Include="image\totop.png" />
+    <Content Include="image\vetau.png" />
+    <Content Include="image\vexe.png" />
+    <Content Include="js\angular.min.js" />
+    <Content Include="js\dangky.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery.autocomplete.min.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\sweetalert.min.js" />
+    <Content Include="kinhnghiem.html" />
+    <Content Include="lienhe.html" />
+    <Content Include="MB_Bamboo_HN.html" />
+    <Content Include="MB_Vietjet_HN.html" />
+    <Content Include="MB_VNAir_HN.html" />
+    <Content Include="tatcatour.html" />
+    <Content Include="ThongBaoDangKy.html" />
+    <Content Include="Tour.html" />
+    <Content Include="Tourgiochotxemthem.html" />
+    <Content Include="tourkhuyenmaixemthem.html" />
+    <Content Include="TuTuc1.html" />
+    <Content Include="TuTuc2_DaLat.html" />
+    <Content Include="TuTuc2_DaNang.html" />
+    <Content Include="TuTuc2_HCM.html" />
+    <Content Include="TuTuc2_HN.html" />
+    <Content Include="TuTuc2_HoiAn.html" />
+    <Content Include="TuTuc2_SaPa.html" />
+    <Content Include="VeMayBay\Airplane.png" />
+    <Content Include="VeMayBay\bamboo.jpg" />
+    <Content Include="VeMayBay\vjet.jpg" />
+    <Content Include="VeMayBay\vnaline.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Json\tourdata.json" />
+    <Content Include="Json\Bam.json" />
+    <Content Include="Json\Vemaybay.json" />
+    <Content Include="Json\Vietjet.json" />
+    <Content Include="Json\VietNamAir.json" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59382</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59382/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

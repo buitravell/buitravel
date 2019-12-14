@@ -1,0 +1,380 @@
+﻿<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/angular.min.js"></script>
+    <link href="Css/tutuc2.css" rel="stylesheet" />
+    <link href="Css/footer.css" rel="stylesheet" />
+    <link href="Css/MayBay.css" rel="stylesheet" />
+
+
+    <script>
+        function DatVJ() {
+            window.open("https://fly.vietnamairlines.com/dx/VNDX/#/flight-selection?journeyType=round-trip&locale=vi-VI&origin=SGN&destination=HAN&ADT=1&CHD=0&INF=0&date=12-09-2019&origin1=HAN&destination1=SGN&date1=12-10-2019&promoCode=&class=Economy&pointOfSale=VN&execution=e2s1");
+        }
+    </script>
+    <script>
+        var app = angular.module("angularApp", [])
+        app.controller("MayBayController", function ($scope, $http) {
+            $http({
+                method: "GET",
+                url: "JSON/VietNamAir.json"
+            }).then(function mySucces(respone) {
+                $scope.maybays = respone.data
+            }, function myError(respone) {
+                $scope.dataError = respone.statusText
+            })
+        })
+    </script>
+</head>
+<body ng-app="angularApp" ng-controller="MayBayController">
+
+    <div id="main">
+        <!--Thanh menu trên cùng-->
+
+        <div class="menu-bar">
+            <img src="hinh/LOGO-BUITRAVEL.png"
+                 width="40"
+                 height="40" , class="log" />
+            <ul>
+                <li><a href="buitravel.html"><i class="fa fa-home"></i>Trang Chủ</a></li>
+                <li><a href="Tour.html"><i class="fa fa-users"></i>Tour</a></li>
+                <li><a href="TuTuc1.html"><i class="fa fa-clone"></i>Tự Túc</a></li>
+                <li><a href="kinhnghiem.html"><i class="fa fa-angellist"></i>Kinh Nghiệm</a></li>
+                <li><a href="#"><i class="fa fa-inr"></i>Diễn Đàn</a></li>
+                <li><a href="lienhe.html"><i class="fa fa-phone"></i>Liên Hệ</a></li>
+                <li id="btnDangKy"><a href="#">Đăng ký</a></li>
+                <li id="btnDangNhap"><a href="#">Đăng nhập</a></li>
+                <li id="chaomung">Chào <span id="spanusn" class="highlight"></span>,</li>
+            </ul>
+        </div>
+        <div id="Noidungchinh">
+            <div id="NenPT">
+                <div id="Notice">
+                    <img src="VeMayBay/vnaline.jpg" height="150" width="97%" /><br />
+
+                </div>
+                <div style="clear:both;margin-top:17px;color:#0e24a1">
+                    <p style="font-size:25px">
+                        <img src="VeMayBay/Airplane.png" width="3.5%" />
+                        Chuyến đi <b style="font-size:30px">TP Hồ Chí Minh (SGN) - Hà Nội (HAN) </b>
+                    </p>
+                </div>
+                <table align="center" border="1">
+                    <tr style="background-color:#102393;height:40px;color:#ffffff">
+                        <th>Logo</th>
+                        <th>Mã</th>
+                        <th>Giờ khởi hành</th>
+                        <th>Giờ đến</th>
+                        <th>Giá</th>
+                    </tr>
+                    <tr style="height:50px" ng-repeat="mb in maybays | filter:search" onmouseover="this.style.backgroundColor='#FFFAB3'" onmouseout="this.style.backgroundColor='white'">
+                        <td align="center">
+                            <img src="{{mb.Logo}}" height="30" width="140" />
+                        </td>
+                        <td>{{mb.Ma}}</td>
+                        <td><b>{{mb.GioKhoiHanh}}</b></td>
+                        <td><b>{{mb.GioDen}}</b></td>
+                        <td style="background-color:#f6f3f3; color:red;">{{mb.Gia}}</td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+                <button onclick="DatVJ()"><b>Đặt VietNamAirlines</b></button>
+            </div>
+        </div>
+        <!--Form đăng ký-->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="close" onclick="closeForm()"></div>
+                <form action="ThongBaoDangKy.html" id="frm" onsubmit="return (validateForm());">
+                    <div class="icontainer">
+                        <h1 id="sign">Đăng ký</h1>
+                        <p>Vui lòng điền vào mẫu bên dưới để đăng ký tài khoản</p>
+                        <hr>
+
+                        <label for="email"><b>Email/Số điện thoại</b></label>
+                        <input type="text" placeholder="Nhập email hoặc số điện thoại" name="email" required id="email" />
+
+                        <label for="usn"><b>Username</b></label>
+                        <input type="text" placeholder="Nhập username bạn muốn" name="usn" required id="usn" />
+
+                        <label for="psw"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="psw" id="psw" required>
+
+                        <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" id="psw-repeat" required>
+
+                        <label>
+                            <input type="checkbox" name="remember" style="margin-bottom:4%"> Nhớ mật khẩu
+                        </label>
+
+                        <p id="dieukhoan">Bằng việc đăng ký, tôi đồng ý với các  <a class="DangKy" href="#">Điều khoản & Điều kiện</a> và <a class="DangKy" href="#">Chính sách về quyền riêng tư</a> của Bụi Travel</p>
+
+                        <div class="clearfix">
+                            <button type="button" class="cancelbtn" onclick="closeForm()">Huỷ</button>
+                            <button type="submit" class="signupbtn">Đăng ký</button>
+                        </div>
+                        <div class="strike">
+                            <span>hoặc</span>
+                        </div>
+                        <!--Nút Facebook-->
+                        <div class="space">
+                            <div class="btnFB" ; onclick="window.location='http://facebook.com';">
+                                <div class="logoFB">
+                                    <img src="image/fb.png" />
+                                </div>
+                                <div class="content">Đăng ký bằng Facebook</div>
+                            </div>
+                        </div>
+                        <!--Nút Gmail-->
+                        <div>
+                            <div class="btnGM" ; onclick="window.location='http://google.com';">
+                                <div class="logoGM">
+                                    <img src="image/google.png" />
+                                </div>
+                                <div class="content">Đăng ký bằng Gmail</div>
+                            </div>
+                        </div>
+                        <p class="clearfloat">Bạn đã có tài khoản? <a class="DangKy" href="#" onclick="chuyenForm()">Đăng nhập</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Form đăng nhập-->
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <div class="close" onclick="closeForm2()"></div>
+                <form action="#" id="frm2">
+                    <div class="icontainer">
+                        <h1 id="sign">Đăng nhập</h1>
+                        <p>Vui lòng điền thông tin để đăng nhập</p>
+                        <hr>
+
+                        <label for="email2"><b>Email/Số điện thoại</b></label>
+                        <input type="text" placeholder="Nhập email hoặc số điện thoại" name="email2" required id="email2" />
+
+
+                        <label for="psw2"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="psw2" id="psw2" required>
+
+                        <label>
+                            <input type="checkbox" name="remember" style="margin-bottom:4%"> Nhớ mật khẩu
+                        </label>
+
+                        <div class="clearfix">
+                            <button type="button" class="cancelbtn" onclick="closeForm2()">Huỷ</button>
+                            <button type="submit" class="signupbtn">Đăng nhập</button>
+                        </div>
+
+                        <div class="strike">
+                            <span>hoặc</span>
+                        </div>
+                        <!--Nút Facebook-->
+                        <div class="space">
+                            <div class="btnFB" ; onclick="window.location='http://facebook.com';">
+                                <div class="logoFB">
+                                    <img src="image/fb.png" />
+                                </div>
+                                <div class="content">Đăng nhập bằng Facebook</div>
+                            </div>
+                        </div>
+                        <!--Nút Gmail-->
+                        <div>
+                            <div class="btnGM" ; onclick="window.location='http://google.com';">
+                                <div class="logoGM">
+                                    <img src="image/google.png" />
+                                </div>
+                                <div class="content">Đăng nhập bằng Gmail</div>
+                            </div>
+                        </div>
+                        <p class="clearfloat">Bạn chưa có tài khoản? <a class="DangKy" href="#" onclick="chuyenForm2()">Đăng ký</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Footer cuối màn hình-->
+        <div id="foot">
+            <div>
+
+                <div class="wrapper bg-green">
+                    <footer class="d-flex-r clear containerf text-white" id="main-footer">
+                        <div class="mx-0">
+                            <h6 class="heading font-x1 my-1">LIÊN HỆ</h6>
+                            <ul class="nospace linkedlist contact">
+                                <li>
+
+                                    <address> <img src="hinh/location.png" /> &nbsp;&nbsp; Pasteur , Phường 6, Quận 3 ,TP HCM</address>
+
+                                </li>
+                                <li>
+                                    <img src="hinh/telephone%20(3).png" />&nbsp;&nbsp; +(84 28)3822 8899
+
+                                </li>
+                                <li>
+                                    <img src="hinh/messages.png" />&nbsp;&nbsp;
+                                    info@buitravel.com
+                                </li>
+                                <li>
+                                    <img src="hinh/Travel.png" />&nbsp;&nbsp;
+                                    <a class="text-white" href="https://www.youtube.cpm/buitravel/" target="_blank"><i class="fa fa-youtube"></i>buitravel.com</a>
+
+                                </li>
+                            </ul>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4611.090314710304!2d106.690956426912!3d10.78240361522089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3816236ab3%3A0xb62bca767bca4649!2zUGFzdGV1ciwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574304266404!5m2!1svi!2s"
+                                    width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="mx-0 ">
+                            <h6 class="heading my-1 font-x1">THÔNG TIN</h6>
+                            <ul class="nospace linkedlist">
+                                <li class="my-0"><a href="#" class="f">Tin tức</a></li>
+                                <li class="my-0"><a href="#" class="f">Kinh nghiệm du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Cẩm nang du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Sitemap</a></li>
+                                <li>---------------------------------</li>
+                                <li class="my-0"><a href="#" class="f">Chính sách riêng tư</a></li>
+                                <li class="my-0"><a href="#" class="f">Thỏa thuận sử dụng</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mx-0">
+                            <h6 class="heading my-1 font-x1">NEWSLETTER</h6>
+
+                            <form method="post" action="#" id="foote">
+                                <table>
+                                    <tr>
+                                        <td><input type="name" placeholder="Name" /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style3">
+                                            <input type="email" class="auto-style2" placeholder="Email" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style3"><button class="auto-style4">Submit</button></td>
+                                    </tr>
+                                </table>
+                            </form>
+
+                        </div>
+                        <div class="mx-0 " id="instafeed">
+                            <h6 class="heading my-1 font-x1">MẠNG XÃ HỘI</h6>
+                            <div class="d-flex-r my-1">
+                                <a href="#"><img src="hinh/facebook1.png" class="my-0" /> </a>
+                                <a href="#"><img src="hinh/instagram.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/twitter.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/youtube.png" class="my-0" /> </a>
+                            </div>
+                            <h6 class="heading my-1 font-x1 ">HOTLINE</h6>
+                            <div class="d-flex-r my-1">
+                                <img src="hinh/call.png" class="my-1" />
+                                <ul class="nospace linkedlist ">
+
+                                    <li class="my-0 text-bold"> 1900 1839</li>
+                                    <li class="my-0"> Tư vấn 8h00 - 23h00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="d-flex-r clear justify-content-space-between text-white" id="copyright">
+                        <p class="d-flex-r ">
+                            Copyright &copy; 2019 - All Rights Reserved -
+                            <a href="#"> &nbsp; &nbsp;Domain Name </a>
+                        </p>
+                        <a href="#myPage" id="backtotop"><i class="fa fa-chevron-up"></i></a>
+                        <p class="d-flex-r"> Template by <a href="https://www.facebook.com/buitravel.com/" target="_blank" title="buitravel.com"> &nbsp; 5A1C </a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Modal box đăng ký-->
+    <script type="text/javascript">
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("myModal2");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("btnDangKy");
+
+
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        function closeForm() {
+            modal.style.display = "none";
+        }
+
+        function chuyenForm() {
+            modal.style.display = "none";
+            modal2.style.display = "block";
+        }
+    </script>
+
+    <!--Modal box đăng nhập-->
+    <script type="text/javascript">
+        // Get the modal
+        var modal2 = document.getElementById("myModal2");
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("btnDangNhap");
+
+        // When the user clicks on the button, open the modal
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+        }
+
+
+
+        function closeForm2() {
+            modal2.style.display = "none";
+        }
+
+        function chuyenForm2() {
+            modal.style.display = "block";
+            modal2.style.display = "none";
+        }
+    </script>
+    <!--Validate data trong form đăng ký, đăng nhập-->
+    <script type="text/javascript">
+        //JavaScript Document
+        function validateForm() {
+            //Email hoặc phải được điền chính xác
+            var email = document.getElementById("email").value;
+            var aCong = email.indexOf("@");
+            var dauCham = email.lastIndexOf(".");
+            var kiemTraDT = isNaN(email);
+            var psw = document.getElementById("psw").value;
+            var pswrepeat = document.getElementById("psw-repeat").value;
+            var usn = document.getElementById("usn").value
+            sessionStorage.setItem("username", usn)
+            sessionStorage.setItem("email", email)
+            if (kiemTraDT == true) {
+                if ((aCong < 1) || (dauCham < aCong + 2) || (dauCham + 2 > email.length)) {
+                    swal("Email hoặc số điện thoại bạn điền không chính xác. Xin vui lòng nhập lại!");
+                    return false;
+                }
+            }
+            if (psw != pswrepeat) {
+                swal("Mật khẩu bạn nhập không giống nhau. Xin vui lòng nhập lại!");
+                return false;
+            }
+        }
+    </script>
+    <!--Chào user-->
+    <script type="text/javascript">
+        if (sessionStorage.getItem("username")) {
+            document.getElementById("btnDangKy").style.display = "none"
+            document.getElementById("btnDangNhap").style.display = "none"
+            document.getElementById("chaomung").style.display = "block"
+            var spanusn = sessionStorage.getItem("username")
+            document.getElementById("spanusn").innerHTML = spanusn
+        }
+    </script>
+</body>

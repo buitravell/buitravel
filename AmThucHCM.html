@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--Hình Cho Thanh Menu-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--Đánh Giá Sao-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        @import url(Css/tutuc2.css);
+        @import url(Css/oke.css);
+        @import url(Css/AmThuc.css);
+        @import url(Css/footer.css);
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <!--Thanh menu trên cùng-->
+        <div class="menu-baramthuc">
+            <img src="hinh/LOGO-BUITRAVEL.png"
+                 width="40"
+                 height="40" , class="logamthuc" />
+            <ul>
+                <li><a href="buitravel.html"><i class="fa fa-home"></i>Trang Chủ</a></li>
+                <li><a href="Tour.html"><i class="fa fa-users"></i>Tour</a></li>
+                <li><a href="TuTuc1.html"><i class="fa fa-clone"></i>Tự Túc</a></li>
+                <li><a href="kinhnghiem.html"><i class="fa fa-angellist"></i>Kinh Nghiệm</a></li>
+                <li><a href="#"><i class="fa fa-inr"></i>Diễn Đàn</a></li>
+                <li><a href="lienhe.html"><i class="fa fa-phone"></i>Liên Hệ</a></li>
+                <li id="btnDangKy"><a href="#">Đăng ký</a></li>
+                <li id="btnDangNhap"><a href="#">Đăng nhập</a></li>
+                <li id="chaomung">Chào <span id="spanusn" class="highlight"></span>,</li>
+            </ul>
+        </div>
+        <!--Form đăng ký-->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="close" onclick="closeForm()"></div>
+                <form action="action_page.php" id="frm">
+                    <div class="icontainer">
+                        <h1 id="sign">Đăng ký</h1>
+                        <p>Vui lòng điền vào mẫu bên dưới để đăng ký tài khoản</p>
+                        <hr>
+
+                        <label for="email"><b>Email/Số điện thoại</b></label>
+                        <input type="text" placeholder="Nhập email hoặc số điện thoại" name="email" required id="email" />
+
+
+                        <label for="psw"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="psw" id="psw" required>
+
+                        <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" id="psw-repeat" required>
+
+                        <label>
+                            <input type="checkbox" name="remember" style="margin-bottom:4%"> Nhớ mật khẩu
+                        </label>
+
+                        <p>Bằng việc đăng ký, tôi đồng ý với các  <a id="DangKy" href="#">Điều khoản & Điều kiện</a> và <a id="DangKy" href="#">Chính sách về quyền riêng tư</a> của Bụi Travel</p>
+
+                        <div class="clearfix">
+                            <button type="button" class="cancelbtn" onclick="closeForm()">Huỷ</button>
+                            <button type="submit" class="signupbtn">Đăng ký</button>
+                        </div>
+
+                        <div class="strike">
+                            <span>hoặc</span>
+                        </div>
+                        <!--Nút Facebook-->
+                        <div class="space">
+                            <div class="btnFB" ; onclick="window.location='http://facebook.com';">
+                                <div class="logoFB">
+                                    <img src="image/fb.png" />
+                                </div>
+                                <div class="content">Đăng ký bằng Facebook</div>
+                            </div>
+                        </div>
+                        <!--Nút Gmail-->
+                        <div>
+                            <div class="btnGM" ; onclick="window.location='http://google.com';">
+                                <div class="logoGM">
+                                    <img src="image/google.png" />
+                                </div>
+                                <div class="content">Đăng ký bằng Gmail</div>
+                            </div>
+                        </div>
+                        <p class="clearfloat">Bạn đã có tài khoản? <a id="DangKy" href="#" onclick="chuyenForm()">Đăng nhập</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Form đăng nhập-->
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <div class="close" onclick="closeForm2()"></div>
+                <form action="action_page.php" id="frm2">
+                    <div class="icontainer">
+                        <h1 id="sign">Đăng nhập</h1>
+                        <p>Vui lòng điền thông tin để đăng nhập</p>
+                        <hr>
+
+                        <label for="email2"><b>Email/Số điện thoại</b></label>
+                        <input type="text" placeholder="Nhập email hoặc số điện thoại" name="email2" required id="email2" />
+
+
+                        <label for="psw2"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="psw2" id="psw2" required>
+
+                        <label>
+                            <input type="checkbox" name="remember" style="margin-bottom:4%"> Nhớ mật khẩu
+                        </label>
+
+                        <div class="clearfix">
+                            <button type="button" class="cancelbtn" onclick="closeForm2()">Huỷ</button>
+                            <button type="submit" class="signupbtn">Đăng nhập</button>
+                        </div>
+
+                        <div class="strike">
+                            <span>hoặc</span>
+                        </div>
+                        <!--Nút Facebook-->
+                        <div class="space">
+                            <div class="btnFB" ; onclick="window.location='http://facebook.com';">
+                                <div class="logoFB">
+                                    <img src="image/fb.png" />
+                                </div>
+                                <div class="content">Đăng nhập bằng Facebook</div>
+                            </div>
+                        </div>
+                        <!--Nút Gmail-->
+                        <div>
+                            <div class="btnGM" ; onclick="window.location='http://google.com';">
+                                <div class="logoGM">
+                                    <img src="image/google.png" />
+                                </div>
+                                <div class="content">Đăng nhập bằng Gmail</div>
+                            </div>
+                        </div>
+                        <p class="clearfloat">Bạn chưa có tài khoản? <a id="DangKy" href="#" onclick="chuyenForm2()">Đăng ký</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Modal box đăng ký-->
+        <script type="text/javascript">
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            var modal2 = document.getElementById("myModal2");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("btnDangKy");
+
+
+
+            // When the user clicks on the button, open the modal
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            function closeForm() {
+                modal.style.display = "none";
+            }
+
+            function chuyenForm() {
+                modal.style.display = "none";
+                modal2.style.display = "block";
+            }
+        </script>
+
+        <!--Modal box đăng nhập-->
+        <script type="text/javascript">
+            // Get the modal
+            var modal2 = document.getElementById("myModal2");
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn2 = document.getElementById("btnDangNhap");
+
+            // When the user clicks on the button, open the modal
+            btn2.onclick = function () {
+                modal2.style.display = "block";
+            }
+
+
+
+            function closeForm2() {
+                modal2.style.display = "none";
+            }
+
+            function chuyenForm2() {
+                modal.style.display = "block";
+                modal2.style.display = "none";
+            }
+        </script>
+        <!--Slide-->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="image/AmThuc3.jpg" width="100%" height="400" />
+                <div class="text">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="image/AmThuc2.jpg" width="100%" height="400" />
+                <div class="text">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="image/AmThuc1.jpg" width="100%" height="400" />
+                <div class="text">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+        <br />
+        <h1>Đặc sản</h1>
+        <div style="margin-left:7%">
+            <div id="myid100" style="height:440px;">
+                <a href="#" target="_self">
+                    <img src="AmThuc/TPHCM1.png" width="100%" height="300" />
+                </a>
+                <div>
+                    <div class="text-cus1">
+                        <a href="#" target="_self"><b>&nbsp;&nbsp;Cơm tấm Sài Gòn</b></a>
+                    </div>
+                    <div class="text-am">
+                        <img src="AmThuc/price.png" /> &nbsp; <i>25.000VNĐ - 85.000VNĐ</i><br />
+                        <i>Với hương vị khác biệt đã khiến món cơm tấm trở thành món đặc sản mà du khách nào tới Sài Gòn cũng phải thử một lần. Bạn có thẻ thử quán cơm tấm sườn hoặc cơm tấm gà qua để có thể hưởng trọn vị thơm của món ăn nức tiếng này.</i>
+
+                    </div>
+                </div>
+            </div>
+            <div id="myid100" style="height:440px;">
+                <a href="#" target="_self">
+                    <img src="AmThuc/TPHCM2.png" width="100%" height="300" />
+                </a>
+                <div>
+                    <div class="text-cus1">
+                        <a href="#" target="_self"><b>&nbsp;&nbsp;Hủ tiếu Nam Vang</b></a>
+                    </div>
+                    <div class="text-am">
+                        <img src="AmThuc/price.png" /> &nbsp; <i>35.000VNĐ - 90.000VNĐ</i><br />
+                        <i>Với tên gọi khác là món ăn “ đa sắc tộc” thì hủ tiếu Nam Vang cũng chính là một món đặc sản Sài Gòn mà du khách nên biết tới khi đến nơi đây du lịch. Với nhiều loại nguyên liệu khác nhau đã tạo nên một món ăn nức tiếng khiến du khách nào cũng yêu thích. </i>
+
+                    </div>
+                </div>
+            </div>
+            <div id="myid100" style="height:440px;">
+                <a href="#" target="_self">
+                    <img src="AmThuc/TPHCM3.png" width="100%" height="300" />
+                </a>
+                <div>
+                    <div class="text-cus1">
+                        <a href="#" target="_self"><b>&nbsp;&nbsp;Bánh Tráng Trộn</b></a>
+                    </div>
+                    <div class="text-am">
+                        <img src="AmThuc/price.png" /> &nbsp; <i>10.000VNĐ - 25.000VNĐ</i><br />
+                        <i>
+                            Bánh tráng được xé nhỏ và cho thêm hành phi cùng sa tế, đậu phộng, khô bò,trứng cút, xoài,…trộn thành món ăn vặt thơm ngon. Bạn sẽ thích mê với món ăn này khi được thưởng thức tại bánh tráng Chú Viên.
+
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div id="myid100" style="height:440px;">
+                <a href="#" target="_self">
+                    <img src="AmThuc/TPHCM4.jpg" width="100%" height="300" />
+                </a>
+                <div>
+                    <div class="text-cus1">
+                        <a href="#" target="_self"><b>&nbsp;&nbsp;Bột Chiên</b></a>
+                    </div>
+                    <div class="text-am">
+                        <img src="AmThuc/price.png" /> &nbsp; <i>10.000VNĐ - 35.000VNĐ</i><br />
+                        <i>Những khối bột cắt vuông như con cờ chiên giòn rụm bên ngoài nhưng bên trong mềm dẻo vừa phải. Áo bên ngoài là phần trứng màu vàng ruộm cùng vài sợi đu đủ bào xanh nõn nà. Có thể nói phần bột và nước chấm là linh hồn của món ăn vặt này.</i>
+
+                    </div>
+                </div>
+            </div>
+            <div id="myid100" style="height:440px;">
+                <a href="#" target="_self">
+                    <img src="AmThuc/TPHCM5.jpg" width="100%" height="300" />
+                </a>
+                <div>
+                    <div class="text-cus1">
+                        <a href="#" target="_self"><b>&nbsp;&nbsp;Súp Cua</b></a>
+                    </div>
+                    <div class="text-am">
+                        <img src="AmThuc/price.png" /> &nbsp; <i>10.000VNĐ - 50.000VNĐ</i><br />
+                        <i>Người Sài Gòn quen thuộc với hình ảnh ly súp cua đặc sánh lẫn trong đó là thịt cua và thịt gà. Trên mặt là dầu mè, rau ngò thêm xíu ớt là đủ lót dạ cho bữa sáng rồi.</i>
+
+                    </div>
+                </div>
+            </div>
+            <div id="myid100" style="height:440px;">
+                <a href="#" target="_self">
+                    <img src="AmThuc/TPHCM6.jpg" width="100%" height="300" />
+                </a>
+                <div>
+                    <div class="text-cus1">
+                        <a href="#" target="_self"><b>&nbsp;&nbsp;Phá Lấu</b></a>
+                    </div>
+                    <div class="text-am">
+                        <img src="AmThuc/price.png" /> &nbsp; <i>25.000VNĐ - 85.000VNĐ</i><br />
+                        <i>Hầu như ai sống ở Sài Gòn đều có đôi lần nghe đến món phá lấu. Món ăn có nguồn gốc từ người Tiều này quen thuộc đến nỗi nhắc đến là người ta có thể hình dung ra ngay.</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="clear">Địa Điểm Ăn Uống</h1>
+        <br />
+        <div style="margin-left:7%;">
+            <div id="myid100">
+                <a href="#" target="_self">
+                    <img src="AmThuc/DiemTHHCM1.png" width="100%" height="300" />
+                </a>
+                <div class="text-cus">
+                    <a href="#" target="_self"><b>"Con đường trái cây đĩa" Nguyễn Cảnh Chân</b></a><br />
+                    <img src="AmThuc/DiaDiem.png" height="17" />&nbsp;&nbsp; 33/7 Nguyễn Cảnh Chân, phường Cầu Kho, quận 1, TP.HCM<br />
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star-half-o checked" style="font-size:24px;"></span>&nbsp;&nbsp;4 review
+                </div>
+            </div>
+            <div id="myid100">
+                <a href="#" target="_self">
+                    <img src="AmThuc/DiemTPHCM2.png" width="100%" height="300" />
+                </a>
+                <div class="text-cus">
+                    <a href="#" target="_self"><b>Món ăn vặt ở hẻm 76 Hai Bà Trưng</b></a><br />
+                    <img src="AmThuc/DiaDiem.png" height="17" />&nbsp;&nbsp;hẻm 76 Hai Bà Trưng, quận 1, TP.HCM<br />
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star-half-o checked" style="font-size:24px;"></span>&nbsp;&nbsp;14 review
+                </div>
+            </div>
+            <div id="myid100">
+                <a href="#" target="_self">
+                    <img src="AmThuc/DiemTPHCM3.jpg" width="100%" height="300" />
+                </a>
+                <div class="text-cus">
+                    <a href="#" target="_self"><b>Làng ẩm thực 3 cua</b></a><br />
+                    <img src="AmThuc/DiaDiem.png" height="17" />&nbsp;&nbsp;315B Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7<br />
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star-half-o checked" style="font-size:24px;"></span>&nbsp;&nbsp;3 review
+                </div>
+            </div>
+            <br />
+            <div id="myid100">
+                <a href="#" target="_self">
+                    <img src="AmThuc/DiemTPHCM4.jpg" width="100%" height="300" />
+                </a>
+                <div class="text-cus">
+                    <a href="#" target="_self"><b>Bánh xèo A Phủ</b></a><br />
+                    <img src="AmThuc/DiaDiem.png" height="17" />&nbsp;&nbsp;10A đường 3/2, Quận 10<br />
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star-half-o checked" style="font-size:24px;"></span>&nbsp;&nbsp;2 review
+                </div>
+            </div>
+            <div id="myid100">
+                <a href="#" target="_self">
+                    <img src="AmThuc/DiemTPHCM5.jpg" width="100%" height="300" />
+                </a>
+                <div class="text-cus">
+                    <a href="#" target="_self"><b>Quán bún mắm 61</b></a><br />
+                    <img src="AmThuc/DiaDiem.png" height="17" />&nbsp;&nbsp;63 Cô Giang, Quận 1<br />
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star-half-o checked" style="font-size:24px;"></span>&nbsp;&nbsp;7 review
+                </div>
+            </div>
+            <div id="myid100">
+                <a href="#" target="_self">
+                    <img src="AmThuc/DiemTPHCM6.jpg" width="100%" height="300" />
+                </a>
+                <div class="text-cus">
+                    <a href="#" target="_self"><b>Marukame Udon – Udon & Tempura</b></a><br />
+                    <img src="AmThuc/DiaDiem.png" height="17" />&nbsp;&nbsp;215 Lý Tự Trọng, Phường Bến Thành, Quận 1<br />
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star checked" style="font-size:24px;"></span>
+                    <span class="fa fa-star-half-o checked" style="font-size:24px;"></span>&nbsp;&nbsp;4 review
+                </div>
+            </div>
+        </div>
+
+        <!--Footer cuối màn hình-->
+        <div id="foot">
+            <div>
+
+                <div class="wrapper bg-green">
+                    <footer class="d-flex-r clear containerf text-white" id="main-footer">
+                        <div class="mx-0">
+                            <h6 class="heading font-x1 my-1">LIÊN HỆ</h6>
+                            <ul class="nospace linkedlist contact">
+                                <li>
+
+                                    <address> <img src="hinh/location.png" /> &nbsp;&nbsp; Pasteur , Phường 6, Quận 3 ,TP HCM</address>
+
+                                </li>
+                                <li>
+                                    <img src="hinh/telephone%20(3).png" />&nbsp;&nbsp; +(84 28)3822 8899
+
+                                </li>
+                                <li>
+                                    <img src="hinh/messages.png" />&nbsp;&nbsp;
+                                    info@buitravel.com
+                                </li>
+                                <li>
+                                    <img src="hinh/Travel.png" />&nbsp;&nbsp;
+                                    <a class="text-white" href="https://www.youtube.cpm/buitravel/" target="_blank"><i class="fa fa-youtube"></i>buitravel.com</a>
+
+                                </li>
+                            </ul>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4611.090314710304!2d106.690956426912!3d10.78240361522089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3816236ab3%3A0xb62bca767bca4649!2zUGFzdGV1ciwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574304266404!5m2!1svi!2s"
+                                    width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="mx-0 ">
+                            <h6 class="heading my-1 font-x1">THÔNG TIN</h6>
+                            <ul class="nospace linkedlist">
+                                <li class="my-0"><a href="#" class="f">Tin tức</a></li>
+                                <li class="my-0"><a href="#" class="f">Kinh nghiệm du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Cẩm nang du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Sitemap</a></li>
+                                <li>---------------------------------</li>
+                                <li class="my-0"><a href="#" class="f">Chính sách riêng tư</a></li>
+                                <li class="my-0"><a href="#" class="f">Thỏa thuận sử dụng</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mx-0">
+                            <h6 class="heading my-1 font-x1">NEWSLETTER</h6>
+
+                            <form method="post" action="#" id="foote">
+                                <table>
+                                    <tr>
+                                        <td><input type="name" placeholder="Name" /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style3">
+                                            <input type="email" class="auto-style2" placeholder="Email" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style3"><button class="auto-style4">Submit</button></td>
+                                    </tr>
+                                </table>
+                            </form>
+
+                        </div>
+                        <div class="mx-0 " id="instafeed">
+                            <h6 class="heading my-1 font-x1">MẠNG XÃ HỘI</h6>
+                            <div class="d-flex-r my-1">
+                                <a href="#"><img src="hinh/facebook1.png" class="my-0" /> </a>
+                                <a href="#"><img src="hinh/instagram.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/twitter.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/youtube.png" class="my-0" /> </a>
+                            </div>
+                            <h6 class="heading my-1 font-x1 ">HOTLINE</h6>
+                            <div class="d-flex-r my-1">
+                                <img src="hinh/call.png" class="my-1" />
+                                <ul class="nospace linkedlist ">
+
+                                    <li class="my-0 text-bold"> 1900 1839</li>
+                                    <li class="my-0"> Tư vấn 8h00 - 23h00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="d-flex-r clear justify-content-space-between text-white" id="copyright">
+                        <p class="d-flex-r ">
+                            Copyright &copy; 2019 - All Rights Reserved -
+                            <a href="#"> &nbsp; &nbsp;Domain Name </a>
+                        </p>
+                        <a href="#myPage" id="backtotop"><i class="fa fa-chevron-up"></i></a>
+                        <p class="d-flex-r"> Template by <a href="https://www.facebook.com/buitravel.com/" target="_blank" title="buitravel.com"> &nbsp; 5A1C </a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<!--Slider-->
+<script>
+    //khai báo biến slideIndex đại diện cho slide hiện tại
+    var slideIndex;
+    // KHai bào hàm hiển thị slide
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].className += " active";
+        //chuyển đến slide tiếp theo
+        slideIndex++;
+        //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+        if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+        }
+        //tự động chuyển đổi slide sau 5s
+        setTimeout(showSlides, 10000);
+    }
+    //mặc định hiển thị slide đầu tiên
+    showSlides(slideIndex = 0);
+
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+</script>
+</html>

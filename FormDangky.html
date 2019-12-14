@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form đang ky</title>
+    <link rel="stylesheet" href="Css/tutuc2.css" />
+    
+</head>
+<body>
+    <div id="myModel" class="model">
+        <div class="model-content">
+          
+            <form>
+                <div class="icontainer">
+                    <h1>Đăng ký</h1>
+                    <p>Vui lòng điền vào mẫu bên dưới để đăng ký tài khoản</p>
+                    <hr>
+
+                    <label for="email"><b>Email/Số điện thoại</b></label>
+                    <input type="text" placeholder="Nhập email hoặc số điện thoại" name="email" required id="email" />
+
+                    <label for="usn"><b>Username</b></label>
+                    <input type="text" placeholder="Nhập username bạn muốn" name="usn" required id="usn" />
+
+                    <label for="psw"><b>Mật khẩu</b></label>
+                    <input type="password" placeholder="Nhập mật khẩu" name="psw" id="psw" required>
+
+                    <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                    <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" id="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" name="remember" style="margin-bottom:4%"> Nhớ mật khẩu
+                    </label>
+
+                    <p>Bằng việc đăng ký, tôi đồng ý với các  <a class="DangKy" href="#">Điều khoản & Điều kiện</a> và <a class="DangKy" href="#">Chính sách về quyền riêng tư</a> của Bụi Travel</p>
+
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn" onclick="closeForm()">Huỷ</button>
+                        <button type="submit" class="signupbtn">Đăng ký</button>
+                    </div>
+                    <button type="button" onclick="CreateFile()">Luu du lieu</button>
+
+                    <div class="strike">
+                        <span>hoặc</span>
+                    </div>
+                    <!--Nút Facebook-->
+                    <div class="space">
+                        <div class="btnFB" ; onclick="window.location='http://facebook.com';">
+                            <div class="logoFB">
+                                <img src="image/fb.png" />
+                            </div>
+                            <div class="content">Đăng ký bằng Facebook</div>
+                        </div>
+                    </div>
+                    <!--Nút Gmail-->
+                    <div>
+                        <div class="btnGM" ; onclick="window.location='http://google.com';">
+                            <div class="logoGM">
+                                <img src="image/google.png" />
+                            </div>
+                            <div class="content">Đăng ký bằng Gmail</div>
+                        </div>
+                    </div>
+                    <p class="clearfloat">Bạn đã có tài khoản? <a class="DangKy" href="#" onclick="chuyenForm()">Đăng nhập</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

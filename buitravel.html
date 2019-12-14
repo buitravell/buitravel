@@ -1,0 +1,1445 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bui</title>
+    <link rel="stylesheet" href="Css/2.css" />
+    <style type="text/css">
+        @import url(Css/tutuc2.css);
+    </style>
+    <style type="text/css">
+        @import url(Css/tutuc2.css);
+        
+
+        .auto-style1 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 78%;
+        }
+
+        .auto-style2 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 87%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="Css/footer.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 30, 2020 15:37:25").getTime();
+
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = " Còn " + days + " ngày " + hours + " : "
+                + minutes + " : " + seconds;
+            document.getElementById("demo2").innerHTML = " Còn " + days + " ngày " + hours + " : "
+                + minutes + " : " + seconds;
+            document.getElementById("demo3").innerHTML = " Còn " + days + " ngày " + hours + " : "
+                + minutes + " : " + seconds;
+            document.getElementById("demo4").innerHTML = " Còn " + days + " ngày " + hours + " : "
+                + minutes + " : " + seconds;
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+                document.getElementById("demo2").innerHTML = "EXPIRED";
+                document.getElementById("demo3").innerHTML = "EXPIRED";
+                document.getElementById("demo4").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+    <script type="text/javascript">
+         // Get the modal
+         var moda = document.getElementById("myModa");
+         var moda2 = document.getElementById("myModa2");
+
+         // Get the button that opens the modal
+         var btn = document.getElementById("btnDangKy");
+
+
+
+         // When the user clicks on the button, open the modal
+         btn.onclick = function () {
+             moda.style.display = "block";
+         }
+
+         function closeForm() {
+             moda.style.display = "none";
+         }
+
+         function chuyenForm() {
+             moda.style.display = "none";
+             moda2.style.display = "block";
+         }
+    </script>
+
+    <!--Modal box đăng nhập-->
+    <script type="text/javascript">
+         // Get the modal
+         var moda2 = document.getElementById("myModa2");
+         var moda = document.getElementById("myModa");
+
+         // Get the button that opens the modal
+         var btn2 = document.getElementById("btnDangNhap");
+
+         // When the user clicks on the button, open the modal
+         btn2.onclick = function () {
+             moda2.style.display = "block";
+         }
+
+
+
+         function closeForm2() {
+             moda2.style.display = "none";
+         }
+
+         function chuyenForm2() {
+             moda.style.display = "block";
+             moda2.style.display = "none";
+         }
+    </script>
+
+   
+
+    
+</head>
+<body>
+    <!--tìm kiếm-->
+    <form name="George">
+        <p class="timkiemtour1">
+
+            <select name="example" size="1" onChange="go()" class="timkiemtour">
+                <option value="diemyeuthich.html">Tìm kiếm tour</option>
+                <option value="diemyeuthich.html">Sa Pa</option>
+                <option value="diemyeuthichdanang.html">Đà Nẵng</option>
+                <option value="diemyeuthichvungtau1.html">Vũng Tàu</option>
+
+                <option value="diemyeuthich.html">Thành phố Hồ Chí Minh</option>
+                <option value="diemyeuthichdanang.html">Hà Nội</option>
+                <option value="diemyeuthichvungtau1.html">Hội An</option>
+                <option value="tatcatour.html">Đà Lạt</option>
+                <option value="tatcatour.html">Nha Trang</option>
+                <option value="tatcatour.html">Tất cả các tour</option>
+
+
+            </select>
+
+            <img src="hinh/search.png" alt="search" />
+        </p>
+
+        <script type="text/javascript">
+           <!--
+            function go() {
+                location =
+                    document.George.example.
+                        options[document.George.example.selectedIndex].value
+            }
+            //-->
+        </script>
+
+    </form>
+    <!--menu-->
+    ﻿<div id="main">
+        <!--Thanh menu trên cùng-->
+        <section>
+            <div class="menu-bar">
+                <img src="hinh/LOGO-BUITRAVEL.png"
+                     width="40"
+                     height="40" , class="log" />
+                <ul>
+                    <li><a href="buitravel.html"><i class="fa fa-home"></i>Trang Chủ</a></li>
+                    <li><a href="Tour.html"><i class="fa fa-users"></i>Tour</a></li>
+                    <li><a href="TuTuc1.html"><i class="fa fa-clone"></i>Tự Túc</a></li>
+                    <li><a href="kinhnghiem.html"><i class="fa fa-angellist"></i>Kinh Nghiệm</a></li>
+                    <li><a href="#"><i class="fa fa-inr"></i>Diễn Đàn</a></li>
+                    <li><a href="lienhe.html"><i class="fa fa-phone"></i>Liên Hệ</a></li>
+                    <li id="btnDangKy"><a href="#">Đăng ký</a></li>
+                    <li id="btnDangNhap"><a href="#">Đăng nhập</a></li>
+                    <li id="chaomung">Chào <span id="spanusn" class="highlight"></span>,</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+    <!--Tìm kiếm, nhập input-->
+    <div id="headlink">
+        <!--Nút search đi-->
+        <div id="searchfield">
+            <form>
+                <input type="text" placeholder="Nhập điểm khởi hành" class="biginput" name="search1" id="searchdi" title="Tên thành phố/tỉnh thành" />
+            </form>
+        </div>
+        <!--Nút search đến-->
+        <div id="searchfield1">
+            <form>
+                <input type="text" placeholder="Nhập điểm đến" class="biginput" name="search2" id="autocomplete" title="Tên thành phố/tỉnh thành" />
+            </form>
+        </div>
+        <!--Button Ngày-->
+        <div id="divNgay">
+            <button id="btnNgay" type="button" onclick="moPopupNgay()">NGÀY ĐI - NGÀY VỀ</button>
+        </div>
+        <!--Button Số người-->
+        <div id="divSoNguoi">
+            <button id="btnSoNguoi" type="button" onclick="moPopupNguoi()">SỐ NGƯỜI</button>
+        </div>
+        <!--Tìm kiếm-->
+        <div id="divTimKiem">
+            <button id="btnTimKiem" type="button" class="btnTron">TÌM KIẾM  ➤</button>
+        </div>
+    </div>
+
+
+
+
+    <!--Slide-->
+    <section id="slider">
+        <div id="headerSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#headerSlider" data-slide-to="1"></li>
+                <li data-target="#headerSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="hinh/slider1.jpg" class="d-block img-fluid" width="1550" height="500">
+                    <div class="carousel-caption">
+                        <h5>Bạn muốn chọn 1 tour phù hợp</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="hinh/slider4.jpg" class="d-block img-fluid" width="1550" height="500">
+                    <div class="carousel-caption">
+                        <h5>Thưởng thức cảnh đẹp muôn phương</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="hinh/slider3.jpg" class="d-block img-fluid" width="1550" height="500">
+                    <div class="carousel-caption">
+                        <h5>Bạn muốn chọn 1 tour giá rẻ</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!--tour giờ chót-->
+    <section class="features">
+        <h1>Tour Giờ Chót</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo"></span>
+                            <a href="detailtourgiochot.html" target="_blank"><img src="hinh/condao.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i>&nbsp; Côn Đảo (Bà Rịa – Vũng Tàu)</span>
+
+                            </div>
+                            <h5>Côn Đảo - Thiên Đường Của Biển &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>7,490,000 đ</h4>
+                                <p>Không những nổi tiếng về cảnh đẹp thiên nhiên sơn thủy hữu tình, sở hữu những bãi biển hoang sơ trong vắt, bờ cát trắng mịn làm say mê du khách khắp nơi, mà nơi đây còn nổi tiếng.</p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo3"></span>
+                            <a href="detailtourgiochot1.html" target="_blank"><img src="hinh/tourgiochothanoi.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i>&nbsp; Hà Nội - Lào Cai - Sapa - Hạ Long</span>
+
+                            </div>
+                            <h5>Hà Nội - Lào Cai - Sapa - Hạ Long - Tặng Vé Xe Lửa Mường Hoa </h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+
+                            </div>
+                            <div class="feature-detail">
+                                <h4>8,290,000 đ</h4>
+                                <p>Sa Pa thu hút du khách với những thửa ruộng vàng óng vào mùa lúa chín, chợ tình quyến rũ, đỉnh Phan Xi Păng hùng vỹ. Hà Nội cổ kính, nên thơ trong sương sớm. Hạ Long kỳ vỹ.</p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>5 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>4 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo2"></span>
+                            <a href="detailtourgiochot3.html" target="_blank"><img src="hinh/tourgiochotnhatrang.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i>&nbsp; Nha Trang - Đà Lạt</span>
+
+                            </div>
+                            <h5>Nha Trang - Đà Lạt (Khách sạn tương đương 4*. Tour Tiêu Chuẩn) </h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>5,190,000 đ</h4>
+                                <p>Nha Trang thành phố đáng sống nhất Việt Nam với bờ biển dài với những bờ cát trắng, Đà Lạt thơ mộng, ngôn tình và lãng mạn. Tour thu hút nhiều khách tham gia từ trước đến nay</p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>5 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>4 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <a href="Tourgiochotxemthem.html" target="_self" class="booking-btn">Xem chi tiết</a>
+            </div>
+        </div>
+    </section>
+    <!--tour khuyến mãi-->
+    <section class="features">
+        <h1>Tour Khuyến Mãi</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo2"></span>
+                            <a href="detailtourkhuyenmai1.html" target="_blank"><img src="hinh/tourkm3huejpg.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i> Đà Nẵng - Hội An - Huế</span>
+
+                            </div>
+                            <h5>Bà Nà - Cầu Vàng - Sơn Trà - La Vang - Động Phong Nha  (Khách sạn 4*2 đêm. Tour Tiêu Chuẩn) </h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>5,990,000 đ</h4>
+                                <h4>Còn 5,690,000 đ nếu đặt ngay</h4>
+                                <p>Phố cổ Hội An với lung linh sắc màu của đèn lồng và những hoạt động dân gian đặc sắc. Hội An đậm chât cổ xưa.</p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo2"></span>
+                            <a href="detailtourkhuyenmai2.html" target="_blank"><img src="hinh/tourkmcantho.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i>&nbsp; Thơ - Cà Mau - Bạc Liêu - Sóc Trăng</span>
+
+                            </div>
+                            <h5>Miền Tây - Sa Đéc - Cần Thơ - Cà Mau - Bạc Liêu - Sóc Trăng (khách sạn 3*, Tour Tiêu Chuẩn) </h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>3,690,000 đ</h4>
+                                <h4>Còn 3,190,000 đ nếu đặt ngay</h4>
+                                <p>Chùa Kiến An Cung: ngôi chùa cổ gần 100 năm với kiến trúc độc đáo - Nhà cổ Huỳnh Thủy Lê: tìm hiểu chuyện tình lãng mạn</p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo2"></span>
+                            <a href="detailtourkhuyenmai3.html" target="_blank"><img src="hinh/background3.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i>Đà Nẵng - Huế</span>
+
+                            </div>
+                            <h5>Bà Nà - Cầu Vàng - Sơn Trà - La Vang - Động Thiên Đường  (Khách sạn 4* 2 đêm. Tour Giá Sốc)</h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>5,390,000 đ</h4>
+                                <h4>Còn 4,990,000 đ nếu đặt ngay</h4>
+                                <p>Chùa Kiến An Cung: ngôi chùa cổ gần 100 năm với kiến trúc độc đáo - Nhà cổ Huỳnh Thủy Lê: tìm hiểu chuyện tình lãng mạn</p>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <a href="tourkhuyenmaixemthem.html" target="_self" class="booking-btn">Xem thêm</a>
+            </div>
+        </div>
+    </section>
+    <!--Điểm yêu thích-->
+    <section class="features">
+        <h1>Điểm yêu thích</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo"></span>
+                            <a href="diemyeuthich.html" target="_blank"><img src="hinh/diemyeuthichsapa.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i> Sa Pa</span>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo"></span>
+                            <a href="diemyeuthichvungtau1.html" target="_blank"><img src="hinh/diemyeuthichquynhon.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i> Vũng Tàu</span>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo"></span>
+                            <a href="diemyeuthichdanang.html" target="_blank"><img src="hinh/diemyeuthichdanang.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i> Đà Nẵng</span>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Khách sạn yêu thích-->
+    <section class="features">
+        <h1>Khách sạn yêu thích</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo"></span>
+                            <a href="https://www.booking.com/hotel/vn/khach-san-anh-phuong.html?label=gen173nr-1FCAEoggI46AdIM1gEaPQBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALb2LPvBcACAQ;sid=d45fe2568a408b0f06956b07afd41f3d;dest_id=-3712125;dest_type=city;dist=0;from_beach_non_key_ufi_sr=1;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1575808109;srpvid=b12857b62a790006;type=total;ucfs=1&#hotelTmpl" target="_blank"><img src="hinh/khachsan/ksa.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i>&nbsp;[Đà Nẵng]Khách sạn Royal Charm</span>
+
+                            </div>
+                            <h5>Không gian ấm cúng dành cho gia đình </h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>490,000 đ</h4>
+                                <p>Khách sạn nằm cách trung tâm thành phố 5p đi xe máy, cạnh bờ biển, chợ địa phương</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo3"></span>
+                            <a href="https://www.booking.com/hotel/vn/mai-thu.html?label=gen173nr-1FCAEoggI46AdIM1gEaPQBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALb2LPvBcACAQ;sid=d45fe2568a408b0f06956b07afd41f3d;dest_id=-3733750;dest_type=city;dist=0;from_beach_non_key_ufi_sr=1;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1575808189;srpvid=af0b57de598b0142;type=total;ucfs=1&#hotelTmpl" target="_blank"><img src="hinh/khachsan/vungtau.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i>&nbsp;[Vũng Tàu] Thuan Hoa Hotel </span>
+
+                            </div>
+                            <h5>Thiên đường nghỉ dưỡng ngay tại thành phố Vũng Tàu</h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+
+                            </div>
+                            <div class="feature-detail">
+                                <h4>290,000 đ</h4>
+                                <p>Thu hút từ ánh nhìn đầu tiên, view hướng ra biển độc nhất</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo2"></span>
+                            <a href="https://www.booking.com/hotel/vn/tigon-dalat-hostel-thanh-pho-da-lat12.html?label=gen173nr-1FCAEoggI46AdIM1gEaPQBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALb2LPvBcACAQ;sid=d45fe2568a408b0f06956b07afd41f3d;dest_id=-3712045;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1575808264;srpvid=63b25804a98600c9;type=total;ucfs=1&#hotelTmpl" target="_blank"><img src="hinh/khachsan/dalat.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i>&nbsp;[Đà Lạt] Tigon Dalat Hostel</span>
+
+                            </div>
+                            <h5>Tạm rời thành phố náo nhiệt, ta tìm về chốn bình yên</h5>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>750,000 đ</h4>
+                                <p>View 360 độ độc lạ giữa núi rừng thiên nhiên, lãng mạn cùng người ấy ngắm toàn thành phố</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--Ẩm thực-->
+    <section class="features">
+        <h1>Ẩm thực</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo"></span>
+                            <a href="#" target="_blank"><img src="hinh/nhahang/amthucDL.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i>&nbsp;Ẩm thực Đà Lạt</span>
+
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>Chỉ từ 25.000</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo3"></span>
+                            <a href="#" target="_blank"><img src="hinh/nhahang/amthucHN.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i>&nbsp;Ẩm thực Hà Nội</span>
+
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+
+                            </div>
+                            <div class="feature-detail">
+                                <h4>Chỉ từ 20,000 đ</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <span id="demo2"></span>
+                            <a href="#" target="_blank"><img src="hinh/nhahang/amthucHA.jpg" height="300" width="300" /></a>
+
+
+                            <div class="price">
+
+                                <span><i class="fa fa-map-marker"></i>&nbsp;Ẩm thực phố cổ Hội An</span>
+
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="feature-detail">
+                                <h4>Chỉ từ 20.000</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--gallery-->
+    <section class="gallery">
+        <h1>Bộ sưu tập</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="hinh/hagianggallery.jpg" height="150" width="200" />
+                        <h4>Hà Giang</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="hinh/phuyen1.jpg" height="150" width="200" />
+                        <h4>Phú Yên</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="hinh/hoian.jpg" height="150" width="200" />
+                        <h4>Hội An</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="hinh/hoguom.jpg" height="150" width="200" />
+                        <h4>Hà Nội</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="banner-highlights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>Giảm giá 30% cho những địa điểm lớn</h2>
+                        <p>Đạt vé trước 21 tháng 12 năm 2019 bạn sẽ nhận được 20% giảm giá<p>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="booking-btn">Đặt ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="user-feedback">
+        <h1>Đánh giá của người dùng</h1>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>Thực sự rất ấn tượng vì những lời chia sẻ hữu ích. Mình đã có 1 chuyến đi Hà Giang vui vẻ và nhiều trải nghiệm</p>
+                        <h5>Dương Thị Thanh Xuân</h5>
+                        <small>Hà Giang</small>
+                    </div>
+                    <img src="hinh/userxuan.jpg" />
+                </div>
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>Thực sự rất ấn tượng vì những lời chia sẻ hữu ích. Mình đã có 1 chuyến đi Nha Trang vui vẻ và nhiều trải nghiệm</p>
+                        <h5>Trần Văn Giang</h5>
+                        <small>Nha Trang</small>
+                    </div>
+                    <img src="hinh/usergiang.jpg" />
+                </div>
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>Thực sự rất ấn tượng vì những lời chia sẻ hữu ích. Mình đã có 1 chuyến đi Sa Pa vui vẻ và nhiều trải nghiệm</p>
+                        <h5>Phan Thị Nguyên</h5>
+                        <small>Sa Pa</small>
+                    </div>
+                    <img src="hinh/usernguyen.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <div id="foot">
+            <div>
+                <div>
+                    <table id="idwithtable" border="0" cellpadding="8" cellspacing="8" class="backgroundmuc">
+                        <tr class="bvsc">
+
+                            <td rowspan="9" class="text-white text-bold number" align="center">
+                                Vì sao chọn <br />
+                                Buitravel.com?
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number">  1.  </td>
+                            <td class="number">  2.  </td>
+                            <td class="number">  3.  </td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">
+                                MẠNG BÁN TOUR
+                            </td>
+                            <td class="text-bold">
+                                THÔNG TIN
+                            </td>
+                            <td class="text-bold">
+                                GIÁ CẢ
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                ---------------------------
+                            </td>
+                            <td>
+                                ---------------------------
+                            </td>
+                            <td>
+                                ---------------------------
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Ứng dụng công nghệ mới nhất
+                            </td>
+                            <td>
+                                An toàn và linh hoạt
+                            </td>
+                            <td>
+                                Luôn có mức giá tốt nhất với mọi mức giá
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="number">
+                                4.
+                            </td>
+                            <td class="number">
+                                5.
+                            </td>
+                            <td class="number">
+                                6.
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-bold">
+                                SẢN PHẨM
+                            </td>
+                            <td class="text-bold">
+                                ĐẶT TOUR
+                            </td>
+                            <td class="text-bold">
+                                HỖ TRỢ
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> ---------------------------</td>
+                            <td> ---------------------------</td>
+                            <td> ---------------------------</td>
+                        </tr>
+                        <tr>
+                            <td>Đa dạng, chất lượng<br /> Đạt chất lượng tốt nhất</td>
+                            <td>Dễ dàng và nhanh chóng</td>
+                            <td>
+                                Từ 8h00 đến 23h<br /> Hotline hỗ trợ trực tuyến
+                            </td>
+                        </tr>
+
+
+                    </table>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+                <div class="wrapper bg-green">
+                    <footer class="d-flex-r clear containerf text-white" id="main-footer">
+                        <div class="mx-0">
+                            <h6 class="heading font-x1 my-1">LIÊN HỆ</h6>
+                            <ul class="nospace linkedlist contact">
+                                <li>
+
+                                    <address> <img src="hinh/location.png" /> &nbsp;&nbsp; Pasteur , Phường 6, Quận 3 ,TP HCM</address>
+
+                                </li>
+                                <li>
+                                    <img src="hinh/telephone%20(3).png" />&nbsp;&nbsp; +(84 28)3822 8899
+
+                                </li>
+                                <li>
+                                    <img src="hinh/messages.png" />&nbsp;&nbsp;
+                                    info@buitravel.com
+                                </li>
+                                <li>
+                                    <img src="hinh/Travel.png" />&nbsp;&nbsp;
+                                    <a class="text-white" href="https://www.youtube.cpm/buitravel/" target="_blank"><i></i>buitravel.com</a>
+
+                                </li>
+                            </ul>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4611.090314710304!2d106.690956426912!3d10.78240361522089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3816236ab3%3A0xb62bca767bca4649!2zUGFzdGV1ciwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574304266404!5m2!1svi!2s"
+                                    width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="mx-0 ">
+                            <h6 class="heading my-1 font-x1">THÔNG TIN</h6>
+                            <ul class="nospace linkedlist">
+                                <li class="my-0"><a href="#" class="f">Tin tức</a></li>
+                                <li class="my-0"><a href="#" class="f">Kinh nghiệm du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Cẩm nang du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Sitemap</a></li>
+                                <li>------------------------</li>
+                                <li class="my-0"><a href="#" class="f">Chính sách riêng tư</a></li>
+                                <li class="my-0"><a href="#" class="f">Thỏa thuận sử dụng</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mx-0">
+                            <h6 class="heading my-1 font-x1">NEWSLETTER</h6>
+
+                            <form method="post" action="#" id="foote">
+                                <table>
+                                    <tr>
+                                        <td><input type="name" placeholder="Name" class="auto-style1" /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="email" " placeholder="Email" /> <br />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="auto-style4 btnf">Submit</button></td>
+                                    </tr>
+                                </table>
+                            </form>
+
+                        </div>
+                        <div class="mx-0 " id="instafeed">
+                            <h6 class="heading my-1 font-x1">MẠNG XÃ HỘI</h6>
+                            <div class="d-flex-r my-1">
+                                <a href="#"><img src="hinh/facebook1.png" class="my-0" /> </a>
+                                <a href="#"><img src="hinh/instagram.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/twitter.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/youtube.png" class="my-0" /> </a>
+                            </div>
+                            <h6 class="heading my-1 font-x1 ">HOTLINE</h6>
+                            <div class="d-flex-r my-1">
+                                <img src="hinh/call.png" class="my-1" />
+                                <ul class="nospace linkedlist ">
+
+                                    <li class="my-0 text-bold"> 1900 1839</li>
+                                    <li class="my-0"> Tư vấn 8h00 - 23h00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="d-flex-r clear justify-content-space-between text-white" id="copyright">
+                        <p class="d-flex-r ">
+                            Copyright &copy; 2019 - All Rights Reserved -
+                            <a href="#"> &nbsp; &nbsp;Domain Name </a>
+                        </p>
+                        <a href="#myPage" id="backtotop"><i class="fa fa-chevron-up"></i></a>
+                        <p class="d-flex-r"> Template by <a href="https://www.facebook.com/buitravel.com/" target="_blank" title="buitravel.com"> &nbsp; 5A1C </a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Form số người-->
+    <form name="frmSoNguoihome" id="frmSoNguoihome">
+        <table id="tableSoNguoi">
+            <tr>
+                <td>Người lớn</td>
+                <td class="right">
+                    <div class="value-button" onclick="decreaseValueNL()" value="Decrease Value">
+                        <span>-</span>
+                    </div>
+                    <input type="number" class="number1" id="number1" value="0" />
+                    <div class="value-button" onclick="increaseValueNL()" value="Increase Value">
+                        <span class="spanmiddle">+</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Trẻ em</td>
+                <td class="right">
+                    <div class="value-button" onclick="decreaseValueTE()" value="Decrease Value">
+                        <span>-</span>
+                    </div>
+                    <input type="number" class="number1" id="number2" value="0" />
+                    <div class="value-button" onclick="increaseValueTE()" value="Increase Value">
+                        <span class="spanmiddle">+</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Trẻ sơ sinh</td>
+                <td class="right">
+                    <div class="value-button" onclick="decreaseValueSS()" value="Decrease Value">
+                        <span>-</span>
+                    </div>
+                    <input type="number" class="number1" id="number3" value="0" />
+                    <div class="value-button" onclick="increaseValueSS()" value="Increase Value">
+                        <span class="spanmiddle">+</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <hr id="hrnhat" />
+        <button class="btnClear" type="reset">Xoá</button>
+        <button class="btnSave" type="button" onclick="ChangeTextNguoi()">Lưu</button>
+    </form>
+
+    <!--Form chọn ngày-->
+    <form name="frmNgayhome" id="frmNgayhome">
+        <table id="tableNgay">
+            <tr>
+                <td>Chọn ngày đi</td>
+                <td>Chọn ngày về</td>
+            </tr>
+            <tr>
+                <td><input type="date" id="ngaydi" /></td>
+                <td><input type="date" id="ngayve" /></td>
+            </tr>
+        </table>
+        <hr id="hrnhat" />
+        <button class="btnClear" type="reset">Xoá</button>
+        <button class="btnSave" type="button" onclick="ChangeTextNgay()">Lưu</button>
+    </form>
+
+    <!--Form đăng ký-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="close" onclick="closeForm()"></div>
+            <form action="ThongBaoDangKy.html" id="frm" onsubmit="return (validateForm());">
+                <div class="icontainer">
+                    <h1 id="sign">Đăng ký</h1>
+                    <p>Vui lòng điền vào mẫu bên dưới để đăng ký tài khoản</p>
+                    <hr>
+
+                    <label for="email"><b>Email/Số điện thoại</b></label>
+                    <input type="text" placeholder="Nhập email hoặc số điện thoại" name="email" required id="email" />
+
+                    <label for="usn"><b>Username</b></label>
+                    <input type="text" placeholder="Nhập username bạn muốn" name="usn" required id="usn" />
+
+                    <label for="psw"><b>Mật khẩu</b></label>
+                    <input type="password" placeholder="Nhập mật khẩu" name="psw" id="psw" required>
+
+                    <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                    <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" id="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" name="remember" style="margin-bottom:4%"> Nhớ mật khẩu
+                    </label>
+
+                    <p id="dieukhoan">Bằng việc đăng ký, tôi đồng ý với các  <a class="DangKy" href="#">Điều khoản & Điều kiện</a> và <a class="DangKy" href="#">Chính sách về quyền riêng tư</a> của Bụi Travel</p>
+
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn" onclick="closeForm()">Huỷ</button>
+                        <button type="submit" class="signupbtn">Đăng ký</button>
+                    </div>
+                    <div class="strike">
+                        <span>hoặc</span>
+                    </div>
+                    <!--Nút Facebook-->
+                    <div class="space">
+                        <div class="btnFB" ; onclick="window.location='http://facebook.com';">
+                            <div class="logoFB">
+                                <img src="hinh/facebook1.png" />
+                            </div>
+                            <div class="content">Đăng ký bằng Facebook</div>
+                        </div>
+                    </div>
+                    <!--Nút Gmail-->
+                    <div>
+                        <div class="btnGM" ; onclick="window.location='http://google.com';">
+                            <div class="logoGM">
+                                <img src="hinh/google.png" />
+                            </div>
+                            <div class="content">Đăng ký bằng Gmail</div>
+                        </div>
+                    </div>
+                    <p class="clearfloat">Bạn đã có tài khoản? <a class="DangKy" href="#" onclick="chuyenForm()">Đăng nhập</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Form đăng nhập-->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <div class="close" onclick="closeForm2()"></div>
+            <form action="action_page.php" id="frm2">
+                <div class="container">
+                    <h1 id="sign">Đăng nhập</h1>
+                    <p>Vui lòng điền thông tin để đăng nhập</p>
+                    <hr>
+
+                    <label for="email2"><b>Email/Số điện thoại</b></label>
+                    <input type="text" placeholder="Nhập email hoặc số điện thoại" name="email2" required id="email2" />
+
+
+                    <label for="psw2"><b>Mật khẩu</b></label>
+                    <input type="password" placeholder="Nhập mật khẩu" name="psw2" id="psw2" required>
+
+                    <label>
+                        <input type="checkbox" name="remember" style="margin-bottom:15px"> Nhớ mật khẩu
+                    </label>
+
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn" onclick="closeForm2()">Huỷ</button>
+                        <button type="submit" class="signupbtn">Đăng nhập</button>
+                    </div>
+
+                    <div class="strike">
+                        <span>hoặc</span>
+                    </div>
+                    <!--Nút Facebook-->
+                    <div class="space">
+                        <div class="btnFB" ; onclick="window.location='http://facebook.com';">
+                            <div class="logoFB">
+                                <img src="hinh/facebook.png" />
+                            </div>
+                            <div class="content">Đăng nhập bằng Facebook</div>
+                        </div>
+                    </div>
+                    <!--Nút Gmail-->
+                    <div>
+                        <div class="btnGM" ; onclick="window.location='http://google.com';">
+                            <div class="logoGM">
+                                <img src="hinh/google.png" />
+                            </div>
+                            <div class="content">Đăng nhập bằng Gmail</div>
+                        </div>
+                    </div>
+                    <p class="clearfloat">Bạn chưa có tài khoản? <a href="#" onclick="chuyenForm2()">Đăng ký</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Modal box đăng ký-->
+    <script type="text/javascript">
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("myModal2");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("btnDangKy");
+
+
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        function closeForm() {
+            modal.style.display = "none";
+        }
+
+        function chuyenForm() {
+            modal.style.display = "none";
+            modal2.style.display = "block";
+        }
+    </script>
+
+    <!--Modal box đăng nhập-->
+    <script type="text/javascript">
+        // Get the modal
+        var modal2 = document.getElementById("myModal2");
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("btnDangNhap");
+
+        // When the user clicks on the button, open the modal
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+        }
+
+
+
+        function closeForm2() {
+            modal2.style.display = "none";
+        }
+
+        function chuyenForm2() {
+            modal.style.display = "block";
+            modal2.style.display = "none";
+        }
+    </script>
+    <!--Chức năng tăng/giảm số lượng Người lớn-->
+    <script type="text/javascript">
+        function increaseValueNL() {
+            var value = parseInt(document.getElementById('number1').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number1').value = value;
+        }
+
+        function decreaseValueNL() {
+            var value = parseInt(document.getElementById('number1').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number1').value = value;
+        }
+
+
+    </script>
+
+    <!--Chức năng tăng/giảm số lượng Trẻ em-->
+    <script type="text/javascript">
+        function increaseValueTE() {
+            var value = parseInt(document.getElementById('number2').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number2').value = value;
+        }
+
+        function decreaseValueTE() {
+            var value = parseInt(document.getElementById('number2').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number2').value = value;
+        }
+    </script>
+
+    <!--Chức năng tăng/giảm số lượng Trẻ sơ sinh-->
+    <script type="text/javascript">
+        function increaseValueSS() {
+            var value = parseInt(document.getElementById('number3').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number3').value = value;
+        }
+
+        function decreaseValueSS() {
+            var value = parseInt(document.getElementById('number3').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number3').value = value;
+        }
+    </script>
+
+    <!--Chức năng mở popup Số người-->
+    <script type="text/javascript">
+        function moPopupNguoi() {
+            if (document.getElementById("frmSoNguoihome").style.display == "none") {
+                document.getElementById("frmSoNguoihome").style.display = "block";
+            }
+            else {
+                document.getElementById("frmSoNguoihome").style.display = "none";
+            }
+        }
+    </script>
+
+    <!--Chức năng set Số Người-->
+    <script type="text/javascript">
+        function ChangeTextNguoi() {
+            var v1 = parseInt(document.getElementById("number1").value);
+            var v2 = parseInt(document.getElementById("number2").value);
+            var v3 = parseInt(document.getElementById("number3").value);
+            var v = v1 + v2 + v3;
+            if (v > 0) {
+                document.getElementById("btnSoNguoi").innerHTML = v + " người";
+            }
+            else {
+                swal("Nhập số người để nhận được gợi ý chính xác hơn!");
+                document.getElementById("btnSoNguoi").innerHTML = "Số người";
+            }
+        }
+    </script>
+
+
+
+    <!--Chức năng mở popup Ngày-->
+    <script type="text/javascript">
+        function moPopupNgay() {
+            if (document.getElementById("frmNgayhome").style.display == "none") {
+                document.getElementById("frmNgayhome").style.display = "block";
+            }
+            else {
+                document.getElementById("frmNgayhome").style.display = "none";
+            }
+        }
+    </script>
+
+    <!--Set ngày cho button Ngày-->
+    <script type="text/javascript">
+        function ChangeTextNgay() {
+            var ngaydi = new Date(document.getElementById("ngaydi").value);
+            var ngayve = new Date(document.getElementById("ngayve").value);
+            var d1 = ngaydi.getDate();
+            var m1 = ngaydi.getMonth();
+            var d2 = ngayve.getDate();
+            var m2 = ngayve.getMonth();
+            if (isNaN(ngaydi) && isNaN(ngayve)) {
+                swal("Chọn ngày đi và ngày về để nhận được gợi ý chính xác hơn!")
+                document.getElementById("btnNgay").innerHTML = "Ngày đi - Ngày về"
+            }
+            else if (isNaN(ngaydi)) {
+                swal("Chọn ngày đi để nhận được gợi ý chính xác hơn!")
+                document.getElementById("btnNgay").innerHTML = "--/-- " + " - " + d2 + "/" + m2;
+            }
+            else if (isNaN(ngayve)) {
+                swal("Chọn ngày về để nhận được gợi ý chính xác hơn!")
+                document.getElementById("btnNgay").innerHTML = d1 + "/" + m1 + " - " + "--/-- ";
+            }
+
+            else {
+                document.getElementById("btnNgay").innerHTML = d1 + "/" + m1 + " - " + d2 + "/" + m2;
+            }
+        }
+    </script>
+    <!--Validate data trong form đăng ký, đăng nhập-->
+    <script type="text/javascript">
+        //JavaScript Document
+        function validateForm() {
+            //Email hoặc phải được điền chính xác
+            var email = document.getElementById("email").value;
+            var aCong = email.indexOf("@");
+            var dauCham = email.lastIndexOf(".");
+            var kiemTraDT = isNaN(email);
+            var psw = document.getElementById("psw").value;
+            var pswrepeat = document.getElementById("psw-repeat").value;
+            var usn = document.getElementById("usn").value
+            sessionStorage.setItem("username", usn)
+            sessionStorage.setItem("email", email)
+            if (kiemTraDT == true) {
+                if ((aCong < 1) || (dauCham < aCong + 2) || (dauCham + 2 > email.length)) {
+                    swal("Email hoặc số điện thoại bạn điền không chính xác. Xin vui lòng nhập lại!");
+                    return false;
+                }
+            }
+            if (psw != pswrepeat) {
+                swal("Mật khẩu bạn nhập không giống nhau. Xin vui lòng nhập lại!");
+                return false;
+            }
+        }
+    </script>
+    <!--Chào user-->
+    <script type="text/javascript">
+        if (sessionStorage.getItem("username")) {
+            document.getElementById("btnDangKy").style.display = "none"
+            document.getElementById("btnDangNhap").style.display = "none"
+            document.getElementById("chaomung").style.display = "block"
+            var spanusn = sessionStorage.getItem("username")
+            document.getElementById("spanusn").innerHTML = spanusn
+        }
+    </script>
+    <script type="text/javascript">
+        function Navigate() {
+            var input = document.getElementById("autocomplete").value;
+            /*navigate qua trang khác dựa vào input tìm kiếm*/
+            if (input == "Hà Nội") {
+                location.href = "TuTuc2_HN.html";
+            }
+            else if (input == "Đà Lạt") {
+                location.href = "TuTuc2_DaLat.html";
+            }
+            else if (input == "Đà Nẵng") {
+                location.href = "TuTuc2_DaNang.html";
+            }
+            else if (input == "TP Hồ Chí Minh") {
+                location.href = "TuTuc2_HCM.html";
+            }
+            else {
+                location.href = "TuTuc2_SaPa.html";
+            }
+        }
+    </script>
+
+
+</body>
+</html>

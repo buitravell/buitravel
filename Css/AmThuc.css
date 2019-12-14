@@ -1,0 +1,260 @@
+﻿.checked {
+    color: yellow;
+}
+
+/*CHỮ ĐĂNG KÝ, ĐĂNG NHẬP TRONG MODAL*/
+h1#sign {
+    font-size: 32px;
+    text-align: left;
+    font-weight: bold;
+    padding: 2% 0;
+}
+
+
+
+/*THANH TAB BAR*/
+
+#menu {
+    margin-left: 5%;
+    float: left;
+    top: 2%;
+    text-indent: 0px;
+    font-size: 17px;
+    z-index: 999;
+}
+
+    #menu ul {
+        float: left;
+        list-style: none;
+        color: #aba6a8;
+    }
+
+        #menu ul li {
+            position: relative;
+            float: left;
+            display: inline-block;
+        }
+
+            #menu ul li a {
+                display: block;
+                color: #aba6a8;
+                font-weight: bold;
+                text-decoration: none;
+                padding: .3em 16px;
+                text-decoration: none;
+            }
+
+            #menu ul li:hover {
+                background: #c6adad;
+                border-radius: 3px;
+                color: white;
+            }
+
+            #menu ul li a:hover {
+                color: white;
+            }
+
+
+
+/*Slider*/
+* {
+    box-sizing: border-box
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+}
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+
+.text {
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+    /* khi được hover, active đổi màu nền */
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*Khung Hình*/
+div#myid100 {
+    width: 28%;
+    height: 400px;
+    margin: 4% 1.3%;
+    float: left;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform .2s;
+    box-shadow: 0px 0px 10px #FFC804;
+    -moz-box-shadow: 0px 0px 10px #FFC804;
+    -webkit-box-shadow: 0px 0px 10px #FFC804;
+}
+
+    div#myid1:hover img {
+        transform: scale(1.04);
+        -webkit-transform: scale(1.04);
+    }
+/*Định Dạng Chữ Trong Địa Điểm Ăn Uống */
+.text-cus {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 22px;
+    -webkit-line-clamp: 9;
+    display: block;
+    -webkit-box-orient: vertical;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.text-cus1 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: block;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+    padding: 10px 0 0 9px;
+}
+/*Định Dạng Chữ Trong Phần Mô tả Đặc Sản*/
+.text-am {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    padding-left: 9px;
+    line-height: 25px;
+}
+
+/*Định Dạng Trang*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+div#main {
+    width: 100%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#head {
+    height: 62px;
+    border-bottom: 1px solid #ededed;
+}
+
+div#foot {
+    clear: both;
+    border-top: 1px solid #ededed;
+    padding-top: 5%;
+}
+
+h1 {
+    color: #373737;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+}
+
+/*THANH MENU VÀ LOGO*/
+.menu-baramthuc {
+    font-family: sans-serif;
+    background: #373737;
+    text-align: left;
+    padding: 20px;
+}
+
+.logamthuc {
+    
+    float: left;
+}
+.menu-baramthuc ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+
+.menu-baramthuc ul li {
+    width: 120px;
+    margin: 7px;
+    padding: 3px;
+    font-size: 15px;
+}
+
+
+
+    .menu-baramthuc ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .active, .menu-baramthuc ul li:hover {
+        background: #FFC804;
+        border-radius: 3px;
+    }
+
+.menu-baramthuc .fa {
+    margin-right: 8px;
+}
+

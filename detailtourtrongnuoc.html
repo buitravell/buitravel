@@ -1,0 +1,927 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Detail1</title>
+
+
+
+
+    <link rel="stylesheet" href="Css/detailhangtour.css" />
+    <link rel="stylesheet" href="Css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="Css/tutuc2.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body id="main">
+    <section id="nav-bar">
+        <div class="menu-bar">
+            <img src="hinh/LOGO-BUITRAVEL.png"
+                 width="40"
+                 height="40" , class="log" />
+            <ul>
+                <li><a href="buitravel.html"><i class="fa fa-home"></i>Trang Chủ</a></li>
+                <li><a href="Tour.html"><i class="fa fa-users"></i>Tour</a></li>
+                <li><a href="TuTuc1.html"><i class="fa fa-clone"></i>Tự Túc</a></li>
+                <li><a href="kinhnghiem.html"><i class="fa fa-angellist"></i>Kinh Nghiệm</a></li>
+                <li><a href="#"><i class="fa fa-inr"></i>Diễn Đàn</a></li>
+                <li><a href="lienhe.html"><i class="fa fa-phone"></i>Liên Hệ</a></li>
+                <li id="btnDangKy"><a href="#">Đăng ký</a></li>
+                <li id="btnDangNhap"><a href="#">Đăng nhập</a></li>
+                <li id="chaomung">Chào <span id="spanusn" class="highlight"></span>,</li>
+
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section class="banner">
+
+        <div class="line">
+            <img src="hinh/line.png" width="1000" height="5" />
+        </div>
+        <div class="ten">
+            <h3>
+                Đà Lạt - Langbiang - Cánh Đồng Hoa Cẩm Tú Cầu - Đường Hầm Đất Sét
+
+
+            </h3>
+        </div>
+
+        <div class="bannertour">
+            <div class="bannertour-img">
+                <img src="hinh/tourtrongnuoc2.jpg" style="max-width:100%" height="500" />
+            </div>
+
+        </div>
+
+        <div class="bannertour-title">
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <div class="line">
+                <img src="hinh/line.png" width="350" height="1" />
+            </div>
+            <div class="detail">
+
+                <h5>
+                    Khởi hành:10/12/2020
+
+                    <br />
+                    <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                    <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                    <br />Nơi khởi hành: thành phố Hồ Chí Minh
+                </h5>
+
+            </div>
+            <div class="line">
+                <img src="hinh/line.png" width="350" height="1" />
+            </div>
+            <div class="feature-detail">
+                <h4>Giá: 1,990,000 đ</h4>
+
+            </div>
+            <div class="line">
+                <img src="hinh/line.png" width="350" height="1" />
+            </div>
+            <h5>Bạn cần hỗ trợ?</h5>
+            <div class="support">
+
+                <div class="booking-btn">
+                    <a href="#" target="_blank">Gọi điện</a>
+                </div>
+                <div class="booking-btn">
+                    <a href="#" target="_blank">Nhắn tin</a>
+                </div>
+            </div>
+            <div class="line">
+                <img src="hinh/line.png" width="350" height="1" />
+            </div>
+            <div class="booking-btn">
+                <a href="#" target="_blank">Đặt ngay</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="line">
+        <img src="hinh/line.png" width="1000" height="2" />
+    </div>
+    <section class="lichtrinh">
+        <div id="left">
+            <ul class="list-unstyled">
+                <li id="cct" class="tab-chuongtrinhtour active">
+                    <a href="#">
+                        <i class="fas fa-spinner"></i>
+                        &nbsp;&nbsp;
+                        <h4>Chương trình tour</h4>
+                    </a>
+                </li>
+                <li class="tab-chitiettour" id="tabChiTiet">
+                    <a href="#">
+
+                        <h5>Chi tiết tour</h5>
+                    </a>
+                </li>
+                <li class="tab-luuy">
+                    <a href="Lưu ý.html" target="main">
+
+                        <h5>Lưu ý</h5>
+                    </a>
+                </li>
+                <li class="tab-ngaykhac" id="tabNgayKhac">
+                    <a href="#">
+
+                        <h5>Ngày khác</h5>
+                    </a>
+                </li>
+                <li class="tab-ykien">
+                    <a href="#">
+
+                        <h5>Ý kiến khách hàng</h5>
+                    </a>
+                </li>
+                <li class="tab-lienhe" id="tabLienHe">
+                    <a href="#">
+
+                        <h5>Liên hệ</h5>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="article" id="content">
+            Đà Lạt  mộng mơ khiến bao  người  ngơ ngẩn bởi nơi đây ăm ắp nắng vàng, bầu trời xanh ngắt, khí trời se lạnh thả hồn cho bao chuyện tình lãng mạn, nơi chốn hẹn hò của những trái tim khát khao. Không chỉ dừng nơi ấy, Quý khách sẽ không khỏi ngỡ ngàng khi được tận mắt thấy được sự mênh mông của núi đồi, sự hùng vĩ của thác nước, sự êm ả của mặt hồ, sự đắm thắm của những bông hoa đang hé nụ,… những tuyệt tác mà  thiên nhiên ưu ái  dành cho xứ sở sương mù.
+
+
+            <div class="timeline">
+
+                <div>
+                    <table>
+                        <tr>
+                            <td colspan="2" align="center"><h3>Chương trình tour</h3></td>
+                        </tr>
+                        <tr>
+                            <td class="time">02-01-2020&nbsp;</td>
+                            <td class="thongtin">
+                                <a>
+                                    <h4>
+                                        <img src="hinh/location.png" />
+                                        TP. HỒ CHÍ MINH – ĐÀ LẠT Số bữa ăn: 3 bữa (sáng, trưa, chiều)
+
+                                    </h4>
+                                </a>
+                                <br />
+                                Quý khách tập trung tại Vietravel (190 Pasteur, Q3, Tp.HCM), đoàn khởi hành đi Đà Lạt. Trên đường đi Quý khách dừng chân ăn sáng tại Nhà hàng địa phương rồi tiếp tục hành trình đến Đà Lạt. Quý khách tham quan:<br />
+                                - Thác Đam B’ri: Một trong những thác nước đẹp và cao nhất tại cao nguyên Bảo Lộc. Đoàn ăn trưa tại khu du lịch. Sau đó, tiếp tục hành trình đến Đà Lạt.<br />
+                                - Quảng trường Lâm Viên Đà Lạt: Công trình có hướng tuyệt đẹp nhìn thẳng ra hồ Xuân Hương với một nụ hoa Atiso cao 15 m và đóa hoa dã quỳ 18 m đang thu hút nhiều bạn trẻ đến khám phá và chụp hình.<br />
+                                Đến Đà Lạt, Quý khách ăn tối và nhận phòng khách sạn. Buổi tối, Quý khách tự do dạo phố thưởng thức cà phê trong không khí se lạnh của Đà Lạt, ngắm cảnh Hồ Xuân Hương về đêm. Nghỉ đêm tại Đà Lạt.<br />
+
+
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>03-01-2020</td>
+                            <td>
+                                <a>
+                                    <h4>
+                                        <img src="hinh/location.png" />
+
+                                        ĐÀ LẠT - THÀNH PHỐ NGÀN HOA Số bữa ăn: 2 bữa (sáng, trưa, tự túc ăn chiều)
+
+                                    </h4>
+                                </a>
+                                <br />
+                                Sau khi dùng bữa sáng tại khách sạn, Quý khách khởi hành tham quan:<br />
+                                - Núi Langbiang: nóc nhà Tây Nguyên, ngắm toàn cảnh núi đồi, hồ Dankia, suối Vàng với những dòng sông uốn lượn từ trên cao (Quý khách có thể đi lên núi bằng xe Jeep - Chi phí tự túc). Trên đỉnh núi LangBiang cũng là nơi diễn ra nhiều hoạt động vui chơi giải trí khá thú vị: dù lượn, sử dụng ống nhòm đài quan sát để ngắm thành phố Đà Lạt xinh đẹp, cưỡi ngựa hóa thân thành một cao bồi, chụp hình săn mây (chi phí tự túc) …<br />
+                                - Fairytale Land & hầm rượu vang Vĩnh Tiến: đến đây du khách như lạc vào khu vườn cổ tích của những chú lùn Hobbiton, điểm xuyến trong khu vườn là những ngôi nhà độc đáo và đầy sắc màu, những bức vẽ trên tường đầy lôi cuốn và những thảm hoa nhỏ không kém phần quyến rũ. Dạo một vòng quanh khu vườn đừng quên rảo bước vào hầm rượu vang với hơn 10.000 chai đang được lưu trữ dưới hầm.<br />
+                                - Cánh đồng hoa Cẩm Tú Cầu: du khách sẽ như choáng ngợp bởi cánh đồng hoa Cẩm Tú Cầu rộng lớn một màu xanh biếc, nhìn từ xa thảm hoa như trải dài bất tận. Nơi đây thu hút du khách bởi những góc hình ảo diệu và đặc biệt là góc chụp “nấc thang lên thiên đường”.<br />
+                                - Đồi chè Cầu Đất: đến đây du khách sẽ cảm nhận sự nhẹ nhàng, bình yên bởi không gian xanh mướt được bao phủ dọc theo các luống chè dường như trải dài bất tận.<br />
+                                Buổi tối, Quý khách tự do dạo phố thưởng thức ẩm thực nổi tiếng phố núi: Lẩu gà lá é Tao Ngộ, Lẩu bò quán Gỗ, Bánh ướt lòng gà, Ốc nhồi thịt, Xe lẩu buffet, Ngói BBQ … hoặc đến Nhạc Quán Diễm Xưa lắng nghe những tình khúc bất hủ của nhạc sỹ Trịnh Công Sơn … (chi phí tự túc). Nghỉ đêm tại Đà Lạt.<br />
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>04-01-2019</td>
+                            <td>
+                                <br />
+                                <a>
+                                    <h4>
+                                        <img src="hinh/location.png" />
+                                        HUẾ - THÀNH PHỐ HỒ CHÍ MINH Số bữa ăn: 2 bữa (sáng, trưa)
+                                    </h4>
+                                </a>
+                                <br />
+                                Sau khi dùng bữa sáng, đoàn khởi hành tham quan các tuyệt tác điêu khắc::<br />
+                                - Đường Hầm Đất Sét: các công trình nghệ thuật với những tác phẩm điêu khắc bằng đất nung hoành tráng, ấn tượng được sách Kỷ Lục Việt Nam công nhận như: Ga xe lửa, dinh Bảo Đại, Đại học Đà Lạt, nhà thờ Con Gà, sân bay Liên Khương, đường cao tốc, hồ Tuyền Lâm, thung lũng Tình yêu…). Nổi tiếng là “hồ vô cực” thu hút nhiều du khách đến tham quan hiện nay<br />
+                                Ăn trưa, xe đưa đoàn về lại điểm đón ban đầu và kết thúc hành trình nhiều trải nghiệm.<br />
+
+
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+            <!--Lưu ý-->
+            <div class="table">
+                <table>
+                    <tr>
+                        <td align="center"><h3>Lưu ý</h3></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Lộ trình tham khảo, cự ly khoảng:</h4><br />
+                            <p>
+                                Ngày 1 (323km): TP Hồ Chí Minh - Thác Đam B'ri (197km) - Quảng Trường Lâm Viên (126km)<br />
+                                Ngày 2 (55km): Đà lạt - Lang Biang (10km) - Fairytale Land (15km) - Cánh Đồng Hoa Cẩm Tú Cầu (14km) – Đồi Chè Cầu Đất (16km)<br />
+                                Ngày 3 (313km): Đà Lạt - Đường Hầm Đất Sét (12km) - TP Hồ Chí Minh (301km)<br />
+
+
+                            </p>
+
+                            <h4>Giá tour bao gồm:</h4><br />
+                            <p>
+                                <ul>
+                                    <li>Xe tham quan (4, 7, 16, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình</li>
+                                    <li> Khách sạn theo tiêu chuẩn 2 khách/phòng hoặc 3 khách/phòng</li>
+                                    <li> Tương đương 2 sao : An Phú, An An … (xe đưa đoàn ăn sáng buffet bên ngoài khách sạn)</li>
+                                    <li>Tương đương 3 sao : Mai Vàng, Rum Vàng 2, Mai Thắng …</li>
+                                    <li> Tương đương 3 sao cao cấp : River Prince, Dalat Plaza …</li>
+                                    <li> Vé tham quan theo chương trình</li>
+                                    <li> Các bữa ăn chính theo chương trình từ 100.000 – 130.000VNĐ/bữa.</li>
+                                    <li> Hướng dẫn viên tiếng Việt suốt tuyến</li>
+                                    <li> Bảo hiểm du lịch với mức bồi thường cao nhất 120.000.000đ/vụ</li>
+                                    <li> Nón Vietravel + Nước suối + Khăn lạnh</li>
+                                    <li> Thuế VAT</li>
+
+
+
+
+
+                                </ul>
+
+                            </p><br />
+                            <h4>Giá tour không bao gồm:</h4>
+                            <p>
+                                <ul>
+                                    <li> Chi phí cá nhân: 01 bữa chiều ngoài chương trình, giặt ủi, chi phí hủy đổi hành trình, phụ thu phòng đơn</li>
+                                    <li> Chi phí tham quan ngoài chương trình: xe Jeep và các trò chơi tại Langbiang …</li>
+
+                                </ul>
+                            </p>
+                            <h4>Giá vé trẻ em:</h4>
+                            <p>
+                                <ul>
+
+                                    <li> Trẻ em dưới 5 tuổi: không thu phí dịch vụ, gia đình tự lo cho bé. Hai người lớn chỉ được kèm 1 trẻ em dưới 5 tuổi, trẻ em thứ 2 phải đóng phí theo quy định dành cho độ tuổi từ 5 đến dưới 12 tuổi và phụ thu giường đơn</li>
+                                    <li> Trẻ em từ 5 - dưới 12 tuổi: mua 75% vé dịch vụ, bao gồm phương tiện xe vận chuyển, ăn uống, vé tham quan, ngủ chung với gia đình, không có giường riêng. Hai người lớn chỉ được kèm 1 trẻ em từ 5 - dưới 12 tuổi, em thứ hai trở lên phải mua 1 suất giường đơn</li>
+                                    <li> Trẻ em từ 12 tuổi trở lên: mua một vé như người lớn.</li>
+
+
+                                </ul>
+                            </p>
+                            <h4>Điều kiện thanh toán:</h4>
+                            <p>
+                                <ul>
+                                    <li> Khi đăng ký đặt cọc 50% số tiền tour</li>
+                                    <li> Thanh toán hết trước ngày khởi hành 5 ngày (tour ngày thường), trước ngày khởi hành 10 ngày (tour lễ tết)</li>
+
+
+                                </ul>
+                            </p>
+
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <div class="line">
+        <img src="hinh/line.png" width="1000" height="2" />
+    </div>
+
+    <section class="tourtuongtu">
+        <section class="features">
+            <h1>Tour Tương Tự</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="detailtourgiochot.html" target="_blank"><img src="hinh/tourkm2phanthiet.jpg" height="200" width="250" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Côn Đảo (Bà Rịa – Vũng Tàu)</span>
+
+                                </div>
+                                <h6>Côn Đảo - Thiên Đường Của Biển </h6>
+                                <h5>7,490,000 đ</h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+
+                                </div>
+                                <div>
+
+                                    <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                    <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                </div>
+                                <div class="feature-details">
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo3"></span>
+                                <img src="hinh/diemyeuthichangiang.jpg" height="200" width="200" />
+                                <div class="price">
+                                    <p>1,000,000 VNĐ</p>
+
+                                </div>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>Lũng Cú, Hà Giang</h4>
+
+                                    <div>
+                                        <span><i class="fa fa-map-marker"></i>Hà Giang</span>
+                                        <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo2"></span>
+                                <img src="hinh/diemyeuthichangiang.jpg" height="300" width="300" />
+                                <div class="price">
+                                    <p>2,500,000 VNĐ</p>
+
+                                </div>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>Lũng Cú, Hà Giang</h4>
+                                    <p>Cột mốc phương bắc của đất nước Việt Nam</p>
+                                    <div>
+                                        <span><i class="fa fa-map-marker"></i>Hà Giang</span>
+                                        <span><i class="fa fa-sun-o"></i>4 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>3 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="https://travel.com.vn/tourNDSGN821-044-201119VN-D-O/con-dao-thien-duong-cua-bien-resort-3sao,-tour-tieu-chuan.aspx?LM=1" target="_blank"><img src="hinh/condao.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Côn Đảo (Bà Rịa – Vũng Tàu)</span>
+
+                                </div>
+                                <h5>Côn Đảo - Thiên Đường Của Biển </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>7,490,000 đ</h4>
+                                    <p>Không những nổi tiếng về cảnh đẹp thiên nhiên sơn thủy hữu tình, sở hữu những bãi biển hoang sơ trong vắt, bờ cát trắng mịn làm say mê du khách khắp nơi, mà nơi đây còn nổi tiếng với hải sản tươi ngon.</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="https://travel.com.vn/tourNDSGN821-044-201119VN-D-O/con-dao-thien-duong-cua-bien-resort-3sao,-tour-tieu-chuan.aspx?LM=1" target="_blank"><img src="hinh/condao.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Côn Đảo (Bà Rịa – Vũng Tàu)</span>
+
+                                </div>
+                                <h5>Côn Đảo - Thiên Đường Của Biển </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>7,490,000 đ</h4>
+                                    <p>Không những nổi tiếng về cảnh đẹp thiên nhiên sơn thủy hữu tình, sở hữu những bãi biển hoang sơ trong vắt, bờ cát trắng mịn làm say mê du khách khắp nơi, mà nơi đây còn nổi tiếng với hải sản tươi ngon.</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-img">
+                                <span id="demo"></span>
+                                <a href="https://travel.com.vn/tourNDSGN821-044-201119VN-D-O/con-dao-thien-duong-cua-bien-resort-3sao,-tour-tieu-chuan.aspx?LM=1" target="_blank"><img src="hinh/condao.jpg" height="300" width="300" /></a>
+
+
+                                <div class="price">
+
+                                    <span><i class="fa fa-map-marker"></i> Côn Đảo (Bà Rịa – Vũng Tàu)</span>
+
+                                </div>
+                                <h5>Côn Đảo - Thiên Đường Của Biển </h5>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="feature-detail">
+                                    <h4>7,490,000 đ</h4>
+                                    <p>Không những nổi tiếng về cảnh đẹp thiên nhiên sơn thủy hữu tình, sở hữu những bãi biển hoang sơ trong vắt, bờ cát trắng mịn làm say mê du khách khắp nơi, mà nơi đây còn nổi tiếng với hải sản tươi ngon.</p>
+                                    <div>
+
+                                        <span><i class="fa fa-sun-o"></i>3 ngày</span>
+                                        <span><i class="fa fa-moon-o"></i>2 đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="line">
+        <img src="hinh/line.png" width="1000" height="2" />
+    </div>
+    <section class="baivietlienquan">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </section>
+
+    <div class="line">
+        <img src="hinh/line.png" width="1000" height="2" />
+    </div>
+
+    <section class="footer">
+
+        <div id="foot">
+            <div>
+                <div>
+                    <table id="idwithtable" border="0" cellpadding="8" cellspacing="8" class="backgroundmuc">
+                        <tr class="bvsc">
+
+                            <td rowspan="9" class="text-white text-bold number" align="center">
+                                Vì sao chọn <br />
+                                Buitravel.com?
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number">  1.  </td>
+                            <td class="number">  2.  </td>
+                            <td class="number">  3.  </td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold">
+                                MẠNG BÁN TOUR
+                            </td>
+                            <td class="text-bold">
+                                THÔNG TIN
+                            </td>
+                            <td class="text-bold">
+                                GIÁ CẢ
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                ---------------------------
+                            </td>
+                            <td>
+                                ---------------------------
+                            </td>
+                            <td>
+                                ---------------------------
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Ứng dụng công nghệ mới nhất
+                            </td>
+                            <td>
+                                An toàn và linh hoạt
+                            </td>
+                            <td>
+                                Luôn có mức giá tốt nhất với mọi mức giá
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="number">
+                                4.
+                            </td>
+                            <td class="number">
+                                5.
+                            </td>
+                            <td class="number">
+                                6.
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-bold">
+                                SẢN PHẨM
+                            </td>
+                            <td class="text-bold">
+                                ĐẶT TOUR
+                            </td>
+                            <td class="text-bold">
+                                HỖ TRỢ
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> ---------------------------</td>
+                            <td> ---------------------------</td>
+                            <td> ---------------------------</td>
+                        </tr>
+                        <tr>
+                            <td>Đa dạng, chất lượng<br /> Đạt chất lượng tốt nhất</td>
+                            <td>Dễ dàng và nhanh chóng</td>
+                            <td>
+                                Từ 8h00 đến 23h<br /> Hotline hỗ trợ trực tuyến
+                            </td>
+                        </tr>
+
+
+                    </table>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+                <div class="wrapper bg-green">
+                    <footer class="d-flex-r clear containerf text-white" id="main-footer">
+                        <div class="mx-0">
+                            <h6 class="heading font-x1 my-1">LIÊN HỆ</h6>
+                            <ul class="nospace linkedlist contact">
+                                <li>
+
+                                    <address> <img src="hinh/location.png" /> &nbsp;&nbsp; Pasteur , Phường 6, Quận 3 ,TP HCM</address>
+
+                                </li>
+                                <li>
+                                    <img src="hinh/telephone%20(3).png" />&nbsp;&nbsp; +(84 28)3822 8899
+
+                                </li>
+                                <li>
+                                    <img src="hinh/messages.png" />&nbsp;&nbsp;
+                                    info@buitravel.com
+                                </li>
+                                <li>
+                                    <img src="hinh/Travel.png" />&nbsp;&nbsp;
+                                    <a class="text-white" href="https://www.youtube.cpm/buitravel/" target="_blank"><i></i>buitravel.com</a>
+
+                                </li>
+                            </ul>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4611.090314710304!2d106.690956426912!3d10.78240361522089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3816236ab3%3A0xb62bca767bca4649!2zUGFzdGV1ciwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574304266404!5m2!1svi!2s"
+                                    width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="mx-0 ">
+                            <h6 class="heading my-1 font-x1">THÔNG TIN</h6>
+                            <ul class="nospace linkedlist">
+                                <li class="my-0"><a href="#" class="f">Tin tức</a></li>
+                                <li class="my-0"><a href="#" class="f">Kinh nghiệm du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Cẩm nang du lịch</a></li>
+                                <li class="my-0"><a href="#" class="f">Sitemap</a></li>
+                                <li>------------------------</li>
+                                <li class="my-0"><a href="#" class="f">Chính sách riêng tư</a></li>
+                                <li class="my-0"><a href="#" class="f">Thỏa thuận sử dụng</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mx-0">
+                            <h6 class="heading my-1 font-x1">NEWSLETTER</h6>
+
+                            <form method="post" action="#" id="foote">
+                                <table>
+                                    <tr>
+                                        <td><input type="name" placeholder="Name" class="auto-style1" /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="email" " placeholder="Email" /> <br />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="auto-style4 btnf">Submit</button></td>
+                                    </tr>
+                                </table>
+                            </form>
+
+                        </div>
+                        <div class="mx-0 " id="instafeed">
+                            <h6 class="heading my-1 font-x1">MẠNG XÃ HỘI</h6>
+                            <div class="d-flex-r my-1">
+                                <a href="#"><img src="hinh/facebook1.png" class="my-0" /> </a>
+                                <a href="#"><img src="hinh/instagram.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/twitter.png" class="my-0" /></a>
+                                <a href="#"><img src="hinh/youtube.png" class="my-0" /> </a>
+                            </div>
+                            <h6 class="heading my-1 font-x1 ">HOTLINE</h6>
+                            <div class="d-flex-r my-1">
+                                <img src="hinh/call.png" class="my-1" />
+                                <ul class="nospace linkedlist ">
+
+                                    <li class="my-0 text-bold"> 1900 1839</li>
+                                    <li class="my-0"> Tư vấn 8h00 - 23h00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="d-flex-r clear justify-content-space-between text-white" id="copyright">
+                        <p class="d-flex-r ">
+                            Copyright &copy; 2019 - All Rights Reserved -
+                            <a href="#"> &nbsp; &nbsp;Domain Name </a>
+                        </p>
+                        <a href="#myPage" id="backtotop"><i class="fa fa-chevron-up"></i></a>
+                        <p class="d-flex-r"> Template by <a href="https://www.facebook.com/buitravel.com/" target="_blank" title="buitravel.com"> &nbsp; 5A1C </a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Form đăng ký-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="close" onclick="closeForm()"></div>
+            <form action="action_page.php" id="frm">
+                <div class="icontainer">
+                    <h1>Đăng ký</h1>
+                    <p>Vui lòng điền vào mẫu bên dưới để đăng ký tài khoản</p>
+                    <hr>
+
+                    <label for="email"><b>Email/Số điện thoại</b></label>
+                    <input type="text" placeholder="Nhập email hoặc số điện thoại" name="email" required id="email" />
+
+
+                    <label for="psw"><b>Mật khẩu</b></label>
+                    <input type="password" placeholder="Nhập mật khẩu" name="psw" id="psw" required>
+
+                    <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                    <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" id="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" name="remember" style="margin-bottom:15px"> Nhớ mật khẩu
+                    </label>
+
+                    <p>Bằng việc đăng ký, tôi đồng ý với các  <a id="DangKy" href="#">Điều khoản & Điều kiện</a> và <a id="DangKy" href="#">Chính sách về quyền riêng tư</a> của Bụi Travel</p>
+
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn" onclick="closeForm()">Huỷ</button>
+                        <button type="submit" class="signupbtn">Đăng ký</button>
+                    </div>
+
+                    <div class="strike">
+                        <span>hoặc</span>
+                    </div>
+                    <!--Nút Facebook-->
+                    <div class="space">
+                        <div class="btnFB" ; onclick="window.location='http://facebook.com';">
+                            <div class="logoFB">
+                                <img src="image/fb.png" />
+                            </div>
+                            <div class="content">Đăng ký bằng Facebook</div>
+                        </div>
+                    </div>
+                    <!--Nút Gmail-->
+                    <div>
+                        <div class="btnGM" ; onclick="window.location='http://google.com';">
+                            <div class="logoGM">
+                                <img src="image/google.png" />
+                            </div>
+                            <div class="content">Đăng ký bằng Gmail</div>
+                        </div>
+                    </div>
+                    <p class="clearfloat">Bạn đã có tài khoản? <a id="DangKy" href="#" onclick="chuyenForm()">Đăng nhập</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Form đăng nhập-->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <div class="close" onclick="closeForm2()"></div>
+            <form action="action_page.php" id="frm2">
+                <div class="icontainer">
+                    <h1>Đăng nhập</h1>
+                    <p>Vui lòng điền thông tin để đăng nhập</p>
+                    <hr>
+
+                    <label for="email2"><b>Email/Số điện thoại</b></label>
+                    <input type="text" placeholder="Nhập email hoặc số điện thoại" name="email2" required id="email2" />
+
+
+                    <label for="psw2"><b>Mật khẩu</b></label>
+                    <input type="password" placeholder="Nhập mật khẩu" name="psw2" id="psw2" required>
+
+                    <label>
+                        <input type="checkbox" name="remember" style="margin-bottom:15px"> Nhớ mật khẩu
+                    </label>
+
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn" onclick="closeForm2()">Huỷ</button>
+                        <button type="submit" class="signupbtn">Đăng nhập</button>
+                    </div>
+
+                    <div class="strike">
+                        <span>hoặc</span>
+                    </div>
+                    <!--Nút Facebook-->
+                    <div class="space">
+                        <div class="btnFB" ; onclick="window.location='http://facebook.com';">
+                            <div class="logoFB">
+                                <img src="image/fb.png" />
+                            </div>
+                            <div class="content">Đăng nhập bằng Facebook</div>
+                        </div>
+                    </div>
+                    <!--Nút Gmail-->
+                    <div>
+                        <div class="btnGM" ; onclick="window.location='http://google.com';">
+                            <div class="logoGM">
+                                <img src="image/google.png" />
+                            </div>
+                            <div class="content">Đăng nhập bằng Gmail</div>
+                        </div>
+                    </div>
+                    <p class="clearfloat">Bạn chưa có tài khoản? <a id="DangKy" href="#" onclick="chuyenForm2()">Đăng ký</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Modal box đăng ký-->
+    <script type="text/javascript">
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("myModal2");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("btnDangKy");
+
+
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        function closeForm() {
+            modal.style.display = "none";
+        }
+
+        function chuyenForm() {
+            modal.style.display = "none";
+            modal2.style.display = "block";
+        }
+    </script>
+
+    <!--Modal box đăng nhập-->
+    <script type="text/javascript">
+        // Get the modal
+        var modal2 = document.getElementById("myModal2");
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("btnDangNhap");
+
+        // When the user clicks on the button, open the modal
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+        }
+
+
+
+        function closeForm2() {
+            modal2.style.display = "none";
+        }
+
+        function chuyenForm2() {
+            modal.style.display = "block";
+            modal2.style.display = "none";
+        }
+    </script>
+    <script type="text/javascript">
+        //JavaScript Document
+        function validateForm() {
+            //Email hoặc phải được điền chính xác
+            var email = document.getElementById("email").value;
+            var aCong = email.indexOf("@");
+            var dauCham = email.lastIndexOf(".");
+            var kiemTraDT = isNaN(email);
+            var psw = document.getElementById("psw").value;
+            var pswrepeat = document.getElementById("psw-repeat").value;
+            var usn = document.getElementById("usn").value
+            sessionStorage.setItem("username", usn)
+            sessionStorage.setItem("email", email)
+            if (kiemTraDT == true) {
+                if ((aCong < 1) || (dauCham < aCong + 2) || (dauCham + 2 > email.length)) {
+                    swal("Email hoặc số điện thoại bạn điền không chính xác. Xin vui lòng nhập lại!");
+                    return false;
+                }
+            }
+            if (psw != pswrepeat) {
+                swal("Mật khẩu bạn nhập không giống nhau. Xin vui lòng nhập lại!");
+                return false;
+            }
+        }
+    </script>
+    <!--Chào user-->
+    <script type="text/javascript">
+        if (sessionStorage.getItem("username")) {
+            document.getElementById("btnDangKy").style.display = "none"
+            document.getElementById("btnDangNhap").style.display = "none"
+            document.getElementById("chaomung").style.display = "block"
+            var spanusn = sessionStorage.getItem("username")
+            document.getElementById("spanusn").innerHTML = spanusn
+        }
+    </script>
+</body>
+</html>

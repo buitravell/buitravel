@@ -1,0 +1,40 @@
+﻿{
+  "toursData": [
+
+    {
+      "name": "Bà Nà - Cầu Vàng - Sơn Trà - La Vang - Động Phong Nha (Khách sạn 4*2 đêm. Tour Tiêu Chuẩn)",
+      "star": "4,5/5",
+      "mota": [ "Phố cổ Hội An với lung linh sắc màu của đèn lồng và những hoạt động dân gian đặc sắc. Hội An đậm chât cổ xưa." ],
+      "xemchitiet": 2016,
+      "photo": "hinhjson/condaojs.jpg"
+    },
+    {
+      "name": "Bà Nà - Cầu Vàng - Sơn Trà - La Vang - Động Thiên Đường (Khách sạn 4* 2 đêm. Tour Giá Sốc)",
+      "star": "4,5/5",
+      "mota": [ "Chùa Kiến An Cung: ngôi chùa cổ gần 100 năm với kiến trúc độc đáo - Nhà cổ Huỳnh Thủy Lê: tìm hiểu chuyện tình lãng mạn" ],
+      "xemchitiet": 2016,
+      "photo": "hinhjson/condaojs.jpg"
+    },
+    {
+      "name": "Côn Đảo - Thiên Đường Của Biển ",
+      "star": "4,5/5",
+      "mota": [ "Không những nổi tiếng về cảnh đẹp thiên nhiên sơn thủy hữu tình, sở hữu những bãi biển hoang sơ trong vắt, bờ cát trắng mịn làm say mê du khách khắp nơi, mà nơi đây còn nổi tiếng." ],
+      "xemchitiet": 2016,
+      "photo": "hinhjson/condaojs.jpg"
+    },
+    {
+      "name": "Hà Nội - Lào Cai - Sapa - Hạ Long - Tặng Vé Xe Lửa Mường Hoa",
+      "star": "4,5/5",
+      "mota": [ "Sa Pa thu hút du khách với những thửa ruộng vàng óng vào mùa lúa chín, chợ tình quyến rũ, đỉnh Phan Xi Păng hùng vỹ. Hà Nội cổ kính, nên thơ trong sương sớm. Hạ Long kỳ vỹ." ],
+      "xemchitiet": 2016,
+      "photo": "hinhjson/condaojs.jpg"
+    },
+    {
+      "name": "Nha Trang - Đà Lạt (Khách sạn tương đương 4*. Tour Tiêu Chuẩn)",
+      "star": "4,5/5",
+      "mota": [ "Nha Trang thành phố đáng sống nhất Việt Nam với bờ biển dài với những bờ cát trắng, Đà Lạt thơ mộng, ngôn tình và lãng mạn. Tour thu hút nhiều khách tham gia từ trước đến nay" ],
+      "xemchitiet": 2016,
+      "photo": "hinhjson/condaojs.jpg"
+    }
+  ]
+}

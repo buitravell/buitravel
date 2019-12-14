@@ -1,0 +1,912 @@
+﻿
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    
+}
+
+#logo {
+    float: left;
+}
+
+#menu {
+    margin-left: 5%;
+    float: left;
+    top: 2%;
+    text-indent: 0px;
+    font-size: 17px;
+    z-index: 999;
+}
+
+    #menu ul {
+        float: left;
+        list-style: none;
+        color: #aba6a8;
+    }
+
+        #menu ul li {
+            position: relative;
+            float: left;
+            display: inline-block;
+        }
+
+            #menu ul li a {
+                display: block;
+                color: #aba6a8;
+                font-weight: bold;
+                text-decoration: none;
+                padding: .3em 16px;
+                text-decoration: none;
+            }
+
+            #menu ul li:hover {
+                background: #c6adad;
+                border-radius: 3px;
+                color: white;
+            }
+
+            #menu ul li a:hover {
+                color: white;
+            }
+
+div#myid1 {
+    width: 30%;
+    height: 330px;
+    margin: 4% 1.3%;
+    float: left;
+    border-radius: 10px;
+    transition: transform .2s;
+    box-shadow: 0px 0px 10px #b0e8e8;
+    -moz-box-shadow: 0px 0px 10px #b0e8e8;
+    -webkit-box-shadow: 0px 0px 10px #b0e8e8;
+}
+
+div#myDacSan {
+    width: 30%;
+    height: 400px;
+    margin: 4% 1.3%;
+    float: left;
+    border-radius: 10px;
+    transition: transform .2s;
+    box-shadow: 0px 0px 10px #b0e8e8;
+    -moz-box-shadow: 0px 0px 10px #b0e8e8;
+    -webkit-box-shadow: 0px 0px 10px #b0e8e8;
+}
+
+    div#myDacSan:hover img {
+        transform: scale(1.04);
+        -webkit-transform: scale(1.04);
+        border-radius: 10px;
+    }
+
+div#mydiadiem {
+    width: 30%;
+    height: 300px;
+    margin: 4% 1.3%;
+    float: left;
+    border-radius: 10px;
+    transition: transform .2s;
+    box-shadow: 0px 0px 10px #b0e8e8;
+    -moz-box-shadow: 0px 0px 10px #b0e8e8;
+    -webkit-box-shadow: 0px 0px 10px #b0e8e8;
+}
+
+    div#mydiadiem:hover img {
+        transform: scale(1.04);
+        -webkit-transform: scale(1.04);
+        border-radius: 10px;
+    }
+
+div#mykhachsan {
+    width: 36%;
+    height: 270px;
+    border-radius: 10px;
+    margin: 5% 2%;
+    transition: transform .2s;
+    box-shadow: 0px 0px 10px #b0e8e8;
+    -moz-box-shadow: 0px 0px 10px #b0e8e8;
+    -webkit-box-shadow: 0px 0px 10px #b0e8e8;
+}
+
+    div#mykhachsan:hover img {
+        transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        border-radius: 10px;
+    }
+
+div#myid3 {
+    width: 33%;
+    height: 300px;
+    margin: 4% 3%;
+    border: 1px solid #0094ff;
+    float: left;
+    border-radius: 10px;
+}
+
+li#dichuyen {
+    list-style: circle url('../image/dichuyen.png') inside;
+}
+li#DacSan {
+    list-style: circle url('../image/Dacsan.png') inside;
+}
+li#DDAnUong {
+    list-style: circle url('../image/DDAnUong.png') inside;
+}
+li#maybay {
+    list-style: circle url('../image/maybay.png') inside;
+}
+
+li#vetau {
+    list-style: circle url('../image/vetau.png') inside;
+}
+
+li#vexe {
+    list-style: circle url('../image/vexe.png') inside;
+}
+
+li#kshs {
+    list-style: circle url('../image/kshs.png') inside;
+}
+
+li#ks {
+    list-style: circle url('../image/Hotel.png') inside;
+}
+
+li#hs {
+    list-style: circle url('../image/homestay.png') inside;
+}
+
+li#amthuc {
+    list-style: circle url('../image/amthuc.png' ) inside;
+}
+
+li#tintuc {
+    list-style: circle url('../image/tintuc.png') inside;
+}
+
+.clear {
+    clear: both;
+}
+
+a:link {
+    color: #373737;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #373737;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.DangKy:link {
+    color: #FFC804;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.DangKy:visited {
+    color: #FFC804;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.DangKy:hover {
+    color: #373737;
+    font-weight: bold;
+}
+
+h1#sign {
+    color: #373737;
+}
+
+
+
+div#main {
+    width: 100%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#head {
+    height: 62px;
+    border-bottom: 1px solid #ededed;
+}
+
+div#headlink {
+    height: 95px;
+    clear: both;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #FFC804;
+}
+
+div#left {
+    width: 20%;
+    float: left;
+    font-weight: bold;
+    line-height: 3;
+    font-size: 16px;
+    background-color: #FFC804;
+    color: #373737;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+
+div#right {
+    width: 78%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    position: relative;
+    font-weight: bold;
+    color: #373737;
+}
+
+div#foot {
+    clear: both;
+    border-top: 1px solid #ededed;
+    padding-top: 3%;
+}
+
+/* TÌM KIẾM */
+#Tim {
+    float: left;
+    margin-left: 6%;
+    margin-top: 1%;
+}
+
+#btnTim {
+    width: 160%;
+    font-size: 16px;
+    border-radius: 30px;
+    height: 37px;
+    padding: 9px 9px;
+}
+
+/* SEARCH ĐI*/
+
+.autocomplete-suggestions {
+    border: 1px solid #999;
+    background: #fff;
+    cursor: default;
+    overflow: auto;
+}
+
+.autocomplete-suggestion {
+    padding: 10px 5px;
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.autocomplete-selected {
+    background: #F4F4F4;
+    color: #000;
+    cursor: pointer;
+}
+
+.autocomplete-suggestions strong {
+    font-weight: normal;
+    color: #1176d9;
+}
+
+#searchfield {
+    display: block;
+    text-align: center;
+    float: left;
+    margin-top: 1.1%;
+    margin-left: 0.5%;
+}
+
+    #searchfield form {
+        width: 230px;
+        float: left;
+    }
+        /* ô tìm kiếm */
+        #searchfield form .biginput {
+            background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+            width: 115%;
+            height: 37px;
+            padding: 20px 20px 20px 40px;
+            background-color: #FFDB4F;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2em;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            margin-left: 0;
+            margin-top: 5%;
+            outline: none;
+            font-size: 17.5px;
+            color: #373737;
+            /*transition:0.6s ease-in-out;  dài ra chậm và mượt */
+        }
+
+            #searchfield form .biginput:focus {
+                background: #F4F4F4 url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+                color: #807c7e;
+                outline: 0;
+            }
+
+
+/* SEARCH ĐẾN NƠI*/
+
+#searchfield1 {
+    display: block;
+    text-align: center;
+    float: left;
+    margin-top: 1.1%;
+    margin-left: 5%;
+}
+
+    #searchfield1 form {
+        width: 230px;
+        float: left;
+        border: none;
+    }
+        /* ô tìm kiếm */
+        #searchfield1 form .biginput {
+            background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+            width: 115%;
+            height: 37px;
+            padding: 20px 20px 20px 40px;
+            background-color: #FFDB4F;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2em;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            margin-left: 0;
+            margin-top: 5%;
+            outline: none;
+            font-size: 17.5px;
+            color: #373737;
+            border-color: none;
+            /*transition:0.6s ease-in-out;  dài ra chậm và mượt */
+        }
+
+            #searchfield1 form .biginput:focus {
+                background: #F4F4F4 url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+                color: #807c7e;
+                outline: 0;
+            }
+
+
+
+/* ĐĂNG KÝ */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Input dài hết form */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+}
+
+    /* nhấn vào input */
+    input[type=text]:focus, input[type=password]:focus {
+        outline: none;
+        border-color: dodgerblue;
+    }
+
+hr {
+    border: 0.5px solid #373737;
+    margin-bottom: 25px;
+}
+
+/* nút button */
+button {
+    color: #373737 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 11px;
+    border: 2px solid #373737 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    background-color: #FFC804;
+    outline: none;
+}
+
+    /* rê chuột vào button */
+    button:hover {
+        color: #373737 !important;
+        background: #FFDB4F;
+        border: solid 2px #fff !important;
+        transition: all 0.4s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+
+/* cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #aba6a8;
+}
+
+/* float cancel, độ rộng cancel với sign up bằng nhau */
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 45%;
+    margin: 11px;
+    height: 40px;
+}
+
+/* Add padding to icontainer elements */
+.icontainer {
+    padding: 16px 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfloat {
+    clear: both;
+    text-align: center;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+.modal-content {
+    border: 1px solid #ccc;
+    width: 520px;
+    position: absolute;
+    left: 30%;
+    background-color: white;
+    overflow: auto;
+    z-index: 1;
+    padding-left: 20px;
+}
+
+/* icon mỗi dòng nhập */
+
+
+h1 {
+    color: #a76869;
+}
+
+
+
+div #btn {
+    float: right;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+
+    .close:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .close:before, .close:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: #333;
+    }
+
+    .close:before {
+        transform: rotate(45deg);
+    }
+
+    .close:after {
+        transform: rotate(-45deg);
+    }
+
+
+/* ở ngoài modal */
+.modal {
+    display: none; /* mặc định được ẩn đi */
+    position: fixed; /* vị trí cố định */
+    z-index: 1; /* Ưu tiên hiển thị trên cùng */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* thẻ hr chỗ hoặc */
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+    .strike > span {
+        position: relative;
+        display: inline-block;
+    }
+
+        .strike > span:before,
+        .strike > span:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 9999px;
+            height: 1px;
+            background: #ededed;
+        }
+
+        .strike > span:before {
+            right: 100%;
+            margin-right: 15px;
+        }
+
+        .strike > span:after {
+            left: 100%;
+            margin-left: 15px;
+        }
+
+/* đăng nhập bằng facebook, gmail */
+.space {
+    margin-left: 7%;
+}
+
+.btnFB, .btnGM {
+    float: left;
+    width: 200px;
+    background-color: white;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    color: dodgerblue;
+    font-weight: bold;
+    margin: 10px -20px;
+    padding: 10px;
+    font-size: 16px;
+    display: table;
+    cursor: pointer;
+}
+
+.btnGM {
+    margin-left: 50px;
+}
+
+.btnFB:hover {
+    background-color: #FFDB4F;
+}
+
+.btnGM:hover {
+    background-color: #FFDB4F;
+}
+
+.logoFB {
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: 5px;
+    padding-top: 3px;
+}
+
+.logoGM {
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: 5px;
+    padding-top: 0;
+}
+
+.content {
+    padding-top: 5px;
+}
+
+/* INPUT SỐ NGƯỜI */
+
+.value-button {
+    display: inline-block;
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    background: #fff;
+    border: solid 1px #a19f9f;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-size: 22px;
+    color: #a19f9f;
+}
+
+.spanmiddle {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.value-button:hover {
+    cursor: pointer;
+    border: solid 1px #505050;
+    color: #505050;
+}
+
+input.number1 {
+    text-align: center;
+    border: none;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#frmSoNguoi {
+    width: 320px;
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 23%;
+    left: 39%;
+}
+#frmSoNguoihome {
+    width: 320px;
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 27%;
+    left: 45%;
+}
+
+.btnTron {
+    border-radius: 30px;
+    text-align: center;
+    outline: none;
+    clear: right;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+#divSoNguoi {
+    float: left;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+#tableSoNguoi {
+    width: 300px;
+}
+
+table td.right {
+    text-align: right;
+}
+
+.btnClear {
+    background-color: white;
+    color: black;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-bottom: 0;
+    outline: none;
+    margin-top: 2%;
+}
+
+    .btnClear:hover {
+        background-color: #f1efef;
+        cursor: pointer;
+        box-shadow: none;
+    }
+
+#hrnhat {
+    margin-bottom: 0;
+}
+
+.btnSave {
+    outline: none;
+    width: 20%;
+    float: right;
+    margin-bottom: 0;
+    padding: 10px 0;
+    margin-top: 2%;
+}
+
+/*NÚT TÌM KIẾM*/
+#divTimKiem {
+    float: left;
+    margin-left: 12%;
+    margin-top: 1.9%;
+}
+
+/*INPUT NGÀY ĐI NGÀY VỀ*/
+
+#divNgay {
+    float: left;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+#btnNgay {
+    width: 200px;
+}
+
+#frmNgay {
+    width: 480px;
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 5px;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 23%;
+    left: 49.5%;
+}
+#frmNgayhome {
+    width: 480px;
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 5px;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 23%;
+    left: 49.5%;
+}
+
+#tableNgay {
+    width: 470px;
+}
+
+input[type=date] {
+    width: 100%;
+    border: 1px solid #373737;
+    border-radius: 10px;
+    height: 40px;
+    box-shadow: none;
+    padding: 10px;
+    outline: none;
+}
+
+hr#hrmenu {
+    border: 0.5px solid #eee;
+    margin-top: 0;
+}
+
+/*THÔNG BÁO ĐĂNG KÝ*/
+div#thongbao {
+    border: 1px dashed #373737;
+    text-align: left;
+    vertical-align: middle;
+    padding: 15px;
+    width: 35%;
+    height: 13%;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    align-items: center;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #FFC804;
+}
+
+#chaomung {
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    display: none;
+}
+
+    #chaomung:hover {
+        background-color: #373737;
+    }
+
+/*menu*/
+
+.menu-bar {
+    font-family: sans-serif;
+    background: #373737;
+    text-align: left;
+    padding: 3px;
+}
+
+.log {
+    margin: 7px 7px;
+    float: left;
+}
+
+.sub-menu-1 {
+    display: none;
+    position: absolute;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.hover-me:hover .sub-menu-2 {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #373737;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 7px;
+    padding: 3px;
+    font-size: 15px;
+}
+
+
+
+    .menu-bar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .active, .menu-bar ul li:hover {
+        background: #FFC804;
+        border-radius: 3px;
+    }
+
+.menu-bar .fa {
+    margin-right: 8px;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+
