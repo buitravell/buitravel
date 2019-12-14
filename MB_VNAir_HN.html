@@ -17,7 +17,7 @@
         app.controller("MayBayController", function ($scope, $http) {
             $http({
                 method: "GET",
-                url: "JSON/VietNamAir.json"
+   url:"Json/VietAir.json"
             }).then(function mySucces(respone) {
                 $scope.maybays = respone.data
             }, function myError(respone) {
